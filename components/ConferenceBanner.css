@@ -1,0 +1,22 @@
+.text-stroke-white {
+  -webkit-text-stroke: 1px white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-stroke-blue {
+  -webkit-text-stroke: 0.5px #003399;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.shape-clip {
+  clip-path: polygon(
+    100% 0,
+    100% 100%,
+    25% 100%,
+    0 85%,
+    25% 70%,
+    25% 30%,
+    0 15%,
+    25% 0
+  );
+}
