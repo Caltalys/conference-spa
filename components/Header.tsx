@@ -1,6 +1,8 @@
+'use client';
+
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { AlignJustifyIcon, Atom, AtomIcon, FlagIcon, HamburgerIcon, MoonIcon, MoonStarIcon } from "lucide-react";
-import Image from "next/image";
+import { AlignJustifyIcon, AtomIcon, MoonStarIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 
 const menuItems = [
@@ -13,21 +15,27 @@ const menuItems = [
 ];
 
 const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <>
-            <header>
+            <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm">
                 <div className="flex justify-between items-center w-full lg:px-24 p-4 shadow-lg">
                     {/* Logo section */}
-                    <div className="flex items-center gap-2 text-2xl font-bold">
+                    <Link href="/" className="flex items-center gap-2 text-2xl font-bold cursor-pointer">
                         <AtomIcon className=" text-blue-500" />
                         <p>VSRNM</p>
-                    </div>
+                    </Link>
                     {/* Menu section */}
                     <div className="hidden lg:block">
                         <ul className="flex justify-between items-center gap-8 font-semibold">
                             {menuItems.map(item => (
                                 <li key={item.id}>
-                                    <a href={item.href} className="hover:text-primary hover:scale-110 transition-transform duration-300">
+                                    <a href={item.href} className="hover:text-destructive hover:underline hover:underline-offset-8 hover:scale-110 transition-transform duration-300">
                                         {item.title}
                                     </a>
                                 </li>
@@ -46,29 +54,26 @@ const Header = () => {
                             <MoonStarIcon />
                         </Button>
                         {/* Mobile Hamburger icon section  */}
-                        <Button variant="outline" size="icon" className="size-8 lg:hidden">
-                            <AlignJustifyIcon />
+                        <Button variant="outline" size="icon" className="size-8 lg:hidden" onClick={toggleMenu}>
+                            {isMenuOpen ? <XIcon /> : <AlignJustifyIcon />}
                         </Button>
                     </div>
                 </div>
-
-
-
-
-                {/* <Link href="/" className="flex items-center gap-2 mx-6">
-                <AtomIcon className="w-12 h-12 text-blue-500" />
-            </Link> */}
-
-                {/* <Link href="#dang-ky" className="">
-                <Button className="p-4 rounded-xl hover:scale-105 transition-transform duration-300 text-accent-hover">
-                    Đăng ký ngay
-                </Button>
-            </Link> */}
             </header>
             {/* Mobile menu section */}
-            {/* <div>
-
-        </div> */}
+            <div className={`lg:hidden transition-all duration-300 ease-in-out overflow-hidden ${isMenuOpen ? 'max-h-screen' : 'max-h-0'}`}>
+                <div className="flex flex-col items-center p-4 bg-white">
+                    <ul className="flex flex-col items-center gap-4 font-semibold w-full">
+                        {menuItems.map(item => (
+                            <li key={item.id} className="w-full text-center">
+                                <a href={item.href} className="block py-2 hover:text-destructive hover:bg-gray-100 rounded-md transition-colors duration-200" onClick={toggleMenu}>
+                                    {item.title}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
         </>
     );
 };
