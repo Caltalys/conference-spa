@@ -1,40 +1,29 @@
 import CommitteeMember from "./CommitteeMember";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+
 const committee = [
-    { title: 'PGS. TS. BS.', name: 'Nguyễn Trọng Hào', role: 'Chủ tọa đoàn', imageUrl: '/images/member1.jpg', social: { linkedin: '#' } },
-    { title: 'GS. TS. BS.', name: 'Nguyên Tấn Bình', role: 'Chủ tọa đoàn', imageUrl: '/images/member2.jpg', social: { linkedin: '#' } },
-    { title: 'GS. TS. BS.', name: 'Ngô Minh Xuân', role: 'Chủ tọa đoàn', imageUrl: '/images/member3.jpg', social: { linkedin: '#' } },
-    { title: 'GS. TS. BS.', name: 'Nguyên Tấn Bình', role: 'Chủ tọa đoàn', imageUrl: '/images/member2.jpg', social: { linkedin: '#' } },
-    { title: 'GS. TS. BS.', name: 'Ngô Minh Xuân', role: 'Chủ tọa đoàn', imageUrl: '/images/member3.jpg', social: { linkedin: '#' } },
-    { title: 'GS. TS. BS.', name: 'Nguyên Tấn Bình', role: 'Chủ tọa đoàn', imageUrl: '/images/member2.jpg', social: { linkedin: '#' } },
-    { title: 'GS. TS. BS.', name: 'Ngô Minh Xuân', role: 'Chủ tọa đoàn', imageUrl: '/images/member3.jpg', social: { linkedin: '#' } },
+    { title: 'PGS. TS. BS.', name: 'Nguyễn Trọng Hào', role: 'Chủ tọa đoàn', imageUrl: '/photo.jpg', social: { linkedin: '#' } },
+    { title: 'GS. TS. BS.', name: 'Nguyên Tấn Bình', role: 'Chủ tọa đoàn', imageUrl: '/photo.jpg', social: { linkedin: '#' } },
+    { title: 'GS. TS. BS.', name: 'Ngô Minh Xuân', role: 'Chủ tọa đoàn', imageUrl: '/photo.jpg', social: { linkedin: '#' } },
+    { title: 'GS. TS. BS.', name: 'Nguyên Tấn Bình', role: 'Chủ tọa đoàn', imageUrl: '/photo.jpg', social: { linkedin: '#' } },
 ];
 
 const Committee = () => {
     return (
-        <section id="ban-to-chuc" className="flex flex-col justify-center items-center py-16 w-full min-h-screen scroll-mt-14">
-            <div className="mx-auto p-8 container">
+        <section id="ban-to-chuc" className=" bg-slate-50 p-4 sm:p-6 lg:p-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mb-16 text-center">
-                    <h2 className="font-bold text-gray-800 text-2xl md:text-5xl">Chủ tọa đoàn - Báo cáo viên</h2>
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">Chủ tọa đoàn - Báo cáo viên</h2>
+                    <p className="mt-4 text-lg text-gray-600">
+                        Những chuyên gia đầu ngành sẽ có mặt tại hội nghị.
+                    </p>
                 </div>
-                <div className="flex flex-wrap justify-center gap-8">
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {committee.map((member, index) => (
-                        <div key={index} className="w-64">
-                            <CommitteeMember {...member} />
-                        </div>
+                        <CommitteeMember key={index} {...member} />
                     ))}
                 </div>
             </div>
         </section>
     )
 }
-
 export default Committee

@@ -33,8 +33,8 @@ const ConferenceInfo = () => {
   const [isMapModalOpen, setIsMapModalOpen] = useState(false);
 
   return (
-    <section id="tong-quan" className="scroll-mt-16 bg-slate-50 py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="tong-quan" className="scroll-mt-16 py-16 lg:py-24">
+      <div className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8 rounded-2xl shadow-xl bg-white">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-16">
           <div className="space-y-8">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

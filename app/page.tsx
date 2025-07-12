@@ -10,8 +10,7 @@ export default function Home() {
       <Header /> 
       <Hero />
       <ConferenceInfo />
-      {/*
-      <Committee /> */}
+      <Committee />
     </div>
   );
 }
