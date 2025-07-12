@@ -9,8 +9,8 @@ export default function Home() {
     <div className="overflow-x-hidden">
       <Header /> 
       <Hero />
-      {/*
       <ConferenceInfo />
+      {/*
       <Committee /> */}
     </div>
   );

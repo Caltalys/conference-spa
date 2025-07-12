@@ -23,7 +23,7 @@ const Header = () => {
 
     return (
         <>
-            <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm">
+            <header className="fixed w-full top-0 z-50 bg-white backdrop-blur-sm">
                 <div className="flex justify-between items-center w-full lg:px-24 p-4 shadow-lg">
                     {/* Logo section */}
                     <Link href="/" className="flex items-center gap-2 text-2xl font-bold cursor-pointer">
