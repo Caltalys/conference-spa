@@ -47,10 +47,9 @@ const ScientificReportForm = () => {
             <CardHeader>
                 <CardTitle className="text-2xl text-center lg:text-left">{t('reportTitle')}</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="space-y-6">
                 <form ref={formRef} action={formAction} className="space-y-6">
                     <div className="flex items-start gap-4">
-                        <FileText className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
                         <p className="text-base text-gray-700">{t('reportStep1')}</p>
                     </div>
                     <div className="space-y-2">
@@ -62,11 +61,18 @@ const ScientificReportForm = () => {
                         <Input id="reportFile" name="reportFile" type="file" required accept=".pdf,.doc,.docx" />
                     </div>
                     <SubmitButton>{t('submitReportButton')}</SubmitButton>
-                    <div className="flex items-start gap-4">
+                    {/* <div className="flex items-start gap-4">
                         <CalendarCheck className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
-                        <p className="text-base text-gray-700">{t('reportStep3')}</p>
-                    </div>
+                        <p className="text-base text-gray-700">{t('submissionDeadline')}</p>
+                    </div> */}
                 </form>
+                <div className="flex jus items-end gap-4">
+                    <CalendarClock className="h-6 w-6 text-blue-600 mt-1" aria-hidden="true" />
+                    <p className="text-base text-gray-700">
+                        {t('submissionDeadline')}
+                        <span className="font-semibold">{t('submissionDate')}</span>.
+                    </p>
+                </div>
             </CardContent>
         </Card>
     );
@@ -109,7 +115,7 @@ const AttendanceRegistrationForm = () => {
                     </div>
                     <SubmitButton>{t('registerButton')}</SubmitButton>
                 </form>
-                <div className="flex items-start gap-4">
+                <div className="flex items-end gap-4">
                     <CalendarClock className="h-6 w-6 text-blue-600 mt-1" aria-hidden="true" />
                     <p className="text-base text-gray-700">
                         {t('attendanceDeadline')}

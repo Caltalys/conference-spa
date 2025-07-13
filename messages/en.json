@@ -6,7 +6,11 @@
     "committee": "Committee",
     "register": "Register",
     "services": "Services",
-    "openMenu": "Open menu"
+    "openMenu": "Open menu",
+    "switchToVietnamese": "Switch to Vietnamese",
+    "switchToEnglish": "Switch to English",
+    "toggleTheme": "Toggle theme",
+    "homePage": "VSRNM Home Page"
   },
   "Hero": {
     "conference": "",
@@ -106,9 +110,10 @@
     "title": "Registration",
     "subtitle": "Join us for this important event.",
     "reportTitle": "For Scientific Reports",
-    "reportStep1": "Download the report template.",
+    "reportStep1": "Submit a summary of your report of no more than 300 words in Vietnamese and English.",
     "reportStep2": "Send the report to the email address: <emailLink>vsrnm.org@gmail.com</emailLink>",
-    "reportStep3": "Deadline for submission: 31/08/2025",
+    "submissionDeadline": "Deadline for submission: ",
+    "submissionDate": "31/08/2025",
     "authorNameLabel": "Author Name",
     "reportFileLabel": "Report File (PDF, DOCX)",
     "submitReportButton": "Submit Report",
@@ -119,7 +124,7 @@
     "emailLabel": "Email Address",
     "registerButton": "Register Now",
     "qrAlt": "QR code for attendance registration",
-    "attendanceDeadline": "Registration deadline: ",
+    "attendanceDeadline": "Deadline for registration: ",
     "deadlineDate": "31/10/2025"
   },
   "Services": {
@@ -144,15 +149,15 @@
     "contactEmail": "director@actravel.com.vn"
   },
   "Footer": {
-    "conferenceName": "The 3rd AON-KMC Conference 2025",
+    "conferenceName": "The 3rd Regional Conference of Asia-Oceania Network of Kangaroo Mother Care 2025",
     "conferenceDescription": "Bringing together experts and practitioners to advance Kangaroo Mother Care in the Asia-Oceania region.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
-    "contactPerson": "Prof. Dr. Nguyễn Hữu Tùng",
-    "email": "vsrnm.org@gmail.com",
-    "phone": "(+84) 903 507 428",
-    "department": "Da Nang University of Medical Technology and Pharmacy",
-    "address": "99 Hùng Vương, Hải Châu 1, Hải Châu, Đà Nẵng",
-    "copyright": "VSRNM. All rights reserved."
+    "contactPerson": "Dr. Huynh Thi Le",
+    "email": "kmcdanang2025@gmail.com",
+    "phone": "(+84) 0905 662 186",
+    "department": "Department of Emergency Neonatal - Intensive Care & Pathological Neonatal, Danang Maternity and Pediatrics Hospital",
+    "address": "402 Le Van Hien, Khue My Ward, Ngu Hanh Son District, Da Nang City",
+    "copyright": "KMC 2025 VIETNAM – DA NANG. All rights reserved."
   }
 }

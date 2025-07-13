@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useRouter, usePathname } from "../i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { AlignJustifyIcon, AtomIcon, MoonStarIcon, XIcon } from "lucide-react";
@@ -9,6 +9,7 @@ import Link from "next/link";
 
 const Header = () => {
     const t = useTranslations('Header');
+    const locale = useLocale();
     const router = useRouter();
     const pathname = usePathname();
 
@@ -27,8 +28,9 @@ const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const handleLocaleChange = (locale: 'vi' | 'en') => {
-        router.replace(pathname, { locale });
+    const handleLocaleChange = (nextLocale: 'vi' | 'en') => {
+        if (nextLocale === locale) return;
+        router.replace(pathname, { locale: nextLocale });
     };
 
     return (
@@ -36,8 +38,8 @@ const Header = () => {
             <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm">
                 <div className="flex justify-between items-center w-full lg:px-24 p-4 shadow-lg">
                     {/* Logo section */}
-                    <Link href="/" className="flex items-center gap-2 text-2xl font-bold cursor-pointer">
-                        <AtomIcon className=" text-blue-500" />
+                    <Link href="/" className="flex items-center gap-2 text-2xl font-bold cursor-pointer" aria-label={t('homePage')}>
+                        <AtomIcon className=" text-blue-500" aria-hidden="true" />
                         <p>VSRNM</p>
                     </Link>
                     {/* Menu section */}
@@ -54,15 +56,29 @@ const Header = () => {
                     </nav>
                     {/* Icon section */}
                     <div className="flex items-center gap-2">
-                        <Button variant="destructive" size="icon" className="size-8" onClick={() => handleLocaleChange('vi')}>
+                        <Button
+                            variant={locale === 'vi' ? 'destructive' : 'outline'}
+                            size="icon"
+                            className="size-8"
+                            onClick={() => handleLocaleChange('vi')}
+                            aria-label={t('switchToVietnamese')}
+                            aria-current={locale === 'vi' ? 'page' : undefined}
+                        >
                             VN
                         </Button>
-                        <Button variant="outline" size="icon" className="size-8" onClick={() => handleLocaleChange('en')}>
+                        <Button
+                            variant={locale === 'en' ? 'destructive' : 'outline'}
+                            size="icon"
+                            className="size-8"
+                            onClick={() => handleLocaleChange('en')}
+                            aria-label={t('switchToEnglish')}
+                            aria-current={locale === 'en' ? 'page' : undefined}
+                        >
                             EN
                         </Button>
-                        <Button variant="outline" size="icon" className="size-8">
+                        {/* <Button variant="outline" size="icon" className="size-8" aria-label={t('toggleTheme')}>
                             <MoonStarIcon />
-                        </Button>
+                        </Button> */}
                         {/* Mobile Hamburger icon section  */}
                         <Button variant="outline" size="icon" className="size-8 lg:hidden" onClick={toggleMenu} aria-controls="mobile-menu" aria-expanded={isMenuOpen}>
                             <span className="sr-only">{t('openMenu')}</span>
