@@ -1,25 +1,34 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
+import { useRouter, usePathname } from "../i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { AlignJustifyIcon, AtomIcon, MoonStarIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 
-const menuItems = [
-    { id: 1, title: 'Trang chủ', href: '/' },
-    { id: 2, title: 'Thông tin', href: '#tong-quan' },
-    { id: 3, title: 'Chương trình', href: '#chuong-trinh' },
-    { id: 4, title: 'Ban tổ chức', href: '#ban-to-chuc' },
-    { id: 5, 'title': 'Đăng ký', href: '#dang-ky' },
-    { id: 6, title: 'Dịch vụ', href: '#dich-vu' },
-    { id: 7, title: 'Liên hệ', href: '#lien-he' }
-];
-
 const Header = () => {
+    const t = useTranslations('Header');
+    const router = useRouter();
+    const pathname = usePathname();
+
+    const menuItems = [
+        { id: 'home', href: '#trang-chu' },
+        { id: 'info', href: '#tong-quan' },
+        { id: 'agenda', href: '#chuong-trinh' },
+        { id: 'committee', href: '#ban-to-chuc' },
+        { id: 'register', href: '#dang-ky' },
+        { id: 'services', href: '#dich-vu' },
+    ];
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    const handleLocaleChange = (locale: 'vi' | 'en') => {
+        router.replace(pathname, { locale });
     };
 
     return (
@@ -37,7 +46,7 @@ const Header = () => {
                             {menuItems.map(item => (
                                 <li key={item.id}>
                                     <Link href={item.href} className="hover:text-destructive hover:underline hover:underline-offset-8 hover:scale-110 transition-transform duration-300">
-                                        {item.title}
+                                        {t(item.id)}
                                     </Link>
                                 </li>
                             ))}
@@ -45,10 +54,10 @@ const Header = () => {
                     </nav>
                     {/* Icon section */}
                     <div className="flex items-center gap-2">
-                        <Button variant="destructive" size="icon" className="size-8">
+                        <Button variant="destructive" size="icon" className="size-8" onClick={() => handleLocaleChange('vi')}>
                             VN
                         </Button>
-                        <Button variant="outline" size="icon" className="size-8" >
+                        <Button variant="outline" size="icon" className="size-8" onClick={() => handleLocaleChange('en')}>
                             EN
                         </Button>
                         <Button variant="outline" size="icon" className="size-8">
@@ -56,7 +65,7 @@ const Header = () => {
                         </Button>
                         {/* Mobile Hamburger icon section  */}
                         <Button variant="outline" size="icon" className="size-8 lg:hidden" onClick={toggleMenu} aria-controls="mobile-menu" aria-expanded={isMenuOpen}>
-                            <span className="sr-only">Open main menu</span>
+                            <span className="sr-only">{t('openMenu')}</span>
                             {isMenuOpen ? <XIcon /> : <AlignJustifyIcon />}
                         </Button>
                     </div>
@@ -68,7 +77,7 @@ const Header = () => {
                             {menuItems.map(item => (
                                 <li key={item.id} className="w-full text-center">
                                     <Link href={item.href} className="block py-2 hover:text-destructive hover:bg-gray-100 rounded-md transition-colors duration-200" onClick={toggleMenu}>
-                                        {item.title}
+                                        {t(item.id)}
                                     </Link>
                                 </li>
                             ))}

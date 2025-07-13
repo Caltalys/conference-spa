@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 
 const TimeUnit = ({ value, label }: { value: string; label: string }) => (
@@ -12,6 +13,7 @@ const TimeUnit = ({ value, label }: { value: string; label: string }) => (
 const Separator = () => <div className="text-4xl font-light md:text-6xl">:</div>;
 
 const CountDown = () => {
+    const t = useTranslations('Countdown');
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
     const [isMounted, setIsMounted] = useState(false);
 
@@ -54,13 +56,13 @@ const CountDown = () => {
 
     return (
         <div className="flex items-center justify-center space-x-4 rounded-xl bg-black/50 p-4 text-white md:space-x-8">
-            <TimeUnit value={padWithZero(timeLeft.days)} label="Ngày" />
+            <TimeUnit value={padWithZero(timeLeft.days)} label={t('days')} />
             <Separator />
-            <TimeUnit value={padWithZero(timeLeft.hours)} label="Giờ" />
+            <TimeUnit value={padWithZero(timeLeft.hours)} label={t('hours')} />
             <Separator />
-            <TimeUnit value={padWithZero(timeLeft.minutes)} label="Phút" />
+            <TimeUnit value={padWithZero(timeLeft.minutes)} label={t('minutes')} />
             <Separator />
-            <TimeUnit value={padWithZero(timeLeft.seconds)} label="Giây" />
+            <TimeUnit value={padWithZero(timeLeft.seconds)} label={t('seconds')} />
         </div>
     );
 };

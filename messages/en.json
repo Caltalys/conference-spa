@@ -1,0 +1,158 @@
+{
+  "Header": {
+    "home": "Home",
+    "info": "Overview",
+    "agenda": "Agenda",
+    "committee": "Committee",
+    "register": "Register",
+    "services": "Services",
+    "openMenu": "Open menu"
+  },
+  "Hero": {
+    "conference": "",
+    "title": "The 3rd Regional Conference of Asia-Oceania Network of Kangaroo Mother Care",
+    "subtitle": "Da Nang, Vietnam",
+    "date": "November 27-29, 2025",
+    "registerNow": "Register Now"
+  },
+  "Countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+  "ConferenceInfo": {
+    "title": "Conference Overview",
+    "conferenceNameLabel": "Conference Name",
+    "conferenceNameValue": "The 3rd Regional Conference of Asia-Oceania Network of Kangaroo Mother Care 2025",
+    "timeLabel": "Time",
+    "timeValue": "November 27 - 29, 2025",
+    "locationLabel": "Location",
+    "locationValue": "Da Nang, Vietnam",
+    "attendanceLabel": "Expected Attendance",
+    "attendanceValue": "500-700 delegates from Asia-Oceania and around the world",
+    "downloadNotice": "Download 1st Announcement",
+    "downloadLetter": "Download Invitation Letter",
+    "viewMap": "View map",
+    "mapAlt": "Map of the conference location",
+    "closeMap": "Close map"
+  },
+  "Agenda": {
+    "title": "Agenda",
+    "subtitle": "Detailed schedule for the conference days.",
+    "day1": {
+      "day": "Day 1",
+      "date": "27/11/2025",
+      "title": "Pre-conference Workshops",
+      "description": "Intensive workshops on Kangaroo Mother Care.",
+      "icon": "BookOpen",
+      "items": [
+        "Workshop 1: Basic KMC",
+        "Workshop 2: Advanced KMC"
+      ]
+    },
+    "day2": {
+      "day": "Day 2",
+      "date": "28/11/2025",
+      "title": "Main Conference Day 1",
+      "description": "",
+      "icon": "Mic",
+      "items": [
+        "Opening Ceremony",
+        "Keynote Speeches",
+        "Scientific Sessions"
+      ]
+    },
+    "day3": {
+      "day": "Day 3",
+      "date": "29/11/2025",
+      "title": "Main Conference Day 2 & Closing",
+      "description": "",
+      "icon": "Mic",
+      "items": [
+        "Panel Discussions",
+        "Poster Presentations",
+        "Closing Ceremony"
+      ]
+    }
+  },
+  "Committee": {
+    "title": "Organizing Committee",
+    "subtitle": "Meet the team behind the conference.",
+    "members": [
+      {
+        "title": "Chairman",
+        "name": "Prof. Dr. John Doe",
+        "role": "Da Nang University of Medical Technology and Pharmacy"
+      },
+      {
+        "title": "Vice Chairman",
+        "name": "Assoc. Prof. Dr. Jane Smith",
+        "role": "Da Nang Hospital for Women and Children"
+      },
+      {
+        "title": "Secretary",
+        "name": "Dr. Emily Jones",
+        "role": "Da Nang Department of Health"
+      },
+      {
+        "title": "Member",
+        "name": "Dr. Michael Brown",
+        "role": "Vietnam Paediatric Association"
+      }
+    ]
+  },
+  "Register": {
+    "title": "Registration",
+    "subtitle": "Join us for this important event.",
+    "reportTitle": "For Scientific Reports",
+    "reportStep1": "Download the report template.",
+    "reportStep2": "Send the report to the email address: <emailLink>vsrnm.org@gmail.com</emailLink>",
+    "reportStep3": "Deadline for submission: 31/08/2025",
+    "authorNameLabel": "Author Name",
+    "reportFileLabel": "Report File (PDF, DOCX)",
+    "submitReportButton": "Submit Report",
+    "attendanceTitle": "For Attendance",
+    "attendanceSubtitle": "Register to attend the conference via the form or QR code below.",
+    "attendanceSubtitleForm": "Register to attend the conference by filling out the form below.",
+    "nameLabel": "Full Name",
+    "emailLabel": "Email Address",
+    "registerButton": "Register Now",
+    "qrAlt": "QR code for attendance registration",
+    "attendanceDeadline": "Registration deadline: ",
+    "deadlineDate": "31/10/2025"
+  },
+  "Services": {
+    "title": "Travel & Accommodation Services",
+    "subtitle": "We provide comprehensive travel and accommodation services for delegates.",
+    "service1_title": "Visa Support",
+    "service1_description": "Assistance with visa applications for international delegates.",
+    "service2_title": "Accommodation",
+    "service2_description": "Partnerships with hotels near the conference venue for special rates.",
+    "service3_title": "Tours & Transport",
+    "service3_description": "Airport transfers and city tours to explore Da Nang.",
+    "companyName": "ASIAN COMPANION TRAVEL",
+    "companyDescription": "With over 10 years of experience in organizing tours for international conferences and events in Da Nang, we are proud to be the trusted partner for your travel needs.",
+    "experience": "We are committed to providing professional and high-quality services to ensure your trip is comfortable and memorable.",
+    "support": "For support with booking flights, hotels, and tours, please contact us.",
+    "registerButton": "Book Services Now",
+    "contactTitle": "Contact Information",
+    "contactPhone1": "0988 016 000",
+    "contactPerson1": " (Mr. Hung)",
+    "contactPhone2": "0336 548 705",
+    "contactPerson2": " (Ms. Thao)",
+    "contactEmail": "director@actravel.com.vn"
+  },
+  "Footer": {
+    "conferenceName": "The 3rd AON-KMC Conference 2025",
+    "conferenceDescription": "Bringing together experts and practitioners to advance Kangaroo Mother Care in the Asia-Oceania region.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "contactPerson": "Prof. Dr. Nguyễn Hữu Tùng",
+    "email": "vsrnm.org@gmail.com",
+    "phone": "(+84) 903 507 428",
+    "department": "Da Nang University of Medical Technology and Pharmacy",
+    "address": "99 Hùng Vương, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "copyright": "VSRNM. All rights reserved."
+  }
+}

@@ -2,43 +2,43 @@
 
 import Image from "next/image";
 import { Building, CalendarDays, Download, MapPin, Users, XIcon } from "lucide-react";
-import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { useState } from 'react';
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-const infoItems = [
-  {
-    icon: Building,
-    label: "Tên Hội nghị",
-    value:
-      "Hội nghị mạng lưới chăm sóc trẻ sinh non bằng phương pháp Kangaroo khu vực Châu Á - Châu Đại Dương lần thứ 3",
-  },
-  {
-    icon: CalendarDays,
-    label: "Thời gian",
-    value: "Ngày 27-28-29/11/2025",
-  },
-  {
-    icon: MapPin,
-    label: "Địa điểm",
-    value:
-      "Trung tâm Kiểm soát Bệnh tật (CDC) thành phố Đà Nẵng, 118 Lê Đình Lý, Phường Thạc Gián, Quận Thanh Khê, Thành phố Đà Nẵng, Việt Nam.",
-  },
-  {
-    icon: Users,
-    label: "Hình thức tham dự",
-    value: "Trực tiếp",
-  },
-];
-
 const ConferenceInfo = () => {
+  const t = useTranslations('ConferenceInfo');
   const [isMapModalOpen, setIsMapModalOpen] = useState(false);
+
+  const infoItems = [
+    {
+      icon: Building,
+      label: t('conferenceNameLabel'),
+      value: t('conferenceNameValue'),
+    },
+    {
+      icon: CalendarDays,
+      label: t('timeLabel'),
+      value: t('timeValue'),
+    },
+    {
+      icon: MapPin,
+      label: t('locationLabel'),
+      value: t('locationValue'),
+    },
+    {
+      icon: Users,
+      label: t('attendanceLabel'),
+      value: t('attendanceValue'),
+    },
+  ];
 
   return (
     <section id="tong-quan" className="scroll-mt-16 lg:pt-16">
       <div className="text-center mb-8">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">
-            Thông tin Hội nghị
+            {t('title')}
           </h2>
         </div>
       <div className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8">
@@ -69,13 +69,13 @@ const ConferenceInfo = () => {
               <Button asChild size="lg">
                 <Link href="/ThongBao.pdf" download="ThongBaoHoiNghi.pdf">
                   <Download className="mr-2 h-5 w-5" />
-                  Tải Thông Báo
+                  {t('downloadNotice')}
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <Link href="/ThuNgo.pdf" download="ThuNgo.pdf">
                   <Download className="mr-2 h-5 w-5" />
-                  Tải Thư Ngỏ
+                  {t('downloadLetter')}
                 </Link>
               </Button>
             </div>
@@ -87,11 +87,11 @@ const ConferenceInfo = () => {
               type="button"
               onClick={() => setIsMapModalOpen(true)}
               className="relative block w-full aspect-[16/9] overflow-hidden rounded-2xl shadow-xl"
-              aria-label="Xem bản đồ kích thước đầy đủ"
+              aria-label={t('viewMap')}
             >
               <Image
                 src="/map.png"
-                alt="Bản đồ địa điểm tổ chức hội nghị tại CDC Đà Nẵng"
+                alt={t('mapAlt')}
                 fill
                 className="object-cover transition-transform duration-300 hover:scale-105"
               />
@@ -109,12 +109,12 @@ const ConferenceInfo = () => {
           <button
             className="absolute top-4 right-4 text-white hover:text-gray-300 z-10"
             onClick={() => setIsMapModalOpen(false)}
-            aria-label="Đóng bản đồ"
+            aria-label={t('closeMap')}
           >
             <XIcon className="h-8 w-8" />
           </button>
           <div className="relative w-full h-full max-w-6xl max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
-            <Image src="/map.png" alt="Bản đồ địa điểm tổ chức hội nghị tại CDC Đà Nẵng" fill className="object-contain" />
+            <Image src="/map.png" alt={t('mapAlt')} fill className="object-contain" />
           </div>
         </div>
       )}

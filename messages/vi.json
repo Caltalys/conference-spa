@@ -1,0 +1,158 @@
+{
+  "Header": {
+    "home": "Trang chủ",
+    "info": "Tổng quan",
+    "agenda": "Chương trình",
+    "committee": "Ban tổ chức",
+    "register": "Đăng ký",
+    "services": "Dịch vụ",
+    "openMenu": "Mở menu"
+  },
+  "Hero": {
+    "conference": "Hội nghị",
+    "title": "Mạng lưới chăm sóc trẻ sinh non bằng phương pháp Kangaroo Châu Á - Châu Đại Dương Lần thứ 3",
+    "subtitle": "Đà Nẵng, Việt Nam",
+    "date": "Ngày 27-29 tháng 11, 2025",
+    "registerNow": "Đăng ký ngay"
+  },
+  "Countdown": {
+    "days": "Ngày",
+    "hours": "Giờ",
+    "minutes": "Phút",
+    "seconds": "Giây"
+  },
+  "ConferenceInfo": {
+    "title": "Tổng quan hội nghị",
+    "conferenceNameLabel": "Tên hội nghị",
+    "conferenceNameValue": "Hội nghị mạng lưới chăm sóc trẻ sinh non bằng phương pháp Kangaroo Châu Á - Châu Đại Dương Lần thứ 3",
+    "timeLabel": "Thời gian",
+    "timeValue": "Ngày 27 - 29 tháng 11 năm 2025",
+    "locationLabel": "Địa điểm",
+    "locationValue": "Thành phố Đà Nẵng, Việt Nam",
+    "attendanceLabel": "Đối tượng tham dự",
+    "attendanceValue": "Dự kiến 500-700 đại biểu đến từ các nước trong khu vực Châu Á - Châu Đại Dương và trên thế giới",
+    "downloadNotice": "Tải Thông báo số 1",
+    "downloadLetter": "Tải Thư ngỏ",
+    "viewMap": "Xem bản đồ",
+    "mapAlt": "Bản đồ địa điểm hội nghị",
+    "closeMap": "Đóng bản đồ"
+  },
+  "Agenda": {
+    "title": "Chương trình nghị sự",
+    "subtitle": "Lịch trình chi tiết cho các ngày diễn ra hội nghị.",
+    "day1": {
+      "day": "Ngày 1",
+      "date": "27/11/2025",
+      "title": "Hội thảo Tiền hội nghị",
+      "description": "Các hội thảo chuyên sâu về Phương pháp Kangaroo.",
+      "icon": "BookOpen",
+      "items": [
+        "Hội thảo 1: KMC cơ bản",
+        "Hội thảo 2: KMC nâng cao"
+      ]
+    },
+    "day2": {
+      "day": "Ngày 2",
+      "date": "28/11/2025",
+      "title": "Ngày hội nghị chính thức 1",
+      "description": "",
+      "icon": "Mic",
+      "items": [
+        "Lễ khai mạc",
+        "Các bài phát biểu chính",
+        "Các phiên khoa học"
+      ]
+    },
+    "day3": {
+      "day": "Ngày 3",
+      "date": "29/11/2025",
+      "title": "Ngày hội nghị chính thức 2 & Bế mạc",
+      "description": "",
+      "icon": "Mic",
+      "items": [
+        "Thảo luận nhóm",
+        "Trình bày poster",
+        "Lễ bế mạc"
+      ]
+    }
+  },
+  "Committee": {
+    "title": "Ban tổ chức",
+    "subtitle": "Gặp gỡ đội ngũ đứng sau thành công của hội nghị.",
+    "members": [
+      {
+        "title": "Chủ tịch",
+        "name": "GS. TS. John Doe",
+        "role": "Trường Đại học Kỹ thuật Y - Dược Đà Nẵng"
+      },
+      {
+        "title": "Phó chủ tịch",
+        "name": "PGS. TS. Jane Smith",
+        "role": "Bệnh viện Phụ sản - Nhi Đà Nẵng"
+      },
+      {
+        "title": "Thư ký",
+        "name": "TS. Emily Jones",
+        "role": "Sở Y tế Đà Nẵng"
+      },
+      {
+        "title": "Thành viên",
+        "name": "BS. Michael Brown",
+        "role": "Hội Nhi khoa Việt Nam"
+      }
+    ]
+  },
+  "Register": {
+    "title": "Đăng ký",
+    "subtitle": "Tham gia cùng chúng tôi tại sự kiện quan trọng này.",
+    "reportTitle": "Đăng ký Báo cáo khoa học",
+    "reportStep1": "Tải mẫu báo cáo.",
+    "reportStep2": "Gửi báo cáo về địa chỉ email: <emailLink>vsrnm.org@gmail.com</emailLink>",
+    "reportStep3": "Hạn chót nộp báo cáo: 31/08/2025",
+    "authorNameLabel": "Tên tác giả",
+    "reportFileLabel": "Tệp Báo cáo (PDF, DOCX)",
+    "submitReportButton": "Nộp Báo cáo",
+    "attendanceTitle": "Đăng ký tham dự",
+    "attendanceSubtitle": "Đăng ký tham dự hội nghị qua form hoặc mã QR bên dưới.",
+    "attendanceSubtitleForm": "Đăng ký tham dự hội nghị bằng cách điền vào biểu mẫu dưới đây.",
+    "nameLabel": "Họ và Tên",
+    "emailLabel": "Địa chỉ Email",
+    "registerButton": "Đăng ký ngay",
+    "qrAlt": "Mã QR để đăng ký tham dự",
+    "attendanceDeadline": "Hạn chót đăng ký: ",
+    "deadlineDate": "31/10/2025"
+  },
+  "Services": {
+    "title": "Dịch vụ Lữ hành & Lưu trú",
+    "subtitle": "Chúng tôi cung cấp các dịch vụ lữ hành và lưu trú toàn diện cho đại biểu.",
+    "service1_title": "Hỗ trợ Visa",
+    "service1_description": "Hỗ trợ thủ tục xin visa cho các đại biểu quốc tế.",
+    "service2_title": "Lưu trú",
+    "service2_description": "Hợp tác với các khách sạn gần địa điểm hội nghị với mức giá ưu đãi.",
+    "service3_title": "Tour & Di chuyển",
+    "service3_description": "Dịch vụ đưa đón sân bay và các tour tham quan thành phố Đà Nẵng.",
+    "companyName": "CÔNG TY TNHH MTV LỮ HÀNH NGƯỜI BẠN ĐỒNG HÀNH CHÂU Á",
+    "companyDescription": "Với hơn 10 năm kinh nghiệm trong việc tổ chức các tour du lịch cho các hội nghị, sự kiện quốc tế tại Đà Nẵng, chúng tôi tự hào là đối tác tin cậy cho nhu cầu đi lại của quý vị.",
+    "experience": "Chúng tôi cam kết mang đến những dịch vụ chuyên nghiệp, chất lượng cao để đảm bảo chuyến đi của quý vị thoải mái và đáng nhớ.",
+    "support": "Để được hỗ trợ đặt vé máy bay, khách sạn và các tour du lịch, vui lòng liên hệ với chúng tôi.",
+    "registerButton": "Đặt dịch vụ ngay",
+    "contactTitle": "Thông tin liên hệ",
+    "contactPhone1": "0988 016 000",
+    "contactPerson1": " (Mr. Hùng)",
+    "contactPhone2": "0336 548 705",
+    "contactPerson2": " (Ms. Thảo)",
+    "contactEmail": "director@actravel.com.vn"
+  },
+  "Footer": {
+    "conferenceName": "Hội nghị AON-KMC lần thứ 3 - 2025",
+    "conferenceDescription": "Nơi quy tụ các chuyên gia và người thực hành để thúc đẩy Phương pháp Kangaroo tại khu vực Châu Á - Châu Đại Dương.",
+    "quickLinks": "Liên kết nhanh",
+    "contact": "Liên hệ",
+    "contactPerson": "GS. TS. Nguyễn Hữu Tùng",
+    "email": "vsrnm.org@gmail.com",
+    "phone": "(+84) 903 507 428",
+    "department": "Trường Đại học Kỹ thuật Y - Dược Đà Nẵng",
+    "address": "99 Hùng Vương, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "copyright": "VSRNM. Mọi quyền được bảo lưu."
+  }
+}
