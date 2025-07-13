@@ -11,7 +11,7 @@ const Committee = () => {
     return (
         <section id="ban-to-chuc" className=" bg-slate-50 p-4 scroll-mt-16">
             <div className="mx-auto max-w-7xl">
-                <div className="mb-16 text-center">
+                <div className="mb-8 text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">Chủ tọa đoàn - Báo cáo viên</h2>
                     <p className="mt-4 text-lg text-gray-600">
                         Những chuyên gia đầu ngành sẽ có mặt tại hội nghị.

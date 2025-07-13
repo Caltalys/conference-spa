@@ -1,8 +1,10 @@
 'use client';
 
 import Image from "next/image";
-import { Building, CalendarDays, MapPin, Users, XIcon } from "lucide-react";
+import { Building, CalendarDays, Download, MapPin, Users, XIcon } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const infoItems = [
   {
@@ -33,13 +35,18 @@ const ConferenceInfo = () => {
   const [isMapModalOpen, setIsMapModalOpen] = useState(false);
 
   return (
-    <section id="tong-quan" className="scroll-mt-16 py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8 rounded-2xl shadow-xl bg-white">
+    <section id="tong-quan" className="scroll-mt-16 lg:pt-16">
+      <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">
+            Thông tin Hội nghị
+          </h2>
+        </div>
+      <div className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-16">
           <div className="space-y-8">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Thông tin Hội nghị
-            </h2>
+            </h2> */}
             <dl className="space-y-6">
               {infoItems.map((item) => (
                 <div key={item.label} className="flex">
@@ -58,6 +65,21 @@ const ConferenceInfo = () => {
                 </div>
               ))}
             </dl>
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <Button asChild size="lg">
+                <Link href="/ThongBao.pdf" download="ThongBaoHoiNghi.pdf">
+                  <Download className="mr-2 h-5 w-5" />
+                  Tải Thông Báo
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg">
+                <Link href="/ThuNgo.pdf" download="ThuNgo.pdf">
+                  <Download className="mr-2 h-5 w-5" />
+                  Tải Thư Ngỏ
+                </Link>
+              </Button>
+            </div>
+
           </div>
 
           <div className="relative mt-12 lg:mt-0">

@@ -7,11 +7,12 @@ import Link from "next/link";
 
 const menuItems = [
     { id: 1, title: 'Trang chủ', href: '/' },
-    { id: 2, title: 'Thông báo', href: '#tong-quan' },
-    { id: 3, title: 'Ban tổ chức', href: '#ban-to-chuc' },
-    { id: 4, title: 'Hướng dẫn', href: '#huong-dan' },
-    { id: 5, title: 'Dịch vụ', href: '#dich-vu' },
-    { id: 6, title: 'Liên hệ', href: '#lien-he' }
+    { id: 2, title: 'Thông tin', href: '#tong-quan' },
+    { id: 3, title: 'Chương trình', href: '#chuong-trinh' },
+    { id: 4, title: 'Ban tổ chức', href: '#ban-to-chuc' },
+    { id: 5, 'title': 'Đăng ký', href: '#dang-ky' },
+    { id: 6, title: 'Dịch vụ', href: '#dich-vu' },
+    { id: 7, title: 'Liên hệ', href: '#lien-he' }
 ];
 
 const Header = () => {

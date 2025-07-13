@@ -4,7 +4,7 @@ import CountDown from "./Countdown";
 const Hero = () => {
     return (
         <>
-            <section className="relative h-screen bg-[url('/baby.jpg')] bg-cover bg-no-repeat bg-center">
+            <section id="trang-chu" className="relative h-screen bg-[url('/baby.jpg')] bg-cover bg-no-repeat bg-center">
                 {/* This div creates the semi-transparent overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-gray-500/50 to-black/50" />
                 <div className="relative z-10 flex h-full w-full items-center justify-center pt-16">
@@ -18,6 +18,7 @@ const Hero = () => {
                         <p className="text-2xl lg:text-4xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] uppercase">
                             Khu vực Châu Á - Châu Đại Dương lần thứ 3
                         </p>
+                        <p className="text-xl lg:text-3xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] uppercase">27 - 29 / 11 / 2025</p>
                         <CountDown />
                         <Link href="#dang-ky" className="inline-block rounded-full bg-destructive px-8 py-3 text-lg font-bold text-primary-foreground transition-transform duration-300 hover:scale-105">
                             Đăng ký ngay
