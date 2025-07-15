@@ -55,14 +55,6 @@ const ScientificReportForm = () => {
                     <div className="flex items-start gap-4">
                         <p className="text-base text-gray-700">{t('reportStep2')}</p>
                     </div>
-                    {/* <div className="space-y-2">
-                        <Label htmlFor="authorName">{t('authorNameLabel')}</Label>
-                        <Input id="authorName" name="authorName" required />
-                    </div>
-                    <div className="space-y-2">
-                        <Label htmlFor="reportFile">{t('reportFileLabel')}</Label>
-                        <Input id="reportFile" name="reportFile" type="file" required accept=".pdf,.doc,.docx" />
-                    </div> */}
                     <SubmitButton>{t('submitReportButton')}</SubmitButton>
                 </form>
                 <div className="flex jus items-end gap-4">

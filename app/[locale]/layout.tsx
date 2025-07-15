@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Roboto, Roboto_Mono } from "next/font/google";
-import {NextIntlClientProvider, useMessages} from 'next-intl';
+import {Locale, NextIntlClientProvider, useMessages} from 'next-intl';
 import {getTranslations, getMessages} from 'next-intl/server';
 
 import "../../app/globals.css";
+import React from "react";
 
 const robotoSans = Roboto({
   variable: "--font-roboto-sans",
@@ -16,8 +17,8 @@ const robotoMono = Roboto_Mono({
   subsets: ["latin"],
 });
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations('Hero');
+export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'Hero' });
   return {
     title: t('title'),
     description: t('conference'),
@@ -26,14 +27,14 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function RootLayout({
   children,
-  params: {locale}
+  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: Locale };
 }>) {
   const messages = await getMessages();
   return (
-    <html lang={locale} className="scroll-smooth">
+    <html lang={(await params).locale} className="scroll-smooth">
       <body
         className={`${robotoSans.variable} ${robotoMono.variable} antialiased`}
       >
