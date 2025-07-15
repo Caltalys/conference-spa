@@ -52,19 +52,18 @@ const ScientificReportForm = () => {
                     <div className="flex items-start gap-4">
                         <p className="text-base text-gray-700">{t('reportStep1')}</p>
                     </div>
-                    <div className="space-y-2">
+                    <div className="flex items-start gap-4">
+                        <p className="text-base text-gray-700">{t('reportStep2')}</p>
+                    </div>
+                    {/* <div className="space-y-2">
                         <Label htmlFor="authorName">{t('authorNameLabel')}</Label>
                         <Input id="authorName" name="authorName" required />
                     </div>
                     <div className="space-y-2">
                         <Label htmlFor="reportFile">{t('reportFileLabel')}</Label>
                         <Input id="reportFile" name="reportFile" type="file" required accept=".pdf,.doc,.docx" />
-                    </div>
-                    <SubmitButton>{t('submitReportButton')}</SubmitButton>
-                    {/* <div className="flex items-start gap-4">
-                        <CalendarCheck className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
-                        <p className="text-base text-gray-700">{t('submissionDeadline')}</p>
                     </div> */}
+                    <SubmitButton>{t('submitReportButton')}</SubmitButton>
                 </form>
                 <div className="flex jus items-end gap-4">
                     <CalendarClock className="h-6 w-6 text-blue-600 mt-1" aria-hidden="true" />
@@ -91,6 +90,8 @@ const AttendanceRegistrationForm = () => {
             // toast({ title: "Success", description: state.message });
             alert(state.message); // Using alert as a placeholder for toast
             formRef.current?.reset();
+            // Open the Google Form in a new tab
+            window.open('https://forms.gle/eWMEoPqUEAa9TD6K9', '_blank');
         } else if (state.message) {
             // toast({ title: "Error", description: state.message, variant: "destructive" });
             alert(state.message); // Using alert as a placeholder for toast
@@ -104,7 +105,7 @@ const AttendanceRegistrationForm = () => {
             </CardHeader>
             <CardContent className="space-y-6">
                 <p className="text-base text-gray-700">{t('attendanceSubtitleForm')}</p>
-                <form ref={formRef} action={formAction} className="space-y-4">
+                <form ref={formRef} action={formAction} className="space-y-6">
                     <div className="space-y-2">
                         <Label htmlFor="name">{t('nameLabel')}</Label>
                         <Input id="name" name="name" required />

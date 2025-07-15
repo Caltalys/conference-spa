@@ -14,7 +14,7 @@ export default function Home() {
       <Header />
       <Hero />
       <ConferenceInfo />
-      <Agenda />
+      {/* <Agenda /> */}
       <Committee />
       <Register />
       <Services />

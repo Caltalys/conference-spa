@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, Roboto_Mono } from "next/font/google";
 import {NextIntlClientProvider, useMessages} from 'next-intl';
-import {getTranslations} from 'next-intl/server';
+import {getTranslations, getMessages} from 'next-intl/server';
 
 import "../../app/globals.css";
 
@@ -24,20 +24,20 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params: {locale}
 }: Readonly<{
   children: React.ReactNode;
   params: {locale: string};
 }>) {
-  const messages = useMessages();
+  const messages = await getMessages();
   return (
     <html lang={locale} className="scroll-smooth">
       <body
         className={`${robotoSans.variable} ${robotoMono.variable} antialiased`}
       >
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
       </body>
