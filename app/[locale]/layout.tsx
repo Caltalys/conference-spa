@@ -17,7 +17,8 @@ const robotoMono = Roboto_Mono({
   subsets: ["latin"],
 });
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Hero' });
   return {
     title: t('title'),
@@ -33,8 +34,10 @@ export default async function RootLayout({
   params: { locale: Locale };
 }>) {
   const messages = await getMessages();
+  // Awaiting params is necessary in dev mode when using dynamic APIs.
+  const { locale } = await params;
   return (
-    <html lang={(await params).locale} className="scroll-smooth">
+    <html lang={locale} className="scroll-smooth">
       <body
         className={`${robotoSans.variable} ${robotoMono.variable} antialiased`}
       >

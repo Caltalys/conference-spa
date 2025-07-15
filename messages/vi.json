@@ -122,6 +122,7 @@
     "attendanceSubtitleForm": "Đăng ký tham dự hội nghị bằng cách điền vào biểu mẫu dưới đây.",
     "nameLabel": "Họ và Tên",
     "emailLabel": "Địa chỉ Email",
+    "scanToRegister": "Quét mã QR để đăng ký tham dự",
     "registerButton": "Đăng ký ngay",
     "qrAlt": "Mã QR để đăng ký tham dự",
     "attendanceDeadline": "Hạn chót đăng ký: ",

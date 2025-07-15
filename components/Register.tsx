@@ -1,6 +1,7 @@
 'use client';
 
 import { useFormStatus } from 'react-dom';
+import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from '@/components/ui/input';
@@ -8,9 +9,9 @@ import { Label } from '@/components/ui/label';
 import { CalendarCheck, CalendarClock, FileText, Link as LinkIcon, Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useActionState, useEffect, useRef } from 'react';
-// Assuming useToast from shadcn/ui is available for user feedback
-// import { useToast } from '@/components/ui/use-toast'; 
 import { submitScientificReport, registerForAttendance } from '@/app/[locale]/actions';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
 
 // A shared submit button component to show pending state
 function SubmitButton({ children }: { children: React.ReactNode }) {
@@ -25,37 +26,31 @@ function SubmitButton({ children }: { children: React.ReactNode }) {
 
 // Form for scientific reports
 const ScientificReportForm = () => {
+
     const t = useTranslations('Register');
     const [state, formAction] = useActionState(submitScientificReport, null);
-    // const { toast } = useToast();
     const formRef = useRef<HTMLFormElement>(null);
 
     useEffect(() => {
         if (!state) return;
         if (state.success) {
-            // toast({ title: "Success", description: state.message });
-            alert(state.message); // Using alert as a placeholder for toast
             formRef.current?.reset();
         } else if (state.message) {
-            // toast({ title: "Error", description: state.message, variant: "destructive" });
             alert(state.message); // Using alert as a placeholder for toast
         }
     }, [state]);
 
     return (
         <Card className="shadow-xl">
-            <CardHeader>
-                <CardTitle className="text-2xl text-center lg:text-left">{t('reportTitle')}</CardTitle>
-            </CardHeader>
             <CardContent className="space-y-6">
                 <form ref={formRef} action={formAction} className="space-y-6">
                     <div className="flex items-start gap-4">
                         <p className="text-base text-gray-700">{t('reportStep1')}</p>
                     </div>
-                    <div className="flex items-start gap-4">
+                    <div>
                         <p className="text-base text-gray-700">{t('reportStep2')}</p>
                     </div>
-                    <SubmitButton>{t('submitReportButton')}</SubmitButton>
+                    {/* <SubmitButton>{t('submitReportButton')}</SubmitButton> */}
                 </form>
                 <div className="flex jus items-end gap-4">
                     <CalendarClock className="h-6 w-6 text-blue-600 mt-1" aria-hidden="true" />
@@ -79,7 +74,6 @@ const AttendanceRegistrationForm = () => {
     useEffect(() => {
         if (!state) return;
         if (state.success) {
-            // toast({ title: "Success", description: state.message });
             alert(state.message); // Using alert as a placeholder for toast
             formRef.current?.reset();
             // Open the Google Form in a new tab
@@ -91,10 +85,7 @@ const AttendanceRegistrationForm = () => {
     }, [state]);
 
     return (
-        <Card className="shadow-xl">
-            <CardHeader>
-                <CardTitle className="text-2xl text-center lg:text-left">{t('attendanceTitle')}</CardTitle>
-            </CardHeader>
+        <Card>
             <CardContent className="space-y-6">
                 <p className="text-base text-gray-700">{t('attendanceSubtitleForm')}</p>
                 <form ref={formRef} action={formAction} className="space-y-6">
@@ -121,27 +112,52 @@ const AttendanceRegistrationForm = () => {
 };
 
 const Register = () => {
-  const t = useTranslations('Register');
+    const t = useTranslations('Register');
 
-  return (
-    <section id="dang-ky" className="scroll-mt-16 py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">
-                    {t('title')}
-                </h2>
-                <p className="mt-4 text-lg text-gray-600">
-                    {t('subtitle')}
-                </p>
-            </div>
+    return (
+        <section id="dang-ky" className="scroll-mt-16 py-16 lg:py-24">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">
+                        {t('title')}
+                    </h2>
+                    <p className="mt-4 text-lg text-gray-600">
+                        {t('subtitle')}
+                    </p>
+                </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-                <ScientificReportForm />
-                <AttendanceRegistrationForm />
+                <Tabs defaultValue="attendance" className="w-full max-w-4xl mx-auto">
+                    <div className="flex justify-center mb-6">
+                        <TabsList className="grid w-full max-w-lg grid-cols-2 gap-2 rounded-xl bg-gray-200 p-2">
+                            <TabsTrigger value="attendance" className="py-2.5 text-base font-semibold data-[state=active]:bg-blue-600 data-[state=active]:text-white rounded-lg">
+                                {t('attendanceTitle')}
+                            </TabsTrigger>
+                            <TabsTrigger value="report" className="py-2.5 text-base font-semibold data-[state=active]:bg-blue-600 data-[state=active]:text-white rounded-lg">
+                                {t('reportTitle')}
+                            </TabsTrigger>
+                        </TabsList>
+                    </div>
+                    <TabsContent value="attendance">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                            <AttendanceRegistrationForm />
+                            <Card className="flex flex-col items-center justify-center p-8 text-center h-full">
+                                <CardContent className='space-y-6'>
+                                    <p className="text-base text-gray-700">{t('scanToRegister')}</p>
+                                    <div className="bg-white p-4 rounded-lg border shadow-inner">
+                                        {/* Make sure you have a qr-code.png in your /public folder that points to the registration link. */}
+                                        <Image src="/QR.png" alt={t('qrAlt')} width={220} height={220} />
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </div>
+                    </TabsContent>
+                    <TabsContent value="report">
+                        <ScientificReportForm />
+                    </TabsContent>
+                </Tabs>
             </div>
-        </div>
-    </section>
-  )
+        </section>
+    )
 }
 
 export default Register

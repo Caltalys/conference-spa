@@ -122,6 +122,7 @@
     "attendanceSubtitleForm": "Register to attend the conference by filling out the form below.",
     "nameLabel": "Full Name",
     "emailLabel": "Email Address",
+    "scanToRegister": "Scan QR to register attendance",
     "registerButton": "Register Now",
     "qrAlt": "QR code for attendance registration",
     "attendanceDeadline": "Deadline for registration: ",
