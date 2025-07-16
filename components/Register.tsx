@@ -17,7 +17,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 function SubmitButton({ children }: { children: React.ReactNode }) {
     const { pending } = useFormStatus();
     return (
-        <Button type="submit" className="w-full text-lg py-6" disabled={pending}>
+        <Button type="submit" className="w-full text-lg py-6 hover:bg-destructive transition-colors duration-300" disabled={pending}>
             {pending ? <Loader2 className="mr-2 h-5 w-5 animate-spin" /> : <LinkIcon className="mr-2 h-5 w-5" />}
             {children}
         </Button>
@@ -86,26 +86,23 @@ const AttendanceRegistrationForm = () => {
 
     return (
         <Card>
-            <CardContent className="space-y-6">
-                <p className="text-base text-gray-700">{t('attendanceSubtitleForm')}</p>
+            <CardContent className="flex flex-col items-center justify-center text-center h-full space-y-6">
+                {/* <p className="text-base text-gray-700">{t('attendanceSubtitle')}</p> */}
                 <form ref={formRef} action={formAction} className="space-y-6">
-                    <div className="space-y-2">
-                        <Label htmlFor="name">{t('nameLabel')}</Label>
-                        <Input id="name" name="name" required />
-                    </div>
-                    <div className="space-y-2">
-                        <Label htmlFor="email">{t('emailLabel')}</Label>
-                        <Input id="email" name="email" type="email" required />
-                    </div>
                     <SubmitButton>{t('registerButton')}</SubmitButton>
+                    <p className="text-base text-gray-700">{t('scanToRegister')}</p>
+                    <div className="flex items-center justify-center">
+                        <Image src="/QR.png" alt={t('qrAlt')} width={220} height={220} />
+                    </div>
+                    <div className="flex items-end gap-4">
+                        <CalendarClock className="h-6 w-6 text-blue-600 mt-1" aria-hidden="true" />
+                        <p className="text-base text-gray-700">
+                            {t('attendanceDeadline')}
+                            <span className="font-semibold">{t('deadlineDate')}</span>.
+                        </p>
+                    </div>
                 </form>
-                <div className="flex items-end gap-4">
-                    <CalendarClock className="h-6 w-6 text-blue-600 mt-1" aria-hidden="true" />
-                    <p className="text-base text-gray-700">
-                        {t('attendanceDeadline')}
-                        <span className="font-semibold">{t('deadlineDate')}</span>.
-                    </p>
-                </div>
+                
             </CardContent>
         </Card>
     );
@@ -139,16 +136,12 @@ const Register = () => {
                     </div>
                     <TabsContent value="attendance">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-                            <AttendanceRegistrationForm />
                             <Card className="flex flex-col items-center justify-center p-8 text-center h-full">
                                 <CardContent className='space-y-6'>
-                                    <p className="text-base text-gray-700">{t('scanToRegister')}</p>
-                                    <div className="bg-white p-4 rounded-lg border shadow-inner">
-                                        {/* Make sure you have a qr-code.png in your /public folder that points to the registration link. */}
-                                        <Image src="/QR.png" alt={t('qrAlt')} width={220} height={220} />
-                                    </div>
+                                    
                                 </CardContent>
                             </Card>
+                            <AttendanceRegistrationForm />
                         </div>
                     </TabsContent>
                     <TabsContent value="report">
