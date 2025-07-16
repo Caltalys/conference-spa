@@ -34,6 +34,12 @@ const ConferenceInfo = () => {
     },
   ];
 
+  // Lấy các giá trị đối tượng tham dự bổ sung và lọc ra những giá trị rỗng.
+  const attendanceValue1 = t('attendanceValue1');
+  const attendanceValue2 = t('attendanceValue2');
+  const attendanceValue3 = t('attendanceValue3');
+  const extraAttendanceValues = [attendanceValue1, attendanceValue2, attendanceValue3].filter(Boolean);
+
   return (
     <section id="tong-quan" className="scroll-mt-16 lg:pt-16">
       <div className="text-center mb-8">
@@ -61,6 +67,14 @@ const ConferenceInfo = () => {
                       {item.label}
                     </p>
                     <p className="mt-1 text-base text-gray-700">{item.value}</p>
+                    {item.label === t('attendanceLabel') && extraAttendanceValues.length > 0 && (
+                      <ul className="mt-2 list-disc list-inside space-y-1 text-base text-gray-700">
+                        {extraAttendanceValues.map((value, index) => (
+                          // Loại bỏ gạch đầu dòng '-' nếu có để tránh lặp với dấu chấm của list-disc
+                          <li key={index}>{value.startsWith('- ') ? value.substring(2) : value}</li>
+                        ))}
+                      </ul>
+                    )}
                   </dd>
                 </div>
               ))}
