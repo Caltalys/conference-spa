@@ -26,7 +26,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="dich-vu" className="scroll-mt-16 py-16 lg:py-24">
+    <section id="dich-vu" className="scroll-mt-16 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">

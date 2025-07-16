@@ -18,7 +18,7 @@ const Committee = () => {
     })) : [];
 
     return (
-        <section id="ban-to-chuc" className=" bg-slate-50 p-4 scroll-mt-16">
+        <section id="ban-to-chuc" className="scroll-mt-16 pt-16">
             <div className="mx-auto max-w-7xl">
                 <div className="mb-8 text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">{t('title')}</h2>

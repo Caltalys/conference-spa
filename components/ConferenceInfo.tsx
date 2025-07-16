@@ -41,7 +41,7 @@ const ConferenceInfo = () => {
   const extraAttendanceValues = [attendanceValue1, attendanceValue2, attendanceValue3].filter(Boolean);
 
   return (
-    <section id="tong-quan" className="scroll-mt-16 lg:pt-16">
+    <section id="tong-quan" className="scroll-mt-16 pt-16">
       <div className="text-center mb-8">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">
             {t('title')}

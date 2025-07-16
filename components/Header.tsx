@@ -16,7 +16,7 @@ const Header = () => {
     const menuItems = [
         { id: 'home', href: '#trang-chu' },
         { id: 'info', href: '#tong-quan' },
-        { id: 'agenda', href: '#chuong-trinh' },
+        // { id: 'agenda', href: '#chuong-trinh' },
         { id: 'committee', href: '#ban-to-chuc' },
         { id: 'register', href: '#dang-ky' },
         { id: 'services', href: '#dich-vu' },
