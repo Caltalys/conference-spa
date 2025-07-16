@@ -129,7 +129,18 @@
     "registerButton": "Register Now",
     "qrAlt": "QR code for attendance registration",
     "attendanceDeadline": "Deadline for registration: ",
-    "deadlineDate": "31/10/2025"
+    "deadlineDate": "31/10/2025",
+    "attendanceDescription": "The conference will focus on updating knowledge and improving skills in caring for premature and low birth weight infants receiving Kangaroo Mother Care (KMC) - a method that has been proven to reduce mortality and morbidity among premature and low- birth-weight infants. The conference is honored to welcome clinical experts and researchers from many countries around the world to share valuable experiences as well as the latest research results on this method of care. In addition, the conference will promote the need for widespread application of the KMC in the regional medical community.",
+    "attendanceFeeTitle": "Delegates who register to attend, please follow the information below:",
+    "attendanceFeeBankAccountName": "Hoi Nhi Khoa TP Da Nang",
+    "attendanceFeeBankAccountNumber": "2006201009392",
+    "attendanceFeeBankName": "Agribank",
+    "attendanceFeeSwiftCode": "VBAAVNVX522",
+    "transferSyntaxTitle": "Transfer syntax",
+    "transferSyntax1": "If you only attend the conference (Nov 28-29, 75 USD or 100 USD if registration after 20/9/25): KMCconference-full name-amount transferred eg. KMCconference-Amy Chan-75",
+    "transferSyntax2": "If you only attend the workshops (Nov 27, 50 USD or 70 USD if registration after 20/9/25): KMCworkshop-fullname-amount transferred eg. KMCworkshop-Amy Chan-50",
+    "transferSyntax3": "If you attend both workshops and conference (Nov 27,28,29, 125 USD or 170 USD if registration after 20/9/25): KMCboth-full name-amount transferred eg. KMCboth-Amy Chan-125"
+
   },
   "Services": {
     "title": "Travel & Accommodation Services",
