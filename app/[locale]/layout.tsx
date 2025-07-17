@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto, Roboto_Mono } from "next/font/google";
-import {Locale, NextIntlClientProvider} from 'next-intl';
+import {NextIntlClientProvider} from 'next-intl';
 import {getTranslations, getMessages} from 'next-intl/server';
 
 import "../../app/globals.css";
@@ -17,7 +17,9 @@ const robotoMono = Roboto_Mono({
   subsets: ["latin"],
 });
 
-export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
+type Params = Promise<{ locale: string }>;
+
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Hero' });
   return {
@@ -31,7 +33,7 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: Locale };
+  params: Params;
 }>) {
   const messages = await getMessages();
   // Awaiting params is necessary in dev mode when using dynamic APIs.
