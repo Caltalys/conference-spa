@@ -57,6 +57,13 @@ const ScientificReportForm = () => {
                         <span className="font-semibold">{t('submissionDate')}</span>.
                     </p>
                 </div>
+                <div className="flex jus items-end gap-4">
+                    <CalendarClock className="h-6 w-6 text-blue-600 mt-1" aria-hidden="true" />
+                    <p className="text-base text-gray-700">
+                        {t('announceResultLabel')}
+                        <span className="font-semibold">{t('announceResultDate')}</span>.
+                    </p>
+                </div>
             </CardContent>
         </Card>
     );
@@ -103,7 +110,7 @@ const Register = () => {
     const t = useTranslations('Register');
 
     return (
-        <section id="dang-ky" className="scroll-mt-16 pt-16">
+        <section id="dang-ky" className="scroll-mt-16 pt-16 bg-[#AFDDFF]">
             <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">

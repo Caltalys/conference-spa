@@ -34,7 +34,7 @@ const Hero = () => {
 
                     <p className="text-xl lg:text-3xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] uppercase">{t('date')}</p>
                     <CountDown />
-                    <Link href="#dang-ky" className="inline-block rounded-full bg-destructive px-8 py-3 text-lg font-bold text-primary-foreground transition-transform duration-300 hover:scale-105">
+                    <Link href="#dang-ky" className="inline-block rounded-full bg-secondary px-8 py-3 text-lg font-bold text-primary-foreground transition-transform duration-300 hover:scale-105">
                         {t('registerNow')}
                     </Link>
                 </div>

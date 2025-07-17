@@ -36,12 +36,12 @@ const Header = () => {
 
     return (
         <>
-            <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm">
+            <header className="fixed w-full top-0 z-50 bg-white backdrop-blur-sm">
                 <div className="flex justify-between items-center w-full lg:px-24 p-4 shadow-lg">
                     {/* Logo section */}
                     <Link href="/" className="flex items-center gap-2 text-2xl font-bold cursor-pointer" aria-label={t('homePage')}>
-                        <AtomIcon className=" text-blue-500" aria-hidden="true" />
-                        <p>VSRNM</p>
+                        <img src={"/logo.png"} alt={"logo"} className='w-12 h-12 contrast'/>
+                        <p>KMC2025</p>
                     </Link>
                     {/* Menu section */}
                     <nav className="hidden lg:block">
@@ -58,7 +58,7 @@ const Header = () => {
                     {/* Icon section */}
                     <div className="flex items-center gap-2">
                         <Button
-                            variant={locale === 'vi' ? 'destructive' : 'outline'}
+                            variant={locale === 'vi' ? 'secondary' : 'outline'}
                             size="icon"
                             className="size-8"
                             onClick={() => handleLocaleChange('vi')}
@@ -68,7 +68,7 @@ const Header = () => {
                             VN
                         </Button>
                         <Button
-                            variant={locale === 'en' ? 'destructive' : 'outline'}
+                            variant={locale === 'en' ? 'secondary' : 'outline'}
                             size="icon"
                             className="size-8"
                             onClick={() => handleLocaleChange('en')}
