@@ -1,15 +1,15 @@
 'use client';
 
 import Image from "next/image";
-import { Building, CalendarDays, Download, MapPin, Users, XIcon } from "lucide-react";
+import { Building, CalendarDays, Download, MapPin, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useState } from 'react';
+//import { useState } from 'react';
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const ConferenceInfo = () => {
   const t = useTranslations('ConferenceInfo');
-  const [isMapModalOpen, setIsMapModalOpen] = useState(false);
+  //const [isMapModalOpen, setIsMapModalOpen] = useState(false);
 
   const infoItems = [
     {
@@ -97,7 +97,17 @@ const ConferenceInfo = () => {
           </div>
 
           <div className="relative mt-12 lg:mt-0">
-            <button
+            <Link className="relative block w-full aspect-[16/9] overflow-hidden rounded-2xl shadow-xl"
+              href="https://maps.app.goo.gl/XftdeWVjwhpEkbdz7" target="_blank" rel="noopener noreferrer" >
+                <Image
+                  src="/map.png"
+                  alt={t('mapAlt')}
+                  fill
+                  className="object-cover transition-transform duration-300 hover:scale-105"
+                />
+            </Link>
+
+            {/* <button
               type="button"
               onClick={() => setIsMapModalOpen(true)}
               className="relative block w-full aspect-[16/9] overflow-hidden rounded-2xl shadow-xl"
@@ -109,11 +119,11 @@ const ConferenceInfo = () => {
                 fill
                 className="object-cover transition-transform duration-300 hover:scale-105"
               />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
-      {isMapModalOpen && (
+      {/* {isMapModalOpen && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
           onClick={() => setIsMapModalOpen(false)}
@@ -131,7 +141,7 @@ const ConferenceInfo = () => {
             <Image src="/map.png" alt={t('mapAlt')} fill className="object-contain" />
           </div>
         </div>
-      )}
+      )} */}
     </section>
   );
 };
