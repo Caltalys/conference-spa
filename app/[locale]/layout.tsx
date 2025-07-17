@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto, Roboto_Mono } from "next/font/google";
-import {Locale, NextIntlClientProvider, useMessages} from 'next-intl';
+import {Locale, NextIntlClientProvider} from 'next-intl';
 import {getTranslations, getMessages} from 'next-intl/server';
 
 import "../../app/globals.css";

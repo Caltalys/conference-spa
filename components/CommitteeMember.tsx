@@ -5,12 +5,12 @@ interface CommitteeMemberProps {
     name: string;
     role: string;
     imageUrl: string;
-    social?: {
-        linkedin?: string;
-    };
+    // social?: {
+    //     linkedin?: string;
+    // };
 }
 
-const CommitteeMember = ({ title, name, role, imageUrl, social }: CommitteeMemberProps) => {
+const CommitteeMember = ({ title, name, role, imageUrl }: CommitteeMemberProps) => {
     return (
         <Card className="group bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
             <CardContent className="p-4 flex items-center gap-4">

@@ -1,5 +1,4 @@
 
-import Agenda from "@/components/Agenda";
 import Committee from "@/components/Committee";
 import ConferenceInfo from "@/components/ConferenceInfo";
 import Footer from "@/components/Footer";

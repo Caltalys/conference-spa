@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { useRouter, usePathname } from "../i18n/navigation";
 import { Button } from "@/components/ui/button";
-import { AlignJustifyIcon, AtomIcon, MoonStarIcon, XIcon } from "lucide-react";
+import { AlignJustifyIcon, AtomIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 
 const Header = () => {

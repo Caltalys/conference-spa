@@ -3,7 +3,12 @@
 import { appendFile } from 'fs/promises';
 import { join } from 'path';
 
-export async function submitScientificReport(prevState: any, formData: FormData) {
+export interface ActionState {
+    success: boolean;
+    message?: string;
+}
+
+export async function submitScientificReport(prevState: ActionState | null, formData: FormData) {
   // TODO: Validate and handle file upload
   const reportFile = formData.get('reportFile');
   const authorName = formData.get('authorName');
@@ -20,7 +25,7 @@ export async function submitScientificReport(prevState: any, formData: FormData)
   return { success: true, message: 'Report submitted successfully!' };
 }
 
-export async function registerForAttendance(prevState: any, formData: FormData) {
+export async function registerForAttendance(revState: ActionState | null, formData: FormData) {
   // TODO: Validate form data
   const name = formData.get('name');
   const email = formData.get('email');
