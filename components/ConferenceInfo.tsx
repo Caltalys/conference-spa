@@ -81,7 +81,7 @@ const ConferenceInfo = () => {
             </dl>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button asChild size="lg">
-                <Link href="/ThongBao.pdf" download="ThongBaoHoiNghi.pdf">
+                <Link href={t('downloadFilename')} download="ThongBaoHoiNghi.pdf">
                   <Download className="mr-2 h-5 w-5" />
                   {t('downloadNotice')}
                 </Link>

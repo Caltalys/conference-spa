@@ -1,4 +1,5 @@
 
+import Banner from "@/components/Banner";
 import Committee from "@/components/Committee";
 import ConferenceInfo from "@/components/ConferenceInfo";
 import Footer from "@/components/Footer";
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <ConferenceInfo />
       {/* <Agenda /> */}
+      <Banner />
       <Committee />
       <Register />
       <Services />

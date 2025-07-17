@@ -15,9 +15,11 @@
   },
   "Hero": {
     "conference": "Hội nghị",
-    "title": "Mạng lưới chăm sóc trẻ sinh non bằng phương pháp Kangaroo Châu Á - Châu Đại Dương Lần thứ 3",
-    "subtitle": "Đà Nẵng, Việt Nam",
-    "date": "Ngày 27-29 tháng 11, 2025",
+    "title": "Mạng lưới chăm sóc trẻ sinh",
+    "title1": "bằng phương pháp Kangaroo",
+    "title2": "Châu Á - Châu Đại Dương Lần thứ 3",
+    "subtitle": "",
+    "date": "Đà Nẵng, Việt Nam, 27-29 tháng 11, 2025",
     "registerNow": "Đăng ký ngay"
   },
   "Countdown": {
@@ -40,6 +42,7 @@
     "attendanceValue2": "",
     "attendanceValue3": "",
     "downloadNotice": "Tải Thông báo số 1",
+    "downloadFilename": "/ThongBao.pdf",
     "downloadLetter": "Tải Thư ngỏ",
     "viewMap": "Xem bản đồ",
     "mapAlt": "Bản đồ địa điểm hội nghị",

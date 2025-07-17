@@ -16,6 +16,8 @@
   "Hero": {
     "conference": "",
     "title": "The 3rd Regional Conference of Asia-Oceania Network of Kangaroo Mother Care",
+    "title1": "",
+    "title2": "",
     "subtitle": "Da Nang, Vietnam",
     "date": "November 27-29, 2025",
     "registerNow": "Register Now"
@@ -40,6 +42,7 @@
     "attendanceValue2": "- Health professionals working in related fields.",
     "attendanceValue3": "- Media reporters.",
     "downloadNotice": "Download 1st Announcement",
+    "downloadFilename": "/announcement.pdf",
     "downloadLetter": "Download Invitation Letter",
     "viewMap": "View map",
     "mapAlt": "Map of the conference location",
