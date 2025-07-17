@@ -25,7 +25,10 @@ export async function submitScientificReport(prevState: ActionState | null, form
   return { success: true, message: 'Report submitted successfully!' };
 }
 
-export async function registerForAttendance(revState: ActionState | null, formData: FormData) {
+export async function registerForAttendance(
+  prevState: ActionState | null,
+  formData: FormData,
+) {
   // TODO: Validate form data
   const name = formData.get('name');
   const email = formData.get('email');
