@@ -63,9 +63,9 @@ const Services = () => {
   const t = useTranslations("Services");
 
   const serviceItems = [
-    { title: t("service1_title"), description: t("service1_description"), imageUrl: "/photo.jpg" },
-    { title: t("service2_title"), description: t("service2_description"), imageUrl: "/photo.jpg" },
-    { title: t("service3_title"), description: t("service3_description"), imageUrl: "/photo.jpg" },
+    { title: t("service1_title"), description: t("service1_description"), imageUrl: "/xe-dua-don.jpeg" },
+    { title: t("service2_title"), description: t("service2_description"), imageUrl: "/luu-tru.jpg" },
+    { title: t("service3_title"), description: t("service3_description"), imageUrl: "/tour.jpg" },
   ];
 
   return (
@@ -151,14 +151,14 @@ const Services = () => {
 
 
           <div className="mt-6 flex flex-col items-center justify-center">
-            <motion.h3
+            {/* <motion.h3
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-xl mb-4 font-bold text-gray-900"
             >
               {t("contactTitle")}
-            </motion.h3>
+            </motion.h3> */}
 
             <div className="flex items-end justify-center gap-4 ">
               <ContactInfoItem icon={Phone} index={0}>

@@ -5,6 +5,7 @@ import ConferenceInfo from "@/components/ConferenceInfo";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Reason from "@/components/Reason";
 import Register from "@/components/Register";
 import Services from "@/components/Services";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Banner />
       <Committee />
       <Register />
+      <Reason />
       <Services />
       <Footer />
     </div>
