@@ -151,12 +151,12 @@
   "Services": {
     "title": "Travel & Accommodation Services",
     "subtitle": "We provide comprehensive travel and accommodation services for delegates.",
-    "service1_title": "Visa Support",
-    "service1_description": "Assistance with visa applications for international delegates.",
+    "service1_title": "Transportation",
+    "service1_description": "Door-to-door transportation service ensuring convenience for delegates throughout the conference.",
     "service2_title": "Accommodation",
-    "service2_description": "Partnerships with hotels near the conference venue for special rates.",
-    "service3_title": "Tours & Transport",
-    "service3_description": "Airport transfers and city tours to explore Da Nang.",
+    "service2_description": "In partnership with hotels near the conference venue, we offer special rates and high-quality services.",
+    "service3_title": "Sightseeing Tours",
+    "service3_description": "Daily tours are available to help delegates easily explore local culture and attractions during your stay.",
     "companyName": " ASIAN COMPANION TRAVEL SERVICES AND TRADING COMPANY LIMITED",
     "companyDescription": "With over 15 years of experience in the travel industry, we are proud to be a trusted companion of thousands of individual and corporate clients.",
     "experience": "We are committed to providing professional and high-quality services to ensure your trip is comfortable and memorable.",
@@ -168,9 +168,11 @@
     "contactPhone2": "0336 548 705",
     "contactPerson2": " (Ms. Như)",
     "contactEmail": "director@actravel.com.vn",
-    "facebook": "https://www.facebook.com/asiancompaniontravel"
+    "facebookUrl": "https://www.facebook.com/asiancompaniontravel",
+    "facebookHandle": "Facebook"
   },
   "Footer": {
+    "greeting": "See you at Center for Disease Control (CDC) of Da Nang City | November 27-29, 2025",
     "conferenceName": "The 3rd Regional Conference of Asia-Oceania Network of Kangaroo Mother Care 2025",
     "conferenceDescription": "Bringing together experts and practitioners to advance Kangaroo Mother Care in the Asia-Oceania region.",
     "quickLinks": "Quick Links",

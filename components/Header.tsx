@@ -1,11 +1,11 @@
 'use client';
 
-import { useState } from 'react';
-import { useLocale, useTranslations } from 'next-intl';
-import { useRouter, usePathname } from "../i18n/navigation";
 import { Button } from "@/components/ui/button";
-import { AlignJustifyIcon, AtomIcon, XIcon } from "lucide-react";
+import { AlignJustifyIcon, XIcon } from "lucide-react";
+import { useLocale, useTranslations } from 'next-intl';
 import Link from "next/link";
+import { useState } from 'react';
+import { usePathname, useRouter } from "../i18n/navigation";
 
 const Header = () => {
     const t = useTranslations('Header');

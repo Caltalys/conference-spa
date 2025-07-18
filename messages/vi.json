@@ -151,11 +151,11 @@
     "title": "Dịch vụ Lữ hành & Lưu trú",
     "subtitle": "Đối tác đồng hành chuyên nghiệp cho mọi hành trình hội nghị",
     "service1_title": "Xe đưa đón",
-    "service1_description": "",
+    "service1_description": "Dịch vụ xe đưa đón tận nơi, đảm bảo sự thuận tiện cho Quý Đại biểu trong suốt thời gian tham dự hội nghị và các hoạt động tham quan.",
     "service2_title": "Khách sạn",
-    "service2_description": "",
+    "service2_description": "Hợp tác với các khách sạn gần khu vực tổ chức hội nghị, mang đến mức giá ưu đãi và chất lượng dịch vụ tốt nhất.",
     "service3_title": "Tour tham quan",
-    "service3_description": "",
+    "service3_description": "Cung cấp các tour tham quan hằng ngày giúp Quý Đại biểu dễ dàng khám phá văn hoá và danh thắng địa phương trong thời gian lưu trú.",
     "companyName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ DU LỊCH BẠN ĐỒNG HÀNH CHÂU Á",
     "companyDescription": "Với hơn 15 năm kinh nghiệm hoạt động trong lĩnh vực du lịch nội địa và quốc tế, chúng tôi hân hạnh đồng hành cùng Quý Đại biểu trong suốt thời gian tham dự Hội nghị.",
     "experience": "Chúng tôi cam kết mang đến những dịch vụ chuyên nghiệp, chất lượng cao để đảm bảo chuyến đi của quý vị thoải mái và đáng nhớ.",
@@ -167,9 +167,11 @@
     "contactPhone2": "0336 548 705",
     "contactPerson2": " (Ms. Như)",
     "contactEmail": "director@actravel.com.vn",
-    "facebook": "https://www.facebook.com/asiancompaniontravel"
+    "facebookUrl": "https://www.facebook.com/asiancompaniontravel",
+    "facebookHandle": "Facebook"
   },
   "Footer": {
+    "greeting": "Hẹn gặp bạn tại Trung Tâm Kiểm Soát Bệnh Tật Đà Nẵng | Ngày 27-29 tháng 11, 2025",
     "conferenceName": "Hội nghị mạng lưới chăm sóc trẻ sinh non bằng phương pháp Kangaroo Châu Á - Châu Đại Dương Lần thứ 3 - 2025",
     "conferenceDescription": "Nơi quy tụ các chuyên gia và người thực hành để thúc đẩy Phương pháp Kangaroo tại khu vực Châu Á - Châu Đại Dương.",
     "quickLinks": "Liên kết nhanh",

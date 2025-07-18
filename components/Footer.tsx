@@ -1,27 +1,23 @@
+import { Building, Mail, MapPin, Phone, User } from 'lucide-react';
 import { useTranslations } from "next-intl";
-import Link from "next/link"
-import { Mail, Phone, MapPin, User, Building } from 'lucide-react';
 
 const Footer = () => {
     const t = useTranslations('Footer');
-    const tHeader = useTranslations('Header');
+    //const tHeader = useTranslations('Header');
 
-    const quickLinks = [
-        { id: 'home', href: '#trang-chu', label: tHeader('home') },
-        { id: 'agenda', href: '#chuong-trinh', label: tHeader('agenda') },
-        { id: 'register', href: '#dang-ky', label: tHeader('register') },
-        { id: 'services', href: '#dich-vu', label: tHeader('services') },
-        { id: 'committee', href: '#ban-to-chuc', label: tHeader('committee') },
-    ];
+    // const quickLinks = [
+    //     { id: 'home', href: '#trang-chu', label: tHeader('home') },
+    //     { id: 'agenda', href: '#chuong-trinh', label: tHeader('agenda') },
+    //     { id: 'register', href: '#dang-ky', label: tHeader('register') },
+    //     { id: 'services', href: '#dich-vu', label: tHeader('services') },
+    //     { id: 'committee', href: '#ban-to-chuc', label: tHeader('committee') },
+    // ];
 
     return (
         <footer id="lien-he" className="bg-[url('/layered-waves-haikei.svg')] bg-contain bg-no-repeat">
             <div className="text-center font-semibold py-8">
                     <p className="text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-                        Hẹn gặp bạn tại Trung Tâm Kiểm Soát Bệnh Tật Đà Nẵng
-                    </p>
-                    <p className="text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-                        Ngày 27-29 tháng 11, 2025
+                        {t('greeting')}
                     </p>
                 </div>
             <div className="container mx-auto px-4 py-12">
