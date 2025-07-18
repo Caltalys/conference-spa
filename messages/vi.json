@@ -3,7 +3,7 @@
     "home": "Trang chủ",
     "info": "Tổng quan",
     "agenda": "Chương trình",
-    "committee": "Ban tổ chức",
+    "committee": "Báo cáo viên",
     "register": "Đăng ký",
     "services": "Dịch vụ",
     "contact": "Liên hệ",
@@ -88,8 +88,8 @@
     }
   },
   "Committee": {
-    "title": "Ban tổ chức",
-    "subtitle": "Gặp gỡ đội ngũ đứng sau thành công của hội nghị",
+    "title": "Báo cáo viên",
+    "subtitle": "Gặp gỡ và giao lưu với các diễn giả trong nước và quốc tế",
     "members": [
       {
         "title": "Chủ tịch",
@@ -147,6 +147,15 @@
     "transferSyntax2": "Nếu bạn chỉ đăng ký tham gia hội thảo tiền hội nghị (27/11/25, 500.000 VNĐ hoặc 700.000 VNĐ nếu đăng ký 20/9/25): dktienhnKMC-hovaten. VD: dktienhnKMC-Nguyen Thi A-500000",
     "transferSyntax3": "Nếu bạn tham gia cả hội thảo tiền hội nghị và hội nghị (27,28,29/11/25, 1.150.000 VNĐ hoặc 1.500.000 VNĐ nếu đăng ký 20/9/25): dkKMC-hovaten. VD: dkKMC-Nguyen Thi A-1150000"
   },
+  "WhyAttend": {
+    "title": "VÌ SAO NÊN THAM DỰ KMC 2025?",
+    "feature1_title": "Cập nhật kiến thức – Nâng cao kỹ năng chuyên môn",
+    "feature1_desc": "Hội nghị tập trung vào việc cập nhật những kiến thức mới nhất và nâng cao kỹ năng trong công tác chăm sóc trẻ sinh non, nhẹ cân bằng phương pháp Kangaroo – một phương pháp đã được chứng minh hiệu quả trong việc cải thiện sức khỏe và sự phát triển toàn diện của trẻ.",
+    "feature2_title": "Giao lưu – Chia sẻ kinh nghiệm thực tiễn",
+    "feature2_desc": "Sự kiện hân hạnh đón tiếp các chuyên gia và nhà nghiên cứu từ nhiều quốc gia trên thế giới đến chia sẻ kinh nghiệm thực tiễn và các nghiên cứu mới nhất về phương pháp Kangaroo. Đây là cơ hội quý báu để xây dựng mạng lưới chuyên môn và thúc đẩy hợp tác trong lĩnh vực chăm sóc sơ sinh.",
+    "feature3_title": "Lan tỏa tác động tích cực đến cộng đồng y tế",
+    "feature3_desc": "Hội nghị góp phần nâng cao chất lượng chăm sóc trẻ sinh non, giảm tỷ lệ tử vong và bệnh tật ở trẻ sơ sinh. Đồng thời, sự kiện hướng đến việc lan tỏa và thúc đẩy mạnh mẽ việc áp dụng rộng rãi phương pháp Kangaroo trong hệ thống y tế khu vực và quốc tế."
+  },
   "Services": {
     "title": "Dịch vụ Lữ hành & Lưu trú",
     "subtitle": "Đối tác đồng hành chuyên nghiệp cho mọi hành trình hội nghị",
@@ -169,6 +178,10 @@
     "contactEmail": "director@actravel.com.vn",
     "facebookUrl": "https://www.facebook.com/asiancompaniontravel",
     "facebookHandle": "Facebook"
+  },
+  "Gallery": {
+    "title": "Thư viện ảnh",
+    "subtitle": ""
   },
   "Footer": {
     "greeting": "Hẹn gặp bạn tại Trung Tâm Kiểm Soát Bệnh Tật Đà Nẵng | Ngày 27-29 tháng 11, 2025",

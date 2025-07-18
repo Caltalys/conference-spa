@@ -3,7 +3,7 @@
     "home": "Home",
     "info": "Overview",
     "agenda": "Agenda",
-    "committee": "Committee",
+    "committee": "Speakers",
     "register": "Register",
     "services": "Services",
     "contact": "Contact",
@@ -88,7 +88,7 @@
     }
   },
   "Committee": {
-    "title": "Organizing Committee",
+    "title": "Speakers",
     "subtitle": "Meet the speakers around the world",
     "members": [
       {
@@ -148,6 +148,15 @@
     "transferSyntax3": "If you attend both workshops and conference (Nov 27,28,29, 125 USD or 170 USD if registration after 20/9/25): KMCboth-full name-amount transferred eg. KMCboth-Amy Chan-125"
 
   },
+  "WhyAttend": {
+    "title": "Why Attend KMC 2025?",
+    "feature1_title": "Update knowledge and enhance skills",
+    "feature1_desc": "The conference will focus on updating knowledge and improving skills in caring for premature and low birth weight infants receiving Kangaroo Mother Care (KMC) - a method that has been proven to reduce mortality and morbidity among premature and low-birth-weight infants.",
+    "feature2_title": "Make Meaningful Connections",
+    "feature2_desc": "The conference is honored to welcome clinical experts and researchers from many countries around the world to share valuable experiences as well as the latest research results on this method of care",
+    "feature3_title": "Promote Positive Impact in the Healthcare Community",
+    "feature3_desc": "The conference aims to improve the quality of care for preterm infants, reduce neonatal mortality and morbidity rates, and promote the widespread adoption of the Kangaroo Mother Care method within the regional healthcare community."
+  },
   "Services": {
     "title": "Travel & Accommodation Services",
     "subtitle": "We provide comprehensive travel and accommodation services for delegates.",
@@ -170,6 +179,10 @@
     "contactEmail": "director@actravel.com.vn",
     "facebookUrl": "https://www.facebook.com/asiancompaniontravel",
     "facebookHandle": "Facebook"
+  },
+  "Gallery": {
+    "title": "Thư viện ảnh",
+    "subtitle": ""
   },
   "Footer": {
     "greeting": "See you at Center for Disease Control (CDC) of Da Nang City | November 27-29, 2025",

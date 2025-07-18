@@ -20,6 +20,7 @@ const Header = () => {
         { id: 'committee', href: '#ban-to-chuc' },
         { id: 'register', href: '#dang-ky' },
         { id: 'services', href: '#dich-vu' },
+        // { id: 'gallery', href: '#thu-vien' },
         { id: 'contact', href: '#lien-he' }
     ];
 

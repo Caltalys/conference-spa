@@ -5,7 +5,8 @@ import ConferenceInfo from "@/components/ConferenceInfo";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Reason from "@/components/Reason";
+import Gallery from "@/components/Gallery";
+import WhyAttendKMC from "@/components/WhyAttendKMC";
 import Register from "@/components/Register";
 import Services from "@/components/Services";
 
@@ -19,8 +20,9 @@ export default function Home() {
       <Banner />
       <Committee />
       <Register />
-      <Reason />
+      <WhyAttendKMC />
       <Services />
+      <Gallery />
       <Footer />
     </div>
   );

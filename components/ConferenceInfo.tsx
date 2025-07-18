@@ -8,7 +8,7 @@ import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 
 // Sub-component for the section title
-const SectionHeader = ({ title }) => (
+export const SectionHeader = ({ title }) => (
   <motion.div
     initial={{ y: 20, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}

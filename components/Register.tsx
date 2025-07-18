@@ -157,7 +157,7 @@ const Register = () => {
     return (
         <motion.section
             id="dang-ky"
-            className="scroll-mt-16 pt-16 bg-[#AFDDFF]"
+            className="scroll-mt-16 py-16"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
