@@ -145,7 +145,8 @@
     "transferSyntaxTitle": "Cú pháp chuyển khoản",
     "transferSyntax1": "Nếu bạn chỉ đăng ký tham gia hội nghị chính (28-29/11/25, 650.000 VNĐ hoặc 800.000 VNĐ nếu đăng ký sau 20/9/25): dkhoinghiKMC-hovaten-số tiền đã chuyển. VD: dkhoinghiKMC-Nguyen Thi A-650000",
     "transferSyntax2": "Nếu bạn chỉ đăng ký tham gia hội thảo tiền hội nghị (27/11/25, 500.000 VNĐ hoặc 700.000 VNĐ nếu đăng ký 20/9/25): dktienhnKMC-hovaten. VD: dktienhnKMC-Nguyen Thi A-500000",
-    "transferSyntax3": "Nếu bạn tham gia cả hội thảo tiền hội nghị và hội nghị (27,28,29/11/25, 1.150.000 VNĐ hoặc 1.500.000 VNĐ nếu đăng ký 20/9/25): dkKMC-hovaten. VD: dkKMC-Nguyen Thi A-1150000"
+    "transferSyntax3": "Nếu bạn tham gia cả hội thảo tiền hội nghị và hội nghị (27,28,29/11/25, 1.150.000 VNĐ hoặc 1.500.000 VNĐ nếu đăng ký 20/9/25): dkKMC-hovaten. VD: dkKMC-Nguyen Thi A-1150000",
+    "flyer": "/flyer.jpg"
   },
   "WhyAttend": {
     "title": "VÌ SAO NÊN THAM DỰ KMC 2025?",
@@ -177,7 +178,7 @@
     "contactPerson2": " (Ms. Như)",
     "contactEmail": "director@actravel.com.vn",
     "facebookUrl": "https://www.facebook.com/asiancompaniontravel",
-    "facebookHandle": "Facebook"
+    "facebookHandle": "Asian Companion Travel"
   },
   "Gallery": {
     "title": "Thư viện ảnh",

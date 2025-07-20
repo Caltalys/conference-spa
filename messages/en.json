@@ -145,8 +145,8 @@
     "transferSyntaxTitle": "Transfer syntax",
     "transferSyntax1": "If you only attend the conference (Nov 28-29, 75 USD or 100 USD if registration after 20/9/25): KMCconference-full name-amount transferred eg. KMCconference-Amy Chan-75",
     "transferSyntax2": "If you only attend the workshops (Nov 27, 50 USD or 70 USD if registration after 20/9/25): KMCworkshop-fullname-amount transferred eg. KMCworkshop-Amy Chan-50",
-    "transferSyntax3": "If you attend both workshops and conference (Nov 27,28,29, 125 USD or 170 USD if registration after 20/9/25): KMCboth-full name-amount transferred eg. KMCboth-Amy Chan-125"
-
+    "transferSyntax3": "If you attend both workshops and conference (Nov 27,28,29, 125 USD or 170 USD if registration after 20/9/25): KMCboth-full name-amount transferred eg. KMCboth-Amy Chan-125",
+    "flyer": "/flyer-en.png"
   },
   "WhyAttend": {
     "title": "Why Attend KMC 2025?",
@@ -178,7 +178,7 @@
     "contactPerson2": " (Ms. Như)",
     "contactEmail": "director@actravel.com.vn",
     "facebookUrl": "https://www.facebook.com/asiancompaniontravel",
-    "facebookHandle": "Facebook"
+    "facebookHandle": "Asian Companion Travel"
   },
   "Gallery": {
     "title": "Thư viện ảnh",

@@ -150,17 +150,7 @@ const Services = () => {
           </motion.div>
 
 
-          <div className="mt-6 flex flex-col items-center justify-center">
-            {/* <motion.h3
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-xl mb-4 font-bold text-gray-900"
-            >
-              {t("contactTitle")}
-            </motion.h3> */}
-
-            <div className="flex items-end justify-center gap-4 ">
+            <div className="flex flex-col md:flex-row gap-4 justify-center mx-auto">
               <ContactInfoItem icon={Phone} index={0}>
                 <p><strong>{t("contactPhone1")}</strong> {t("contactPerson1")}</p>
               </ContactInfoItem>
@@ -178,7 +168,6 @@ const Services = () => {
                 </a>
               </ContactInfoItem>
             </div>
-          </div>
         </div>
       </div>
     </section>

@@ -22,7 +22,7 @@ const FeatureItem = ({
   >
     <h3 className="text-xl font-semibold text-white">{title}</h3>
     <p className="mt-2 text-white/90">{description}</p>
-    <div className="mt-4 border-t border-cyan-400 w-12"></div>
+    <div className="mt-4 border-t border-cyan-400 w-full"></div>
   </motion.div>
 );
 
@@ -65,7 +65,7 @@ const WhyAttendKMC = () => {
             />
           ))}
         </div>
-        <div className="relative w-full max-w-[480px] h-96 md:h-auto">
+        <div className="relative w-full max-w-[480px] h-96 md:h-auto mx-auto">
           <Image
             src="/danang-bana.jpg" // Cập nhật lại theo đường dẫn ảnh của bạn
             alt="Why Attend KMC"
