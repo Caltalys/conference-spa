@@ -7,9 +7,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CalendarClock, Link as LinkIcon, Loader2, Search } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from 'next/image';
-import { useActionState, useEffect, useRef, useState } from 'react';
-import { useFormStatus } from 'react-dom';
-import { motion } from 'motion/react';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -17,24 +16,14 @@ const SectionHeader = ({ title, subtitle }) => (
     <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ type: 'spring', stiffness: 100 }}
-        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: 'easeOut' }}
+        viewport={{ once: true, amount: 0.3 }}
         className="text-center mb-8"
     >
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">{title}</h2>
         <p className="mt-4 text-lg text-gray-600">{subtitle}</p>
     </motion.div>
 );
-
-function SubmitButton({ children }) {
-    const { pending } = useFormStatus();
-    return (
-        <Button type="submit" className="w-full text-lg py-6 hover:bg-destructive transition-colors duration-300" disabled={pending}>
-            {pending ? <Loader2 className="mr-2 h-5 w-5 animate-spin" /> : <LinkIcon className="mr-2 h-5 w-5" />}
-            {children}
-        </Button>
-    );
-}
 
 const InfoLine = ({ icon: Icon, children }) => (
     <div className="flex items-start gap-4">
@@ -173,39 +162,6 @@ const AttendanceDetails = () => {
     );
 };
 
-const AttendanceRegistrationForm = () => {
-    const t = useTranslations('Register');
-
-    const handleClick = () => {
-        window.open('https://forms.gle/eWMEoPqUEAa9TD6K9', '_blank');
-    };
-
-    return (
-        <div className="col-span-1">
-            <div className="flex flex-wrap items-center justify-center text-center h-full space-y-6 pt-6">
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                    <Button
-                        className="w-full text-lg py-6 hover:bg-destructive transition-colors duration-300"
-                        onClick={handleClick}
-                    >
-                        <LinkIcon className="mr-2 h-5 w-5" />
-                        {t('registerButton')}
-                    </Button>
-                </motion.div>
-                <p className="text-base text-gray-700">{t('scanToRegister')}</p>
-                <motion.div
-                    className="flex items-center justify-center"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.2 }}
-                >
-                    <Image src="/QR.png" alt={t('qrAlt')} width={220} height={220} />
-                </motion.div>
-            </div>
-        </div>
-    );
-};
-
 const Register = () => {
     const t = useTranslations('Register');
 
@@ -224,8 +180,8 @@ const Register = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ type: 'spring', stiffness: 100 }}
-                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
+                    viewport={{ once: true, amount: 0.2 }}
                 >
                     <Tabs defaultValue="attendance" className="w-full max-w-7xl mx-auto">
                         <div className="flex justify-center mb-6">

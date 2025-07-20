@@ -94,22 +94,26 @@
       {
         "title": "Chủ tịch",
         "name": "GS. TS. John Doe",
-        "role": "Trường Đại học Kỹ thuật Y - Dược Đà Nẵng"
+        "role": "Trường Đại học Kỹ thuật Y - Dược Đà Nẵng",
+        "imageUrl": "/photo.jpg"
       },
       {
         "title": "Phó chủ tịch",
         "name": "PGS. TS. Jane Smith",
-        "role": "Bệnh viện Phụ sản - Nhi Đà Nẵng"
+        "role": "Bệnh viện Phụ sản - Nhi Đà Nẵng",
+        "imageUrl": "/photo.jpg"
       },
       {
         "title": "Thư ký",
         "name": "TS. Emily Jones",
-        "role": "Sở Y tế Đà Nẵng"
+        "role": "Sở Y tế Đà Nẵng",
+        "imageUrl": "/photo.jpg"
       },
       {
         "title": "Thành viên",
         "name": "BS. Michael Brown",
-        "role": "Hội Nhi khoa Việt Nam"
+        "role": "Hội Nhi khoa Việt Nam",
+        "imageUrl": "/photo.jpg"
       }
     ]
   },

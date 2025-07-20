@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Facebook, Link as LinkIcon, Mail, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -50,8 +50,9 @@ const ServiceCard = ({
 const ContactInfoItem = ({ icon: Icon, children, index }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay: getDelay(index) }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: getDelay(index, 0.1) }}
+    viewport={{ once: true, amount: 0.5 }}
     className="flex items-start gap-3"
   >
     <Icon className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Building, CalendarDays, Download, MapPin, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 // Sub-component for the section title

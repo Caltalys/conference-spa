@@ -94,22 +94,26 @@
       {
         "title": "Chairman",
         "name": "Prof. Dr. John Doe",
-        "role": "Da Nang University of Medical Technology and Pharmacy"
+        "role": "Da Nang University of Medical Technology and Pharmacy",
+        "imageUrl": "/photo.jpg"
       },
       {
         "title": "Vice Chairman",
         "name": "Assoc. Prof. Dr. Jane Smith",
-        "role": "Da Nang Hospital for Women and Children"
+        "role": "Da Nang Hospital for Women and Children",
+        "imageUrl": "/photo.jpg"
       },
       {
         "title": "Secretary",
         "name": "Dr. Emily Jones",
-        "role": "Da Nang Department of Health"
+        "role": "Da Nang Department of Health",
+        "imageUrl": "/photo.jpg"
       },
       {
         "title": "Member",
         "name": "Dr. Michael Brown",
-        "role": "Vietnam Paediatric Association"
+        "role": "Vietnam Paediatric Association",
+        "imageUrl": "/photo.jpg"
       }
     ]
   },
