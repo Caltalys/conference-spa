@@ -1,6 +1,18 @@
+'use client';
 import { useTranslations } from "next-intl";
-import CommitteeMember, { type CommitteeMemberProps } from "./CommitteeMember";
+import CommitteeMember from "./CommitteeMember";
+import { motion } from "framer-motion";
+import { staggerContainer, fadeInUp } from "@/lib/animations";
 
+export interface CommitteeMemberProps {
+    title: string;
+    name: string;
+    role: string;
+    imageUrl: string;
+    // social?: {
+    //     linkedin?: string;
+    // };
+}
 const Committee = () => {
     const t = useTranslations('Committee');
     const members = t.raw('members') as CommitteeMemberProps[];
@@ -15,19 +27,29 @@ const Committee = () => {
 
     return (
         <section id="ban-to-chuc" className="scroll-mt-16 pt-16">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="mb-8 text-center">
+            <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.1 }}
+                variants={staggerContainer}
+                className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <motion.div variants={fadeInUp} className="mb-8 text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">{t('title')}</h2>
                     <p className="mt-4 text-lg text-gray-600">
                         {t('subtitle')}
                     </p>
-                </div>
-                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                </motion.div>
+                <motion.div  className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {members.map((member) => (
-                        <CommitteeMember key={member.name} {...member} />
+                        <motion.div variants={staggerContainer}
+                            key={member.name}
+                            whileHover={{ y: -5, transition: { duration: 0.2 } }}
+                        >
+                            <CommitteeMember {...member} />
+                        </motion.div>
                     ))}
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </section>
     )
 }

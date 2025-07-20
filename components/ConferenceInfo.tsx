@@ -6,16 +6,11 @@ import { Building, CalendarDays, Download, MapPin, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight } from "@/lib/animations";
 
 // Sub-component for the section title
 export const SectionHeader = ({ title }) => (
-  <motion.div
-    initial={{ y: 20, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    viewport={{ once: true, amount: 0.3 }}
-    transition={{ duration: 0.5, ease: "easeOut" }}
-    className="text-center mb-12"
-  >
+  <motion.div variants={fadeInUp} className="text-center mb-12">
     <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl uppercase">
       {title}
     </h2>
@@ -23,14 +18,8 @@ export const SectionHeader = ({ title }) => (
 );
 
 // Sub-component for each info item. Now accepts an `index` for staggered animations.
-const InfoItem = ({ icon: Icon, label, index, children }) => (
-  <motion.div
-    initial={{ y: 20, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }} // Stagger delay
-    className="flex"
-  >
+const InfoItem = ({ icon: Icon, label, children }) => (
+  <motion.div variants={fadeInUp} className="flex">
     <dt className="flex-shrink-0">
       <Icon className="h-6 w-6 text-white" aria-hidden="true" />
     </dt>
@@ -43,13 +32,7 @@ const InfoItem = ({ icon: Icon, label, index, children }) => (
 
 // Sub-component for download buttons
 const DownloadButtons = ({ t }) => (
-  <motion.div
-    initial={{ y: 20, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.5, ease: "easeOut" }}
-    className="flex flex-col sm:flex-row gap-4 pt-4"
-  >
+  <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 pt-4">
     {/* Replaced `whileHover`/`whileTap` with `hover`/`press` */}
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
       <Button asChild size="lg" variant="destructive">
@@ -89,22 +72,22 @@ const ConferenceInfo = () => {
 
   return (
     <section id="tong-quan" className="scroll-mt-16 top-wave bottom-wave bg-primary">
-      <SectionHeader title={t('title')} />
-      <div className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8"
+      >
+        <SectionHeader title={t('title')} />
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-16">
 
           {/* Left Column */}
-          <motion.div
-            initial={{ x: -30, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="space-y-8"
-          >
+          <motion.div variants={staggerContainer} className="space-y-8">
             <dl className="space-y-6">
               {/* We now pass the `index` to the InfoItem for staggering */}
-              {infoItems.map((item, index) => (
-                <InfoItem key={item.label} icon={item.icon} label={item.label} index={index}>
+              {infoItems.map((item) => (
+                <InfoItem key={item.label} icon={item.icon} label={item.label}>
                   <p className="mt-1 text-base text-white">{item.value}</p>
                   {item.label === t('attendanceLabel') && extraAttendanceValues.length > 0 && (
                     <ul className="mt-2 list-disc list-inside space-y-1 text-base text-white">
@@ -120,13 +103,7 @@ const ConferenceInfo = () => {
           </motion.div>
 
           {/* Right Column (Map) */}
-          <motion.div
-            initial={{ x: 30, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="relative mt-12 lg:mt-0"
-          >
+          <motion.div variants={fadeInRight} className="relative mt-12 lg:mt-0">
             <Link
               href="https://www.google.com/maps/place/Trung+T%C3%A2m+Ki%E1%BB%83m+So%C3%A1t+B%E1%BB%87nh+T%E1%BA%ADt+(CDC)+%C4%90%C3%A0+N%E1%BA%B5ng/@16.0542243,108.2090089,17z/data=!3m1!4b1!4m6!3m5!1s0x3142192e9a35a1bf:0x57e8e45b501ffea2!8m2!3d16.0542243!4d108.2115838!16s%2Fg%2F11hz3jv49q?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
@@ -144,7 +121,7 @@ const ConferenceInfo = () => {
             </Link>
           </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
