@@ -55,7 +55,7 @@ const CountDown = () => {
     }
 
     return (
-        <div className="flex items-center justify-center space-x-4 rounded-xl bg-black/50 p-4 text-white md:space-x-8">
+        <div className="flex items-center justify-center space-x-4 rounded-xl bg-primary p-4 text-white md:space-x-8">
             <TimeUnit value={padWithZero(timeLeft.days)} label={t('days')} />
             <Separator />
             <TimeUnit value={padWithZero(timeLeft.hours)} label={t('hours')} />
