@@ -9,15 +9,17 @@ import Gallery from "@/components/Gallery";
 import WhyAttendKMC from "@/components/WhyAttendKMC";
 import Register from "@/components/Register";
 import Services from "@/components/Services";
+import CounterContainer from "@/components/CounterContainer";
 
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <Header />
-      <Hero />
+      {/* <Hero /> */}
+      <Banner />
+      <CounterContainer />
       <ConferenceInfo />
       {/* <Agenda /> */}
-      <Banner />
       <Committee />
       <Register />
       <WhyAttendKMC />

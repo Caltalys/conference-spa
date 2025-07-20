@@ -16,7 +16,7 @@ export const SectionHeader = ({ title }) => (
     transition={{ duration: 0.5, ease: "easeOut" }}
     className="text-center mb-12"
   >
-    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">
+    <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl uppercase">
       {title}
     </h2>
   </motion.div>
@@ -32,10 +32,10 @@ const InfoItem = ({ icon: Icon, label, index, children }) => (
     className="flex"
   >
     <dt className="flex-shrink-0">
-      <Icon className="h-6 w-6 text-blue-600" aria-hidden="true" />
+      <Icon className="h-6 w-6 text-white" aria-hidden="true" />
     </dt>
     <dd className="ml-4">
-      <p className="text-lg font-semibold leading-6 text-gray-900">{label}</p>
+      <p className="text-lg font-semibold leading-6 text-white">{label}</p>
       {children}
     </dd>
   </motion.div>
@@ -52,7 +52,7 @@ const DownloadButtons = ({ t }) => (
   >
     {/* Replaced `whileHover`/`whileTap` with `hover`/`press` */}
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-      <Button asChild size="lg">
+      <Button asChild size="lg" variant="destructive">
         <Link href={t('downloadFilename')} download="ThongBaoHoiNghi.pdf">
           <Download className="mr-2 h-5 w-5" />
           {t('downloadNotice')}
@@ -88,7 +88,7 @@ const ConferenceInfo = () => {
   ].filter(Boolean);
 
   return (
-    <section id="tong-quan" className="scroll-mt-16 pt-16">
+    <section id="tong-quan" className="scroll-mt-16 top-wave bottom-wave bg-primary">
       <SectionHeader title={t('title')} />
       <div className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-16">
@@ -105,9 +105,9 @@ const ConferenceInfo = () => {
               {/* We now pass the `index` to the InfoItem for staggering */}
               {infoItems.map((item, index) => (
                 <InfoItem key={item.label} icon={item.icon} label={item.label} index={index}>
-                  <p className="mt-1 text-base text-gray-700">{item.value}</p>
+                  <p className="mt-1 text-base text-white">{item.value}</p>
                   {item.label === t('attendanceLabel') && extraAttendanceValues.length > 0 && (
-                    <ul className="mt-2 list-disc list-inside space-y-1 text-base text-gray-700">
+                    <ul className="mt-2 list-disc list-inside space-y-1 text-base text-white">
                       {extraAttendanceValues.map((value, idx) => (
                         <li key={idx}>{value.startsWith('- ') ? value.substring(2) : value}</li>
                       ))}
