@@ -230,10 +230,10 @@ const Register = () => {
                     <Tabs defaultValue="attendance" className="w-full max-w-7xl mx-auto">
                         <div className="flex justify-center mb-6">
                             <TabsList className="grid w-full max-w-lg grid-cols-2 gap-2 rounded-xl bg-gray-200 p-2">
-                                <TabsTrigger value="attendance" className="py-2.5 text-base font-semibold data-[state=active]:bg-blue-600 data-[state=active]:text-white rounded-lg transition-colors">
+                                <TabsTrigger value="attendance" className="py-2.5 text-base font-semibold data-[state=active]:bg-primary data-[state=active]:text-white rounded-lg transition-colors">
                                     {t('attendanceTitle')}
                                 </TabsTrigger>
-                                <TabsTrigger value="report" className="py-2.5 text-base font-semibold data-[state=active]:bg-blue-600 data-[state=active]:text-white rounded-lg transition-colors">
+                                <TabsTrigger value="report" className="py-2.5 text-base font-semibold data-[state=active]:bg-primary data-[state=active]:text-white rounded-lg transition-colors">
                                     {t('reportTitle')}
                                 </TabsTrigger>
                             </TabsList>

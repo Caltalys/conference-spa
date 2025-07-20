@@ -128,7 +128,7 @@ const ConferenceInfo = () => {
             className="relative mt-12 lg:mt-0"
           >
             <Link
-              href="https://maps.app.goo.gl/kG1gE4t1gSLJt2xZ7"
+              href="https://www.google.com/maps/place/Trung+T%C3%A2m+Ki%E1%BB%83m+So%C3%A1t+B%E1%BB%87nh+T%E1%BA%ADt+(CDC)+%C4%90%C3%A0+N%E1%BA%B5ng/@16.0542243,108.2090089,17z/data=!3m1!4b1!4m6!3m5!1s0x3142192e9a35a1bf:0x57e8e45b501ffea2!8m2!3d16.0542243!4d108.2115838!16s%2Fg%2F11hz3jv49q?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
