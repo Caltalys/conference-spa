@@ -67,7 +67,7 @@ const WhyAttendKMC = () => {
         </div>
         <div className="relative w-full max-w-[480px] h-96 md:h-auto mx-auto">
           <Image
-            src="/danang-bana.jpg" // Cập nhật lại theo đường dẫn ảnh của bạn
+            src="/Skin-to-Skin.jpg"
             alt="Why Attend KMC"
             fill
             className="object-cover rounded-md shadow-lg"

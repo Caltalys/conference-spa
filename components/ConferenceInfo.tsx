@@ -7,11 +7,12 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight } from "@/lib/animations";
+import { cn } from "@/lib/utils";
 
 // Sub-component for the section title
-export const SectionHeader = ({ title }) => (
+export const SectionHeader = ({ title, textColor }) => (
   <motion.div variants={fadeInUp} className="text-center mb-12">
-    <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl uppercase">
+    <h2 className={cn("text-3xl font-bold tracking-tight sm:text-4xl uppercase",textColor)}>
       {title}
     </h2>
   </motion.div>
@@ -79,7 +80,7 @@ const ConferenceInfo = () => {
         viewport={{ once: true, amount: 0.1 }}
         className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8"
       >
-        <SectionHeader title={t('title')} />
+        <SectionHeader title={t('title')} textColor={'text-white'} />
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-16">
 
           {/* Left Column */}

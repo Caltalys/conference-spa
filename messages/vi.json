@@ -20,7 +20,8 @@
     "title2": "Châu Á - Châu Đại Dương Lần thứ 3",
     "subtitle": "",
     "date": "Đà Nẵng, Việt Nam, 27-29 tháng 11, 2025",
-    "registerNow": "Đăng ký ngay"
+    "registerNow": "Đăng ký ngay",
+    "remainTitle": "Chỉ còn"
   },
   "Countdown": {
     "days": "Ngày",
@@ -92,28 +93,22 @@
     "subtitle": "Gặp gỡ và giao lưu với các diễn giả trong nước và quốc tế",
     "members": [
       {
-        "title": "Chủ tịch",
-        "name": "GS. TS. John Doe",
-        "role": "Trường Đại học Kỹ thuật Y - Dược Đà Nẵng",
-        "imageUrl": "/photo.jpg"
+        "title": "PGS.TS.BS",
+        "name": "Trần Thị Hoàng",
+        "role": [
+          "Phó giám đốc bệnh viện Phụ sản Nhi Đà Nẵng, Việt Nam",
+          "Phó trưởng Chi hội Sơ sinh Việt Nam",
+          "Chủ tịch Chi hội Hội Nhi khoa Nam Trung Bộ"
+        ],
+        "imageUrl": "/committer/1.png"
       },
       {
-        "title": "Phó chủ tịch",
-        "name": "PGS. TS. Jane Smith",
-        "role": "Bệnh viện Phụ sản - Nhi Đà Nẵng",
-        "imageUrl": "/photo.jpg"
-      },
-      {
-        "title": "Thư ký",
-        "name": "TS. Emily Jones",
-        "role": "Sở Y tế Đà Nẵng",
-        "imageUrl": "/photo.jpg"
-      },
-      {
-        "title": "Thành viên",
-        "name": "BS. Michael Brown",
-        "role": "Hội Nhi khoa Việt Nam",
-        "imageUrl": "/photo.jpg"
+        "title": "BS",
+        "name": "Lương Kim Chi",
+        "role": [
+          "Trưởng khoa sơ sinh Bệnh viện đa khoa quốc tế Long An, Việt Nam"
+        ],
+        "imageUrl": "/committer/2.png"
       }
     ]
   },
@@ -199,6 +194,8 @@
     "phone": "(+84) 0905 662 186",
     "department": "Khoa Sơ sinh Cấp cứu – Hồi sức tích cực & Sơ sinh bệnh lý, Bệnh viện Phụ sản – Nhi Đà Nẵng",
     "address": "402 Lê Văn Hiến, Phường Khuê Mỹ, Quận Ngũ Hành Sơn, TP. Đà Nẵng",
-    "copyright": "KMC 2025 VIỆT NAM – ĐÀ NẴNG. Mọi quyền được bảo lưu."
+    "copyright": "KMC 2025 VIỆT NAM – ĐÀ NẴNG. Mọi quyền được bảo lưu.",
+    "sponsor": "Đơn vị tài trợ",
+    "sponsorTitle": "Hội nghị/BTC trân trọng cảm ơn sự đồng hành của Đại sứ quán Ireland tại Việt Nam thông qua Dự án Alive & Thrive"
   }
 }

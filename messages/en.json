@@ -20,7 +20,8 @@
     "title2": "",
     "subtitle": "Da Nang, Vietnam",
     "date": "November 27-29, 2025",
-    "registerNow": "Register Now"
+    "registerNow": "Register Now",
+    "remainTitle": "Remain"
   },
   "Countdown": {
     "days": "Days",
@@ -92,28 +93,14 @@
     "subtitle": "Meet the speakers around the world",
     "members": [
       {
-        "title": "Chairman",
-        "name": "Prof. Dr. John Doe",
-        "role": "Da Nang University of Medical Technology and Pharmacy",
-        "imageUrl": "/photo.jpg"
-      },
-      {
-        "title": "Vice Chairman",
-        "name": "Assoc. Prof. Dr. Jane Smith",
-        "role": "Da Nang Hospital for Women and Children",
-        "imageUrl": "/photo.jpg"
-      },
-      {
-        "title": "Secretary",
-        "name": "Dr. Emily Jones",
-        "role": "Da Nang Department of Health",
-        "imageUrl": "/photo.jpg"
-      },
-      {
-        "title": "Member",
-        "name": "Dr. Michael Brown",
-        "role": "Vietnam Paediatric Association",
-        "imageUrl": "/photo.jpg"
+        "title": "PGS.TS.BS",
+        "name": "Trần Thị Hoàng",
+        "role": [
+          "Phó giám đốc bệnh viện Phụ sản Nhi Đà Nẵng, Việt Nam",
+          "Phó trưởng Chi hội Sơ sinh Việt Nam",
+          "Chủ tịch Chi hội Hội Nhi khoa Nam Trung Bộ"
+        ],
+        "imageUrl": "/committer/1.png"
       }
     ]
   },
@@ -199,6 +186,9 @@
     "phone": "(+84) 0905 662 186",
     "department": "Department of Emergency Neonatal - Intensive Care & Pathological Neonatal, Danang Maternity and Pediatrics Hospital",
     "address": "402 Le Van Hien, Khue My Ward, Ngu Hanh Son District, Da Nang City",
-    "copyright": "KMC 2025 VIETNAM – DA NANG. All rights reserved."
+    "copyright": "KMC 2025 VIETNAM – DA NANG. All rights reserved.",
+    "sponsor": "Sponsor",
+    "sponsorTitle": "The Conference Organizing Committee sincerely thanks the Embassy of Ireland in Vietnam for their valued support through the Alive & Thrive project"
+
   }
 }

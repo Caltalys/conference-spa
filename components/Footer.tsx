@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <motion.footer
             id="lien-he"
-            className=""
+            className="bg-primary text-white w-full pt-8"
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
                 </motion.div>
             </div>
-            <motion.div variants={fadeInUp} className="bg-gray-900 py-4">
+            <motion.div variants={fadeInUp} className="bg-gray-800 py-4">
                 <div className="container mx-auto px-4 text-center text-white text-sm">
                     <p>&copy; {new Date().getFullYear()} {t('copyright')}</p>
                 </div>

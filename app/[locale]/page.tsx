@@ -10,6 +10,7 @@ import WhyAttendKMC from "@/components/WhyAttendKMC";
 import Register from "@/components/Register";
 import Services from "@/components/Services";
 import CounterContainer from "@/components/CounterContainer";
+import Sponsor from "@/components/Sponsor";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <WhyAttendKMC />
       <Services />
       <Gallery />
+      <Sponsor />
       <Footer />
     </div>
   );
