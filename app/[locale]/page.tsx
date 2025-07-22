@@ -11,6 +11,7 @@ import Register from "@/components/Register";
 import Services from "@/components/Services";
 import CounterContainer from "@/components/CounterContainer";
 import Sponsor from "@/components/Sponsor";
+import FlyerImage from "@/components/FlyerImage";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <ConferenceInfo />
       {/* <Agenda /> */}
       <Committee />
+      <FlyerImage />
       <Register />
       <WhyAttendKMC />
       <Services />

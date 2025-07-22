@@ -1,15 +1,12 @@
 'use client';
 
-import { registerForAttendance } from '@/app/[locale]/actions';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { CalendarClock, Link as LinkIcon, Loader2, Search } from "lucide-react";
+import { CalendarClock, Link as LinkIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from 'next/image';
-import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 const SectionHeader = ({ title, subtitle }) => (
@@ -50,9 +47,10 @@ const ScientificReportInfo = () => {
     );
 };
 
+
+
 const AttendanceDetails = () => {
     const t = useTranslations('Register');
-    const [isLightboxOpen, setIsLightboxOpen] = useState(false);
     const items1 = [
         t('attendanceFeeBankAccountName'),
         t('attendanceFeeBankAccountNumber'),
@@ -66,121 +64,76 @@ const AttendanceDetails = () => {
         t('transferSyntax3')
     ];
 
-    const flyerImage = { src: t('flyerFull'), srcFull: t('flyer'), alt: 'Conference Flyer' };
-
     const handleClick = () => {
         window.open('https://forms.gle/eWMEoPqUEAa9TD6K9', '_blank');
     };
 
     return (
-        <>
-            <Card className="col-span-3 flex flex-col h-full">
-                <CardContent className='space-y-6 pt-6'>
-                    <p className="text-lg text-gray-600 italic">{t('attendanceDescription')}</p>
-                    <div>
-                        <p className="text-lg text-gray-600 font-semibold">{t('attendanceFeeTitle')}</p>
-                        <ul className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
-                            {items1.map((item, i) => (
-                                <motion.li
-                                    key={i}
-                                    initial={{ opacity: 0, x: -20 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ delay: i * 0.1 }}
-                                    viewport={{ once: true }}
-                                >
-                                    {item}
-                                </motion.li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div>
-                        <p className="text-lg text-gray-600 font-semibold">{t('transferSyntaxTitle')}</p>
-                        <ul className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
-                            {items2.map((item, i) => (
-                                <motion.li
-                                    key={i}
-                                    initial={{ opacity: 0, x: -20 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ delay: i * 0.1 }}
-                                    viewport={{ once: true }}
-                                >
-                                    {item}
-                                </motion.li>
-                            ))}
-                        </ul>
-                    </div>
-                    <InfoLine icon={CalendarClock}>
-                        {t('attendanceDeadline')} <span className="font-semibold">{t('deadlineDate')}</span>.
-                    </InfoLine>
-
-                    <div className="flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-8 w-full pt-4">
-                        <div className="flex flex-col items-center justify-center gap-4 w-full lg:w-1/3">
-                            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                                <Button
-                                    size="lg"
-                                    className="text-lg py-6 px-8 hover:bg-destructive transition-colors duration-300"
-                                    onClick={handleClick}
-                                >
-                                    <LinkIcon className="mr-2 h-5 w-5" />
-                                    {t('registerButton')}
-                                </Button>
-                            </motion.div>
-                            <motion.div
-                                className="flex flex-col items-center justify-center"
-                                initial={{ opacity: 0, scale: 0.8 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                transition={{ delay: 0.2 }}
+        <Card className="flex flex-col h-full">
+            <CardContent className='space-y-6 pt-6'>
+                <p className="text-lg text-gray-600 italic">{t('attendanceDescription')}</p>
+                <div>
+                    <p className="text-lg text-gray-600 font-semibold">{t('attendanceFeeTitle')}</p>
+                    <ul className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
+                        {items1.map((item, i) => (
+                            <motion.li
+                                key={i}
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ delay: i * 0.1 }}
                                 viewport={{ once: true }}
                             >
-                                <p className="text-base text-gray-700">{t('scanToRegister')}</p>
-                                <Image src="/QR.png" alt={t('qrAlt')} width={180} height={180} />
-                            </motion.div>
-                        </div>
+                                {item}
+                            </motion.li>
+                        ))}
+                    </ul>
+                </div>
+                <div>
+                    <p className="text-lg text-gray-600 font-semibold">{t('transferSyntaxTitle')}</p>
+                    <ul className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
+                        {items2.map((item, i) => (
+                            <motion.li
+                                key={i}
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ delay: i * 0.1 }}
+                                viewport={{ once: true }}
+                            >
+                                {item}
+                            </motion.li>
+                        ))}
+                    </ul>
+                </div>
+                <InfoLine icon={CalendarClock}>
+                    {t('attendanceDeadline')} <span className="font-semibold">{t('deadlineDate')}</span>.
+                </InfoLine>
 
-                        {/* <motion.div
-                            className="relative w-full lg:w-2/3 min-h-[300px] lg:min-h-0 cursor-pointer group"
+                <div className="flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-8 w-full pt-4">
+                    <div className="flex flex-col items-center justify-center gap-4 w-full lg:w-1/3">
+                        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                            <Button
+                                size="lg"
+                                className="text-lg py-6 px-8 hover:bg-destructive transition-colors duration-300"
+                                onClick={handleClick}
+                            >
+                                <LinkIcon className="mr-2 h-5 w-5" />
+                                {t('registerButton')}
+                            </Button>
+                        </motion.div>
+                        <motion.div
+                            className="flex flex-col items-center justify-center"
                             initial={{ opacity: 0, scale: 0.8 }}
                             whileInView={{ opacity: 1, scale: 1 }}
-                            whileHover={{ scale: 1.02 }}
-                            whileTap={{ scale: 0.98 }}
-                            transition={{ delay: 0.3 }}
+                            transition={{ delay: 0.2 }}
                             viewport={{ once: true }}
-                            onClick={() => setIsLightboxOpen(true)}
                         >
-                            <Image src={flyerImage.src} alt={flyerImage.alt} fill className="object-cover rounded-lg" />
-                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
-                                <Search className="h-12 w-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                            </div>
-                        </motion.div> */}
+                            <p className="text-base text-gray-700">{t('scanToRegister')}</p>
+                            <Image src="/QR.png" alt={t('qrAlt')} width={180} height={180} />
+                        </motion.div>
                     </div>
-                </CardContent>
-                
-            </Card>
-            <Card className="col-span-2 w-full overflow-hidden">
-                <CardContent className='p-0'>
-                    <motion.div
-                        className="relative w-full cursor-pointer group aspect-[2/3]"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                        transition={{ delay: 0.3 }}
-                        viewport={{ once: true }}
-                        onClick={() => setIsLightboxOpen(true)}
-                    >
-                        <Image src={flyerImage.srcFull} alt={flyerImage.alt} fill className="object-contain" />
-                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
-                            <Search className="h-12 w-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
-                    </motion.div>
-                    <Lightbox
-                        open={isLightboxOpen}
-                        close={() => setIsLightboxOpen(false)}
-                        slides={[flyerImage]}
-                    />
-                </CardContent>
-            </Card>
-        </>
+                </div>
+            </CardContent>
+        </Card>
     );
 };
 
@@ -207,7 +160,7 @@ const Register = () => {
                 >
                     <Tabs defaultValue="attendance" className="w-full max-w-7xl mx-auto">
                         <div className="flex justify-center mb-6">
-                            <TabsList className="grid w-full max-w-lg grid-cols-2 gap-2 rounded-xl bg-gray-200 p-2">
+                            <TabsList className="w-full max-w-lg rounded-xl bg-gray-200 p-2">
                                 <TabsTrigger value="attendance" className="py-2.5 text-base font-semibold data-[state=active]:bg-primary data-[state=active]:text-white rounded-lg transition-colors">
                                     {t('attendanceTitle')}
                                 </TabsTrigger>
@@ -223,7 +176,7 @@ const Register = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.4, ease: 'easeOut' }}
                                 viewport={{ once: true }}
-                                className="grid grid-cols-1 lg:grid-cols-5 gap-y-8 lg:gap-8 items-start"
+                                className=""
                             >
                                 <AttendanceDetails />
                             </motion.div>

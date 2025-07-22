@@ -15,7 +15,7 @@
   },
   "Hero": {
     "conference": "",
-    "title": "The 3rd Regional Conference of Asia-Oceania Network of Kangaroo Mother Care",
+    "title": "The Third Regional Conference of Asia-Oceania Network of Kangaroo Mother Care",
     "title1": "",
     "title2": "",
     "subtitle": "Da Nang, Vietnam",
@@ -93,14 +93,133 @@
     "subtitle": "Meet the speakers around the world",
     "members": [
       {
-        "title": "PGS.TS.BS",
-        "name": "Trần Thị Hoàng",
+        "title": "MD, PhD, Associate Professor",
+        "name": "Tran Thi Hoang",
         "role": [
-          "Phó giám đốc bệnh viện Phụ sản Nhi Đà Nẵng, Việt Nam",
-          "Phó trưởng Chi hội Sơ sinh Việt Nam",
-          "Chủ tịch Chi hội Hội Nhi khoa Nam Trung Bộ"
+          "Deputy Director, Da Nang Hospital for Women and Children, Vietnam",
+          "Head of Department of Pediatrics, School of Medicine and Pharmacy, The University of Da nang",
+          "Vice Chairman, Vietnam Perinatal-Neonatal Association",
+          "IRG member for WPRO on monitoring implementation of the Action Plan for Healthy Newborns"
         ],
-        "imageUrl": "/committer/1.png"
+        "imageUrl": "/committer/TranThiHoang.png"
+      },
+      {
+        "title": "MD, Dr",
+        "name": "Luong Kim Chi",
+        "role": [
+          "Head of Neonatology Department, Long An International General Hospital, Vietnam"
+        ],
+        "imageUrl": "/committer/LuongKimChi.png"
+      },
+      {
+        "title": "MD, PhD, Dr",
+        "name": "Phan Thi Hang",
+        "role": [
+          "Deputy Director, Hùng Vương Hospital, Vietnam"
+        ],
+        "imageUrl": "/committer/PhanThiHang.png"
+      },
+      {
+        "title": "MSc, Specialist Level II, Dr",
+        "name": "Le Thi Ha",
+        "role": [
+          "Director, Neonatal Center – Vietnam National Children's Hospital",
+          "Executive Committee Member, Vietnam Perinatal–Neonatal Association"
+        ],
+        "imageUrl": "/committer/LeThiHa.png"
+      },
+      {
+        "title": "Specialist Level II, Dr",
+        "name": "Bui Thi Thuy Tien",
+        "role": [
+          "Head of Neonatology Department, Hùng Vương Hospital, Ho Chi Minh City, Vietnam"
+        ],
+        "imageUrl": "/committer/BuiThiThuyTien.png"
+      },
+      {
+        "title": "M.D., F.A.A.P",
+        "name": "Larry Ngo",
+        "role": [
+          "Associate Program Director, Neonatal-Perinatal Fellowship Program Co-Director of the Center for Newborn Research",
+          "NRP Instructor - American Academy of Pediatrics"
+        ],
+        "imageUrl": "/committer/LarryNgo.png"
+      },
+      {
+        "title": "Professor",
+        "name": "Shashi N. Vani",
+        "role": [
+          "Honorary Professor of Pediatrics and Neonatology, Gujarat, India",
+          "Founding Chairperson & Managing Trustee, KMC India Foundation",
+          "Member, Technical Committee on Kangaroo Mother Care (KMC), Ministry of Health and Family Welfare, Government of India"
+        ],
+        "imageUrl": "/committer/ShashiNVani.png"
+      },
+      {
+        "title": "Dr",
+        "name": "Socorro De Leon‑Mendoza",
+        "role": [
+          "Co‑Founder & Executive Officer, KMC Asia–Oceania Network",
+          "Pediatrician and Neonatologist, Philippines"
+        ],
+        "imageUrl": "/committer/SocorroDeLeonMendoza.png"
+      },
+      {
+        "title": "Dr",
+        "name": "Nathalie Charpak",
+        "role": [
+          "Leading Expert in Kangaroo Mother Care",
+          "Founder and Scientific Director, Fundación Canguro, Bogotá, Colombia"
+        ],
+        "imageUrl": "/committer/NathalieCharpak.png"
+      },
+      {
+        "title": "Dr",
+        "name": "Delgermaa Vanya",
+        "role": [
+          "Technical Officer, Maternal Child Health and Quality Safety",
+          "Division of Health Systems and Services, WHO Regional Office for the Western Pacific (WPRO)"
+        ],
+        "imageUrl": "/committer/DelgermaaVanya.png"
+      },
+      {
+        "title": "Professor, Dr",
+        "name": "Milind R. Shah",
+        "role": [
+          "Head of Department, Obstetrics and Gynecology, Gandhi Natha Medical College",
+          "Consultant at Naval Maternity Hospital & Nursing Home, Ashakiran Sperm Bank, Endoscopy & Assisted Reproduction Center, Solapur, India"
+        ],
+        "imageUrl": "/committer/MilindRShah.png"
+      },
+      {
+        "title": "Professor",
+        "name": "Amy Gray",
+        "role": [
+          "Head of Pediatrics Department, University of Melbourne",
+          "Consultant Pediatrician, General Pediatrics Department, Royal Children’s Hospital, Melbourne, Australia"
+        ],
+        "imageUrl": "/committer/AmyGray.png"
+      },
+      {
+        "title": "Professor",
+        "name": "Sylvie Nguyen",
+        "role": [
+          "Professor of Pediatrics",
+          "Head of Pediatric Neurology Department, University of Lille, France",
+          "Former President, French Society of Pediatric Neurology"
+        ],
+        "imageUrl": "/committer/SylvieNguyen.png"
+      },
+      {
+        "title": "Professor, MD, PhD",
+        "name": "Deepa Alay Banker",
+        "role": [
+          "Neonatology Specialist & Kangaroo Care Expert",
+          "Former Professor and Head of Pediatrics and Neonatology Department",
+          "Member, SVP Institute of Medical Education and Research",
+          "Member, UN Mehta Institute of Cardiology and Research Centre"
+        ],
+        "imageUrl": "/committer/DeepaAlayBanker.png"
       }
     ]
   },
@@ -179,7 +298,7 @@
   },
   "Footer": {
     "greeting": "See you at Center for Disease Control (CDC) of Da Nang City | November 27-29, 2025",
-    "conferenceName": "The 3rd Regional Conference of Asia-Oceania Network of Kangaroo Mother Care 2025",
+    "conferenceName": "The Third Regional Conference of Asia-Oceania Network of Kangaroo Mother Care 2025",
     "conferenceDescription": "Bringing together experts and practitioners to advance Kangaroo Mother Care in the Asia-Oceania region.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
