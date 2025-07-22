@@ -34,7 +34,7 @@ const Sponsor = () => {
                     <div className="relative h-full w-full max-w-xl">
                         <Image
                             src="/sponsor.png"
-                            alt={t('alive-thrive')}
+                            alt="sponsor"
                             fill
                             className="object-cover"
                         />

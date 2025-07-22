@@ -15,7 +15,7 @@ const CounterContainer = () => {
                 viewport={{ once: true, amount: 0.5 }}
             >
                 <p className="text-xl lg:text-3xl uppercase text-primary font-semibold">
-                    {t("date")}
+                    {t("remainTitle")}
                 </p>
             </motion.div>
             <motion.div

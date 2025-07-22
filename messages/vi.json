@@ -21,7 +21,7 @@
     "subtitle": "",
     "date": "Đà Nẵng, Việt Nam, 27-29 tháng 11, 2025",
     "registerNow": "Đăng ký ngay",
-    "remainTitle": "Chỉ còn"
+    "remainTitle": "Chương trình diễn ra sau"
   },
   "Countdown": {
     "days": "Ngày",
@@ -145,7 +145,8 @@
     "transferSyntax1": "Nếu bạn chỉ đăng ký tham gia hội nghị chính (28-29/11/25, 650.000 VNĐ hoặc 800.000 VNĐ nếu đăng ký sau 20/9/25): dkhoinghiKMC-hovaten-số tiền đã chuyển. VD: dkhoinghiKMC-Nguyen Thi A-650000",
     "transferSyntax2": "Nếu bạn chỉ đăng ký tham gia hội thảo tiền hội nghị (27/11/25, 500.000 VNĐ hoặc 700.000 VNĐ nếu đăng ký 20/9/25): dktienhnKMC-hovaten. VD: dktienhnKMC-Nguyen Thi A-500000",
     "transferSyntax3": "Nếu bạn tham gia cả hội thảo tiền hội nghị và hội nghị (27,28,29/11/25, 1.150.000 VNĐ hoặc 1.500.000 VNĐ nếu đăng ký 20/9/25): dkKMC-hovaten. VD: dkKMC-Nguyen Thi A-1150000",
-    "flyer": "/flyer.jpg"
+    "flyer": "/flyer-cover-vi.jpg",
+    "flyerFull": "/flyer.png"
   },
   "WhyAttend": {
     "title": "VÌ SAO NÊN THAM DỰ KMC 2025?",
@@ -166,9 +167,10 @@
     "service3_title": "Tour tham quan",
     "service3_description": "Cung cấp các tour tham quan hằng ngày giúp Quý Đại biểu dễ dàng khám phá văn hoá và danh thắng địa phương trong thời gian lưu trú.",
     "companyName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ DU LỊCH BẠN ĐỒNG HÀNH CHÂU Á",
-    "companyDescription": "Với hơn 15 năm kinh nghiệm hoạt động trong lĩnh vực du lịch nội địa và quốc tế, chúng tôi hân hạnh đồng hành cùng Quý Đại biểu trong suốt thời gian tham dự Hội nghị.",
+    "companyDescription": "Với đội ngũ chuyên nghiệp hơn 15 năm kinh nghiệm, Công ty Bạn Đồng Hành Châu Á là đối tác tin cậy trong nhiều sự kiện hội nghị trong nước và quốc tế.",
     "experience": "Chúng tôi cam kết mang đến những dịch vụ chuyên nghiệp, chất lượng cao để đảm bảo chuyến đi của quý vị thoải mái và đáng nhớ.",
-    "support": "Nhằm hỗ trợ nhu cầu đi lại và lưu trú khi tham gia Hội nghị, kính mời Quý Đại biểu đăng ký dịch vụ phù hợp ngay dưới đây",
+    "support": "Nhằm tư vấn và hỗ trợ thuận tiện cho nhu cầu di chuyển và lưu trú của Quý Đại biểu, kính mời Quý Đại biểu đăng ký dịch vụ phù hợp ngay dưới đây. Dịch vụ được cung cấp bởi đơn vị đồng hành là Công ty Du lịch Bạn Đồng Hành Châu Á",
+    "registerSubtitle": "Quý đại biểu có thể <a class='font-bold text-destructive' href='https://www.facebook.com/asiancompaniontravel' target='_blank' rel='noopener noreferrer'>đặt trước</a> các dịch vụ xe, khách sạn và tham quan cần thiết trong thời gian hội nghị. Trong link sẽ có hướng dẫn cách thức lựa chọn dịch vụ và thanh toán trực tiếp cho đơn vị cung cấp.",
     "registerButton": "Đặt dịch vụ ngay",
     "contactTitle": "Thông tin liên hệ",
     "contactPhone1": "0989 070 099",

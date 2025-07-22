@@ -96,7 +96,8 @@ const Services = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-bold text-gray-900">{t("companyName")}</h3>
-            <p className="mt-4 text-gray-700">{t("companyDescription")}</p>
+            <p className="mt-4 text-gray-700">{t("support")}</p>
+            {/* <p className="mt-4 text-gray-700 italic">{t("companyDescription")}</p> */}
           </motion.div>
 
           <motion.div
@@ -105,7 +106,7 @@ const Services = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <p className="text-gray-700 italic">{t("experience")}</p>
+            <p className="text-gray-700 italic">{t("companyDescription")} {t("experience")}</p>
 
           </motion.div>
 
@@ -115,17 +116,18 @@ const Services = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <p className="text-gray-700">{t("support")}</p>
-
+            <p
+              className="text-gray-700"
+              dangerouslySetInnerHTML={{ __html: t.raw("registerSubtitle") }}
+            />
           </motion.div>
-
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {serviceItems.map((item, index) => (
               <ServiceCard key={index} {...item} index={index} />
             ))}
           </div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -151,24 +153,24 @@ const Services = () => {
           </motion.div>
 
 
-            <div className="flex flex-col md:flex-row gap-4 justify-center mx-auto">
-              <ContactInfoItem icon={Phone} index={0}>
-                <p><strong>{t("contactPhone1")}</strong> {t("contactPerson1")}</p>
-              </ContactInfoItem>
-              <ContactInfoItem icon={Phone} index={1}>
-                <p><strong>{t("contactPhone2")}</strong> {t("contactPerson2")}</p>
-              </ContactInfoItem>
-              <ContactInfoItem icon={Mail} index={2}>
-                <a href={`mailto:${t("contactEmail")}`} className="text-blue-600 hover:underline break-all">
-                  {t("contactEmail")}
-                </a>
-              </ContactInfoItem>
-              <ContactInfoItem icon={Facebook} index={3}>
-                <a href={t("facebookUrl")} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline break-all">
-                  {t("facebookHandle")}
-                </a>
-              </ContactInfoItem>
-            </div>
+          <div className="flex flex-col md:flex-row gap-4 justify-center mx-auto">
+            <ContactInfoItem icon={Phone} index={0}>
+              <p><strong>{t("contactPhone1")}</strong> {t("contactPerson1")}</p>
+            </ContactInfoItem>
+            <ContactInfoItem icon={Phone} index={1}>
+              <p><strong>{t("contactPhone2")}</strong> {t("contactPerson2")}</p>
+            </ContactInfoItem>
+            <ContactInfoItem icon={Mail} index={2}>
+              <a href={`mailto:${t("contactEmail")}`} className="text-blue-600 hover:underline break-all">
+                {t("contactEmail")}
+              </a>
+            </ContactInfoItem>
+            <ContactInfoItem icon={Facebook} index={3}>
+              <a href={t("facebookUrl")} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline break-all">
+                {t("facebookHandle")}
+              </a>
+            </ContactInfoItem>
+          </div>
         </div>
       </div>
     </section>

@@ -21,7 +21,7 @@
     "subtitle": "Da Nang, Vietnam",
     "date": "November 27-29, 2025",
     "registerNow": "Register Now",
-    "remainTitle": "Remain"
+    "remainTitle": "Our Conference will start in"
   },
   "Countdown": {
     "days": "Days",
@@ -137,7 +137,8 @@
     "transferSyntax1": "If you only attend the conference (Nov 28-29, 75 USD or 100 USD if registration after 20/9/25): KMCconference-full name-amount transferred eg. KMCconference-Amy Chan-75",
     "transferSyntax2": "If you only attend the workshops (Nov 27, 50 USD or 70 USD if registration after 20/9/25): KMCworkshop-fullname-amount transferred eg. KMCworkshop-Amy Chan-50",
     "transferSyntax3": "If you attend both workshops and conference (Nov 27,28,29, 125 USD or 170 USD if registration after 20/9/25): KMCboth-full name-amount transferred eg. KMCboth-Amy Chan-125",
-    "flyer": "/flyer-en.png"
+    "flyer": "/flyer-cover-en.png",
+    "flyerFull": "/flyer-en.png"
   },
   "WhyAttend": {
     "title": "Why Attend KMC 2025?",
@@ -161,6 +162,7 @@
     "companyDescription": "With over 15 years of experience in the travel industry, we are proud to be a trusted companion of thousands of individual and corporate clients.",
     "experience": "We are committed to providing professional and high-quality services to ensure your trip is comfortable and memorable.",
     "support": "For any transportation needs at the conference location - including airport transfers in Da Nang, local tours, or hotel bookings, please select a service below",
+    "registerSubtitle": "Delegates can <a class='font-bold text-destructive' href='https://www.facebook.com/asiancompaniontravel' target='_blank' rel='noopener noreferrer'>pre-book</a> necessary car, hotel, and tour services during the conference. The link will provide instructions on how to select services and pay directly to the provider.",
     "registerButton": "Book Services Now",
     "contactTitle": "Contact Information",
     "contactPhone1": "0989 070 099",
