@@ -1,21 +1,17 @@
 'use client';
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import CommitteeMember from "./CommitteeMember";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
+import { committeeData } from "@/data/committee";
 
-export interface CommitteeMemberProps {
-    title: string;
-    name: string;
-    role: string[];
-    imageUrl: string;
-    // social?: {
-    //     linkedin?: string;
-    // };
-}
 const Committee = () => {
     const t = useTranslations('Committee');
-    const members = t.raw('members') as CommitteeMemberProps[];
+    const locale = useLocale();
+
+    // Fetching data from a dedicated, locale-aware data file
+    // is more efficient and maintainable than using `t.raw`.
+    const members = committeeData[locale] || committeeData.vi; // Fallback to English
 
     // A type guard to ensure that the data from the translation file is a valid array.
     // This prevents runtime errors if the translation key is missing or malformed.

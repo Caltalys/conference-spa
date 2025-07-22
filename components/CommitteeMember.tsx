@@ -2,13 +2,13 @@
 
 import { Card, CardContent } from "@/components/ui/card"; // ✅ sửa đúng cách
 import Image from "next/image";
-import { CommitteeMemberProps } from "./Committee";
+import { type CommitteeMemberProps } from "@/data/committee";
 
 const CommitteeMember = ({ title, name, role, imageUrl }: CommitteeMemberProps) => {
     return (
         <Card className="group bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
             <CardContent className="p-4 flex items-center gap-4">
-                <div className="relative h-36 w-28 flex-shrink-0">
+                <div className="relative h-40 w-32 flex-shrink-0">
                     <Image
                         src={imageUrl}
                         alt={name}

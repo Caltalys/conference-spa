@@ -38,15 +38,9 @@ const Gallery = () => {
 
   // In a real application, this data would likely come from a CMS or the translation files.
   const galleryImages = [
-    { src: '/bg-cau-vang.jpg', alt: 'Golden Bridge in Da Nang' },
-    { src: '/me-va-be.jpg', alt: 'Mother and child practicing Kangaroo care' },
-    { src: '/kangaroo.jpg', alt: 'Kangaroo care illustration' },
-    { src: '/my-son.jpg', alt: 'Mỹ Sơn Sanctuary' },
-    { src: '/cau-rong.jpg', alt: 'Dragon Bridge in Da Nang' },
-    { src: '/xe-dua-don.jpeg', alt: 'Shuttle bus service for the conference' },
-    { src: '/luu-tru.jpg', alt: 'Accommodation for attendees' },
-    { src: '/tour.jpg', alt: 'Tour of local attractions' },
-    { src: '/bg-hero.jpg', alt: 'Scenic view of Da Nang' },
+    { src: '/gallery/IMG_1542.JPG', alt: 'IMG_1542.JPG' },
+    { src: '/gallery/IMG_1632.JPG', alt: 'IMG_1632.JPG' },
+    { src: '/gallery/IMG_1609.JPG', alt: 'IMG_1609.JPG' }
   ];
 
   return (
