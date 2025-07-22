@@ -28,14 +28,14 @@ const Committee = () => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.1 }}
                 variants={staggerContainer}
-                className="mx-auto w-full px-4 sm:px-6 lg:px-8">
+                className="mx-auto w-full sm:px-6 lg:px-8">
                 <motion.div variants={fadeInUp} className="mb-8 text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl uppercase">{t('title')}</h2>
                     <p className="mt-4 text-lg text-white">
                         {t('subtitle')}
                     </p>
                 </motion.div>
-                <motion.div  className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <motion.div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     {members.map((member) => (
                         <motion.div variants={staggerContainer}
                             key={member.name}

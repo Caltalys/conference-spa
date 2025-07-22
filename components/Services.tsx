@@ -123,12 +123,6 @@ const Services = () => {
             />
           </motion.div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {serviceItems.map((item, index) => (
-              <ServiceCard key={index} {...item} index={index} />
-            ))}
-          </div>
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -153,6 +147,14 @@ const Services = () => {
             </Link>
           </motion.div>
 
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {serviceItems.map((item, index) => (
+              <ServiceCard key={index} {...item} index={index} />
+            ))}
+          </div>
+
+
+
 
           <div className="flex flex-col md:flex-row gap-4 justify-center mx-auto">
             <ContactInfoItem icon={Phone} index={0}>
@@ -167,8 +169,8 @@ const Services = () => {
               </a>
             </ContactInfoItem>
             <ContactInfoItem icon={SiFacebook} index={3}>
-              <a href={t("facebookUrl")} target="_blank" rel="noopener noreferrer" 
-              className="text-blue-600 hover:underline break-all">
+              <a href={t("facebookUrl")} target="_blank" rel="noopener noreferrer"
+                className="text-blue-600 hover:underline break-all">
                 {t("facebookHandle")}
               </a>
             </ContactInfoItem>
