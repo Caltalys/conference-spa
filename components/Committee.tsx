@@ -22,16 +22,16 @@ const Committee = () => {
     }
 
     return (
-        <section id="ban-to-chuc" className="scroll-mt-16 pt-16">
+        <section id="ban-to-chuc" className="scroll-mt-16 top-wave bottom-wave bg-primary">
             <motion.div 
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.1 }}
                 variants={staggerContainer}
-                className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                className="mx-auto w-full px-4 sm:px-6 lg:px-8">
                 <motion.div variants={fadeInUp} className="mb-8 text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">{t('title')}</h2>
-                    <p className="mt-4 text-lg text-gray-600">
+                    <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl uppercase">{t('title')}</h2>
+                    <p className="mt-4 text-lg text-white">
                         {t('subtitle')}
                     </p>
                 </motion.div>

@@ -2,7 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Facebook, Link as LinkIcon, Mail, Phone } from "lucide-react";
+import { Link as LinkIcon, Mail, Phone } from "lucide-react";
+import { SiFacebook } from '@icons-pack/react-simple-icons';
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -56,7 +57,7 @@ const ContactInfoItem = ({ icon: Icon, children, index }) => (
     className="flex items-start gap-3"
   >
     <Icon className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
-    <div className="text-gray-700">{children}</div>
+    <div className="text-gray-700 pt-1">{children}</div>
   </motion.div>
 );
 
@@ -165,8 +166,9 @@ const Services = () => {
                 {t("contactEmail")}
               </a>
             </ContactInfoItem>
-            <ContactInfoItem icon={Facebook} index={3}>
-              <a href={t("facebookUrl")} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline break-all">
+            <ContactInfoItem icon={SiFacebook} index={3}>
+              <a href={t("facebookUrl")} target="_blank" rel="noopener noreferrer" 
+              className="text-blue-600 hover:underline break-all">
                 {t("facebookHandle")}
               </a>
             </ContactInfoItem>
