@@ -107,9 +107,9 @@ const AttendanceDetails = () => {
                     {t('attendanceDeadline')} <span className="font-semibold">{t('deadlineDate')}</span>.
                 </InfoLine>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center pt-4">
+                <div className="flex flex-col justify-center items-center space-y-4">
                     <motion.div
-                        className="flex justify-center lg:justify-end"
+                        className="flex justify-center items-center lg:justify-end"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
@@ -122,15 +122,15 @@ const AttendanceDetails = () => {
                     </motion.div>
 
                     <motion.div
-                        className="flex flex-col items-center justify-center lg:items-start"
+                        className="flex flex-col items-center justify-center"
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.2 }}
                         viewport={{ once: true }}
                     >
-                        <p className="text-base text-gray-700">{t('scanToRegister')}</p>
-                        <Image src="/QR.png" alt={t('qrAlt')} width={180} height={180} />
+                        <p className="text-gray-700">{t('scanToRegister')}</p>
                     </motion.div>
+                    <Image src="/QR.png" alt={t('qrAlt')} width={180} height={180} />
                 </div>
             </CardContent>
         </Card>
