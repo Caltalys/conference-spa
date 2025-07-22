@@ -1,15 +1,22 @@
 'use client';
 
+import { type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { CalendarClock, Link as LinkIcon } from "lucide-react";
+import { CalendarClock, Link as LinkIcon, type LucideIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import "yet-another-react-lightbox/styles.css";
 
-const SectionHeader = ({ title, subtitle }) => (
+interface SectionHeaderProps {
+    title: string;
+    subtitle: string;
+}
+
+const SectionHeader = ({ title, subtitle }: SectionHeaderProps) => (
     <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +29,12 @@ const SectionHeader = ({ title, subtitle }) => (
     </motion.div>
 );
 
-const InfoLine = ({ icon: Icon, children }) => (
+interface InfoLineProps {
+    icon: LucideIcon;
+    children: ReactNode;
+}
+
+const InfoLine = ({ icon: Icon, children }: InfoLineProps) => (
     <div className="flex items-start gap-4">
         <Icon className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" aria-hidden="true" />
         <p className="text-base text-gray-700">{children}</p>
@@ -47,8 +59,23 @@ const ScientificReportInfo = () => {
     );
 };
 
+const AnimatedList = ({ items }: { items: string[] }) => (
+    <ul className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
+        {items.map((item, i) => (
+            <motion.li
+                key={item}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+            >
+                {item}
+            </motion.li>
+        ))}
+    </ul>
+);
 
-
+// ... (rest of the file)
 const AttendanceDetails = () => {
     const t = useTranslations('Register');
     const items1 = [
@@ -64,73 +91,46 @@ const AttendanceDetails = () => {
         t('transferSyntax3')
     ];
 
-    const handleClick = () => {
-        window.open('https://forms.gle/eWMEoPqUEAa9TD6K9', '_blank');
-    };
-
     return (
         <Card className="flex flex-col h-full">
             <CardContent className='space-y-6 pt-6'>
                 <p className="text-lg text-gray-600 italic">{t('attendanceDescription')}</p>
                 <div>
                     <p className="text-lg text-gray-600 font-semibold">{t('attendanceFeeTitle')}</p>
-                    <ul className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
-                        {items1.map((item, i) => (
-                            <motion.li
-                                key={i}
-                                initial={{ opacity: 0, x: -20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ delay: i * 0.1 }}
-                                viewport={{ once: true }}
-                            >
-                                {item}
-                            </motion.li>
-                        ))}
-                    </ul>
+                    <AnimatedList items={items1} />
                 </div>
                 <div>
                     <p className="text-lg text-gray-600 font-semibold">{t('transferSyntaxTitle')}</p>
-                    <ul className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
-                        {items2.map((item, i) => (
-                            <motion.li
-                                key={i}
-                                initial={{ opacity: 0, x: -20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ delay: i * 0.1 }}
-                                viewport={{ once: true }}
-                            >
-                                {item}
-                            </motion.li>
-                        ))}
-                    </ul>
+                    <AnimatedList items={items2} />
                 </div>
                 <InfoLine icon={CalendarClock}>
                     {t('attendanceDeadline')} <span className="font-semibold">{t('deadlineDate')}</span>.
                 </InfoLine>
 
-                <div className="flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-8 w-full pt-4">
-                    <div className="flex flex-col items-center justify-center gap-4 w-full lg:w-1/3">
-                        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                            <Button
-                                size="lg"
-                                className="text-lg py-6 px-8 hover:bg-destructive transition-colors duration-300"
-                                onClick={handleClick}
-                            >
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center pt-4">
+                    <motion.div
+                        className="flex justify-center lg:justify-end"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        <Button asChild size="lg" className="text-lg py-6 px-8 hover:bg-destructive transition-colors duration-300">
+                            <Link href="https://forms.gle/eWMEoPqUEAa9TD6K9" target="_blank" rel="noopener noreferrer">
                                 <LinkIcon className="mr-2 h-5 w-5" />
                                 {t('registerButton')}
-                            </Button>
-                        </motion.div>
-                        <motion.div
-                            className="flex flex-col items-center justify-center"
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.2 }}
-                            viewport={{ once: true }}
-                        >
-                            <p className="text-base text-gray-700">{t('scanToRegister')}</p>
-                            <Image src="/QR.png" alt={t('qrAlt')} width={180} height={180} />
-                        </motion.div>
-                    </div>
+                            </Link>
+                        </Button>
+                    </motion.div>
+
+                    <motion.div
+                        className="flex flex-col items-center justify-center lg:items-start"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.2 }}
+                        viewport={{ once: true }}
+                    >
+                        <p className="text-base text-gray-700">{t('scanToRegister')}</p>
+                        <Image src="/QR.png" alt={t('qrAlt')} width={180} height={180} />
+                    </motion.div>
                 </div>
             </CardContent>
         </Card>
