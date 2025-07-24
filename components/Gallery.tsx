@@ -41,7 +41,10 @@ const Gallery = () => {
     { src: '/gallery/IMG_1542.JPG', alt: 'IMG_1542.JPG' },
     { src: '/gallery/IMG_1632.JPG', alt: 'IMG_1632.JPG' },
     { src: '/gallery/IMG_1609.JPG', alt: 'IMG_1609.JPG' },
-    { src: '/gallery/_ATA6354.JPG', alt: '_ATA6354.JPG' }
+    { src: '/gallery/_ATA6354.JPG', alt: '_ATA6354.JPG' },
+    { src: '/gallery/IMG_1594.JPG', alt: 'IMG_1594.JPG' },
+    { src: '/gallery/IMG_1574.JPG', alt: 'IMG_1574.JPG' },
+    { src: '/gallery/IMG_1563.JPG', alt: 'IMG_1563.JPG' }
   ];
 
   return (

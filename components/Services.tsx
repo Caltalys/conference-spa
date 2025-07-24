@@ -157,12 +157,15 @@ const Services = () => {
 
 
           <div className="flex flex-col md:flex-row gap-4 justify-center mx-auto">
-            <ContactInfoItem icon={Phone} index={0}>
-              <p><strong>{t("contactPhone1")}</strong> {t("contactPerson1")}</p>
-            </ContactInfoItem>
+            {t("contactPhone1") && (
+              <ContactInfoItem icon={Phone} index={0}>
+                <p><strong>{t("contactPhone1")}</strong> {t("contactPerson1")}</p>
+              </ContactInfoItem>
+            )
+            }
             <ContactInfoItem icon={Phone} index={1}>
-              <p><strong>{t("contactPhone2")}</strong> {t("contactPerson2")}</p>
-            </ContactInfoItem>
+                  <p><strong>{t("contactPhone2")}</strong> {t("contactPerson2")}</p>
+                </ContactInfoItem>
             <ContactInfoItem icon={Mail} index={2}>
               <a href={`mailto:${t("contactEmail")}`} className="text-blue-600 hover:underline break-all">
                 {t("contactEmail")}

@@ -154,16 +154,16 @@
     "registerSubtitle": "You may <a class='font-bold text-destructive' href='https://forms.gle/3bQ9ztbrVNMMZzhq9' target='_blank' rel='noopener noreferrer'>click here</a> to pre-book transportation, hotel rooms, and sightseeing services during the conference period. The link includes detailed instructions on how to select services and make direct payment to the service provider.",
     "registerButton": "Book Services Now",
     "contactTitle": "Contact Information",
-    "contactPhone1": "0989 070 099",
-    "contactPerson1": " (Ms. Trang)",
+    "contactPhone1": "",
+    "contactPerson1": "",
     "contactPhone2": "0336 548 705",
-    "contactPerson2": " (Ms. Như)",
-    "contactEmail": "director@actravel.com.vn",
+    "contactPerson2": " (Ms. Stella)",
+    "contactEmail": "sales1@actravel.com.vn",
     "facebookUrl": "https://www.facebook.com/asiancompaniontravel",
     "facebookHandle": "Asian Companion Travel"
   },
   "Gallery": {
-    "title": "Thư viện ảnh",
+    "title": "Gallery",
     "subtitle": "See you at Center for Disease Control (CDC) of Da Nang City | November 27-29, 2025"
   },
   "Footer": {
