@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 
-const FlyerImageItem = () => {
+export const FlyerImageItem = () => {
     const t = useTranslations('Register');
 
     const flyerFullSrc = t('flyerFull');

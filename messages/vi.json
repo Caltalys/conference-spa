@@ -30,13 +30,13 @@
     "seconds": "Giây"
   },
   "ConferenceInfo": {
-    "title": "Tổng quan hội nghị",
+    "title": "Giới thiệu",
     "conferenceNameLabel": "Tên hội nghị",
     "conferenceNameValue": "Hội nghị mạng lưới chăm sóc trẻ sinh non bằng phương pháp Kangaroo Châu Á - Châu Đại Dương Lần thứ 3",
     "timeLabel": "Thời gian",
     "timeValue": "Ngày 27 - 29 tháng 11 năm 2025",
     "locationLabel": "Địa điểm",
-    "locationValue": "Trung tâm Kiểm soát Bệnh tật (CDC) thành phố Đà Nẵng, 118 Lê Đình Lý, Phường Thạc Gián, Quận Thanh Khê, Thành phố Đà Nẵng, Việt Nam",
+    "locationValue": "Trung tâm Kiểm soát Bệnh tật (CDC) thành phố Đà Nẵng, 118 Lê Đình Lý, Phường Thanh Khê, Thành phố Đà Nẵng, Việt Nam",
     "attendanceLabel": "Đối tượng tham dự",
     "attendanceValue": "Hội nghị dự kiến đón tiếp khoảng 300 đại biểu, trong đó có nhiều báo cáo viên là các chuyên gia trong nước và quốc tế với các chủ đề chăm sóc từ trước sinh đến sau sinh cho trẻ sinh non, nhẹ cân bằng phương pháp Kangaroo và theo dõi lâu dài.",
     "attendanceValue1": "",
@@ -115,7 +115,7 @@
     "qrAlt": "Mã QR để đăng ký tham dự",
     "attendanceDeadline": "Hạn chót đăng ký: ",
     "deadlineDate": "31/10/2025",
-    "attendanceDescription": "Hội nghị sẽ tập trung vào việc cập nhật kiến thức và nâng cao kỹ năng trong công tác chăm sóc trẻ sinh non, nhẹ cân bằng phương pháp Kangaroo - một phương pháp đã được chứng minh giảm tử vong, cải thiện sức khỏe và sự phát triển toàn diện của trẻ sinh non, nhẹ cân. Hội nghị hân hạnh đón tiếp các chuyên gia lâm sàng, nhà nghiên cứu từ nhiều quốc gia trên thế giới đến tham gia chia sẻ những kinh nghiệm quý báu cũng như các kết quả nghiên cứu mới nhất về phương pháp này. Đây sẽ là một sự kiện ý nghĩa, góp phần nâng cao chất lượng chăm sóc trẻ sinh non, giảm tỉ lệ tử vong và bệnh tật ở trẻ sơ sinh, đồng thời lan toả, thúc đẩy mạnh mẽ việc áp dụng rộng rãi phương pháp Kangaroo trong cộng đồng y tế khu vực.",
+    "attendanceDescription": "Hội nghị sẽ tập trung vào việc cập nhật kiến thức và nâng cao kỹ năng trong công tác chăm sóc trẻ sinh non, nhẹ cân bằng phương pháp Kangaroo - một phương pháp đã được chứng minh giảm tử vong, cải thiện sức khỏe và sự phát triển toàn diện của trẻ sinh non, nhẹ cân. Hội nghị hân hạnh đón tiếp các chuyên gia lâm sàng, nhà nghiên cứu từ nhiều quốc gia trên thế giới đến tham gia chia sẻ những kinh nghiệm quý báu cũng như các kết quả nghiên cứu mới nhất về phương pháp này. Đây sẽ là một sự kiện ý nghĩa, góp phần nâng cao chất lượng chăm sóc trẻ sơ sinh, trẻ sinh non, giảm tỉ lệ tử vong và bệnh tật ở trẻ sơ sinh, đồng thời lan toả, thúc đẩy mạnh mẽ việc áp dụng rộng rãi phương pháp Kangaroo trong cộng đồng y tế khu vực.",
     "attendanceFeeTitle": "Đại biểu đăng ký tham dự vui lòng chuyển khoản theo thông tin:",
     "attendanceFeeBankAccountName": "Hội Nhi khoa TP Đà Nẵng",
     "attendanceFeeBankAccountNumber": "2006201009392",
@@ -123,8 +123,8 @@
     "attendanceFeeSwiftCode": "VBAAVNVX522",
     "transferSyntaxTitle": "Cú pháp chuyển khoản",
     "transferSyntax1": "Nếu bạn chỉ đăng ký tham gia hội nghị chính (28-29/11/25, 650.000 VNĐ hoặc 800.000 VNĐ nếu đăng ký sau 20/9/25): dkhoinghiKMC-hovaten-số tiền đã chuyển. VD: dkhoinghiKMC-Nguyen Thi A-650000",
-    "transferSyntax2": "Nếu bạn chỉ đăng ký tham gia hội thảo tiền hội nghị (27/11/25, 500.000 VNĐ hoặc 700.000 VNĐ nếu đăng ký 20/9/25): dktienhnKMC-hovaten. VD: dktienhnKMC-Nguyen Thi A-500000",
-    "transferSyntax3": "Nếu bạn tham gia cả hội thảo tiền hội nghị và hội nghị (27,28,29/11/25, 1.150.000 VNĐ hoặc 1.500.000 VNĐ nếu đăng ký 20/9/25): dkKMC-hovaten. VD: dkKMC-Nguyen Thi A-1150000",
+    "transferSyntax2": "Nếu bạn chỉ đăng ký tham gia hội thảo tiền hội nghị (27/11/25, 500.000 VNĐ hoặc 700.000 VNĐ nếu đăng ký sau 20/9/25): dktienhnKMC-hovaten. VD: dktienhnKMC-Nguyen Thi A-500000",
+    "transferSyntax3": "Nếu bạn tham gia cả hội thảo tiền hội nghị và hội nghị (27,28,29/11/25, 1.150.000 VNĐ hoặc 1.500.000 VNĐ nếu đăng ký sau 20/9/25): dkKMC-hovaten. VD: dkKMC-Nguyen Thi A-1150000",
     "flyer": "/flyer-cover-vi.jpg",
     "flyerFull": "/flyer.png"
   },
@@ -135,7 +135,8 @@
     "feature2_title": "Giao lưu – Chia sẻ kinh nghiệm thực tiễn",
     "feature2_desc": "Sự kiện hân hạnh đón tiếp các chuyên gia và nhà nghiên cứu từ nhiều quốc gia trên thế giới đến chia sẻ kinh nghiệm thực tiễn và các nghiên cứu mới nhất về phương pháp Kangaroo. Đây là cơ hội quý báu để xây dựng mạng lưới chuyên môn và thúc đẩy hợp tác trong lĩnh vực chăm sóc sơ sinh.",
     "feature3_title": "Lan tỏa tác động tích cực đến cộng đồng y tế",
-    "feature3_desc": "Hội nghị góp phần nâng cao chất lượng chăm sóc trẻ sinh non, giảm tỷ lệ tử vong và bệnh tật ở trẻ sơ sinh. Đồng thời, sự kiện hướng đến việc lan tỏa và thúc đẩy mạnh mẽ việc áp dụng rộng rãi phương pháp Kangaroo trong hệ thống y tế khu vực và quốc tế."
+    "feature3_desc": "Hội nghị góp phần nâng cao chất lượng chăm sóc trẻ sinh non, giảm tỷ lệ tử vong và bệnh tật ở trẻ sơ sinh. Đồng thời, sự kiện hướng đến việc lan tỏa và thúc đẩy mạnh mẽ việc áp dụng rộng rãi phương pháp Kangaroo trong hệ thống y tế khu vực và quốc tế.",
+    "flyer": "/flyer-cover-vi.jpg"
   },
   "Services": {
     "title": "Dịch vụ lưu trú & tham quan",
@@ -175,7 +176,7 @@
     "email": "kmcdanang2025@gmail.com",
     "phone": "(+84) 0905 662 186",
     "department": "Khoa Sơ sinh Cấp cứu – Hồi sức tích cực & Sơ sinh bệnh lý, Bệnh viện Phụ sản – Nhi Đà Nẵng",
-    "address": "402 Lê Văn Hiến, Phường Khuê Mỹ, Quận Ngũ Hành Sơn, TP. Đà Nẵng",
+    "address": "402 Lê Văn Hiến, Phường Ngũ Hành Sơn, TP. Đà Nẵng",
     "copyright": "KMC 2025 VIỆT NAM – ĐÀ NẴNG. Mọi quyền được bảo lưu.",
     "sponsor": "Đơn vị tài trợ",
     "sponsorTitle": "Hội nghị trân trọng cảm ơn sự đồng hành của Đại sứ quán Ireland tại Việt Nam thông qua Dự án Alive & Thrive"

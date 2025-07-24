@@ -22,7 +22,7 @@ export default function Home() {
       <CounterContainer />
       <ConferenceInfo />
       {/* <Agenda /> */}
-      <FlyerImage />
+      {/* <FlyerImage /> */}
       <Committee />
       <Register />
       <WhyAttendKMC />

@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight } from "@/lib/animations";
 import { cn } from "@/lib/utils";
+import { FlyerImageItem } from "./FlyerImage";
 
 // Sub-component for the section title
 export const SectionHeader = ({ title, textColor }) => (
@@ -33,7 +34,7 @@ const InfoItem = ({ icon: Icon, label, children }) => (
 
 // Sub-component for download buttons
 const DownloadButtons = ({ t }) => (
-  <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 pt-4">
+  <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 pt-16 w-full items-center justify-center">
     {/* Replaced `whileHover`/`whileTap` with `hover`/`press` */}
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
       <Button asChild size="xl" variant="destructive" className="text-xl animate-bounce">
@@ -43,6 +44,7 @@ const DownloadButtons = ({ t }) => (
         </Link>
       </Button>
     </motion.div>
+    
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
       <Button asChild variant="outline" size="xl" className="text-xl">
         <Link href="/ThuNgo.pdf" download="ThuNgo.pdf" >
@@ -72,7 +74,7 @@ const ConferenceInfo = () => {
   ].filter(Boolean);
 
   return (
-    <section id="tong-quan" className="scroll-mt-16 top-wave bottom-wave bg-primary">
+    <section id="tong-quan" className="scroll-mt-16 top-wave bg-primary">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -100,11 +102,10 @@ const ConferenceInfo = () => {
                 </InfoItem>
               ))}
             </dl>
-            <DownloadButtons t={t} />
           </motion.div>
 
           {/* Right Column (Map) */}
-          <motion.div variants={fadeInRight} className="relative mt-12 lg:mt-0">
+          <motion.div variants={fadeInRight} className="relative my-16 lg:mt-0">
             <Link
               href="https://www.google.com/maps/place/Trung+T%C3%A2m+Ki%E1%BB%83m+So%C3%A1t+B%E1%BB%87nh+T%E1%BA%ADt+(CDC)+%C4%90%C3%A0+N%E1%BA%B5ng/@16.0542243,108.2090089,17z/data=!3m1!4b1!4m6!3m5!1s0x3142192e9a35a1bf:0x57e8e45b501ffea2!8m2!3d16.0542243!4d108.2115838!16s%2Fg%2F11hz3jv49q?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
@@ -122,6 +123,8 @@ const ConferenceInfo = () => {
             </Link>
           </motion.div>
         </div>
+        <FlyerImageItem />
+        <DownloadButtons t={t} />
       </motion.div>
     </section>
   );

@@ -67,10 +67,10 @@ const WhyAttendKMC = () => {
         </div>
         <div className="relative w-full max-w-[480px] h-96 md:h-auto mx-auto">
           <Image
-            src="/Skin-to-Skin.jpg"
+            src={t('flyer')}
             alt="Why Attend KMC"
             fill
-            className="object-cover rounded-md shadow-lg"
+            className="object-contain rounded-md shadow-lg"
           />
         </div>
       </div>
