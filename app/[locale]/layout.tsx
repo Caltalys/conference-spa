@@ -21,10 +21,41 @@ type Params = Promise<{ locale: string }>;
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Hero' });
+  const t = await getTranslations({ locale, namespace: 'Footer' });
+
+  const siteName = t('conferenceName');
+  const description = t('conferenceDescription');
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://kmcdanang2025.com';
+
   return {
-    title: t('title'),
-    description: t('conference'),
+    title: {
+      default: siteName,
+      template: `%s | ${siteName}`,
+    },
+    description: description,
+    metadataBase: new URL(siteUrl),
+    openGraph: {
+      title: siteName,
+      description: description,
+      url: '/',
+      siteName: 'KMC 2025',
+      images: [
+        {
+          url: '/logo.png', // Đường dẫn tương đối với metadataBase
+          width: 512, // TODO: Cập nhật chiều rộng thực tế của logo
+          height: 512, // TODO: Cập nhật chiều cao thực tế của logo
+          alt: 'KMC 2025 Conference Logo',
+        },
+      ],
+      locale: locale === 'vi' ? 'vi_VN' : 'en_US',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: siteName,
+      description: description,
+      images: [`/logo.png`], // Đường dẫn tương đối với metadataBase
+    },
   };
 }
 
