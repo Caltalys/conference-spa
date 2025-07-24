@@ -180,6 +180,16 @@
     "copyright": "KMC 2025 VIETNAM – DA NANG. All rights reserved.",
     "sponsor": "Sponsor",
     "sponsorTitle": "The Conference Organizing Committee sincerely thanks the Embassy of Ireland in Vietnam for their valued support through the Alive & Thrive project"
-
+  },
+  "WelcomeMessage": {
+    "title": "WELCOME MESSAGE",
+    "subtitle": "THE THIRD REGIONAL CONFERENCE OF ASIA-OCEANIA NETWORK OF KANGAROO MOTHER CARE",
+    "locationDate": "Da Nang City, November 2025",
+    "salutation": "Dear Delegates, Experts, and distinguished guests,",
+    "intro": "We warmly welcome you to the <strong>Third Regional Conference of the Asia-Oceania Network of Kangaroo Mother Care</strong>, held in <strong>Da Nang City</strong> – a place where the majestic beauty of nature, with its long, white sandy beaches and clear blue waters, meets the dynamic and modern pace of a young city in Central Vietnam.",
+    "slogan": "This year's conference carries a profound message: <strong>“Early and continuous Kangaroo Mother Care - Warmth of love, for a healthy future”</strong>",
+    "paragraph1": "The Kangaroo method - initiated as early as possible after birth and maintained continuously - has been proven to be an effective, comprehensive, and humane strategy integrated into the care of premature and low-birth-weight infants. This method not only helps reduce neonatal mortality rates but also promotes holistic development and strengthens the emotional bond between mother and child.",
+    "paragraph2": "This conference is a special occasion to bring together leading experts from the region and around the world in the field of neonatal care, especially for premature and low-birth-weight infants. It serves as a prestigious scientific forum to update the latest evidence, share practical experiences, and foster professional collaboration towards the sustainable expansion of the Kangaroo method in healthcare facilities - from central to local levels. Through this, we join hands to build a strong support network, aiming for a healthier future for children throughout the region.",
+    "closing": "<strong>We wish all delegates good health, success, and memorable experiences in the friendly and hospitable city of Da Nang!</strong>"
   }
 }

@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 import { FlyerImageItem } from "./FlyerImage";
+import { WelcomeMessageItem } from "./WelcomeMessage";
 
 // Sub-component for the section title
 export const SectionHeader = ({ title, textColor }) => (
@@ -80,10 +81,13 @@ const ConferenceInfo = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
-        className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8"
+        className="mx-auto max-w-7xl p-4 sm:p-6 md:p-8"
       >
         <SectionHeader title={t('title')} textColor={'text-white'} />
-        <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-16">
+
+        <WelcomeMessageItem />
+
+        <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-16 py-8">
 
           {/* Left Column */}
           <motion.div variants={staggerContainer} className="space-y-8">

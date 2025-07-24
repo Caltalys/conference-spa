@@ -4,14 +4,12 @@ import Committee from "@/components/Committee";
 import ConferenceInfo from "@/components/ConferenceInfo";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
 import Gallery from "@/components/Gallery";
 import WhyAttendKMC from "@/components/WhyAttendKMC";
 import Register from "@/components/Register";
 import Services from "@/components/Services";
 import CounterContainer from "@/components/CounterContainer";
 import Sponsor from "@/components/Sponsor";
-import FlyerImage from "@/components/FlyerImage";
 
 export default function Home() {
   return (
@@ -21,6 +19,7 @@ export default function Home() {
       <Banner />
       <CounterContainer />
       <ConferenceInfo />
+      {/* <WelcomeMessage /> */}
       {/* <Agenda /> */}
       {/* <FlyerImage /> */}
       <Committee />
