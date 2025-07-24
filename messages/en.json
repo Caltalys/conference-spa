@@ -1,7 +1,7 @@
 {
   "Header": {
     "home": "Home",
-    "info": "Overview",
+    "info": "Introduction",
     "agenda": "Agenda",
     "committee": "Speakers",
     "register": "Register",
@@ -30,7 +30,7 @@
     "seconds": "Seconds"
   },
   "ConferenceInfo": {
-    "title": "Conference Overview",
+    "title": "Conference Introduction",
     "conferenceNameLabel": "Conference Name",
     "conferenceNameValue": "The Third Regional Conference of Asia-Oceania Network of Kangaroo Mother Care 2025",
     "timeLabel": "Time",

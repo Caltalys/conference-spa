@@ -26,14 +26,17 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
+type Params = Promise<{ locale: string }>;
+
 type Props = {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Params;
 };
 
 // --- Improved Metadata Generation ---
-export async function generateMetadata({ params: { locale } }: Omit<Props, 'children'>): Promise<Metadata> {
+export async function generateMetadata({ params }: Omit<Props, 'children'>): Promise<Metadata> {
   // Fetch translations from multiple namespaces if needed
+  const { locale } = await params
   const t = await getTranslations({ locale });
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://kmcdanang2025.com';
   
@@ -102,9 +105,10 @@ export async function generateMetadata({ params: { locale } }: Omit<Props, 'chil
 // --- Improved RootLayout ---
 export default async function RootLayout({
   children,
-  params: { locale }
-}: Readonly<Props>) {
-  // IMPROVEMENT: This validation is good, but ideally should be in middleware.
+  params,
+}: Props) {
+  const { locale } = await params
+  // IMPROVEMENT: This validation is good, but ideally should be in middleware for edge cases.
   // For now, it's fine to keep it here as a safeguard.
   if (!locales.includes(locale)) {
     notFound();
