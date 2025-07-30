@@ -5,20 +5,24 @@ import { type CommitteeMemberProps } from "@/data/committee";
 const CommitteeMember = ({ title, name, role, imageUrl }: CommitteeMemberProps) => {
     return (
         <Card className="group bg-white shadow-lg h-full p-0 rounded-3xl">
-            <CardContent className="flex h-full p-0">
-                <Image
-                    src={imageUrl}
-                    alt={name}
-                    className="w-1/3 object-cover aspect-[3/4] flex-shrink-0 rounded-3xl"
-                    width={300}  // Sử dụng giá trị có tỷ lệ 3:4
-                    height={400} // để khớp với class aspect-[3/4]
-                    sizes="(max-width: 768px) 33vw, 17vw"
-                />
-                <div className="w-2/3 flex flex-col p-4">
+            {/* On mobile, layout is vertical (flex-col). On medium screens and up, it's horizontal (md:flex-row). */}
+            <CardContent className="flex flex-col md:flex-row h-full p-0">
+                {/* Image container: full-width on mobile, 1/3 on desktop. Adjusted aspect ratio for mobile. */}
+                <div className="relative w-full md:w-1/3 aspect-[4/3] md:aspect-[3/4] flex-shrink-0">
+                    <Image
+                        src={imageUrl}
+                        alt={name}
+                        className="object-cover rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none"
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                </div>
+                {/* Text content container: full-width on mobile, 2/3 on desktop. */}
+                <div className="w-full md:w-2/3 flex flex-col p-4">
                     <p className="font-semibold text-gray-900 text-md">{title}</p>
                     <h4 className="font-bold text-xl text-gray-900">{name}</h4>
                     {role.length > 0 && (
-                        <ul className="mt-2 list-disc list-inside space-y-1 text-gray-800">
+                        <ul className="mt-2 list-disc list-inside space-y-1 text-gray-800 text-sm">
                             {role.map((item, index) => (
                                 <li key={`${item}-${index}`}>{item}</li>
                             ))}

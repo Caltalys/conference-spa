@@ -38,7 +38,7 @@ const Committee = () => {
                         {t('subtitle')}
                     </p>
                 </motion.div>
-                <motion.div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <motion.div className="grid grid-cols-1 gap-8 md:grid-cols-2 px-4">
                     {sortedMembers.map((member) => (
                         <motion.div variants={staggerContainer}
                             key={member.name}
