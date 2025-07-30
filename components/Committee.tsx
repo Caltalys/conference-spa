@@ -26,30 +26,30 @@ const Committee = () => {
 
     return (
         <section id="ban-to-chuc" className="scroll-mt-16 pt-16 bottom-wave bg-primary">
-            <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.1 }}
-                variants={staggerContainer}
-                className="mx-auto w-full p-4 sm:p-6 lg:p-8">
-                <motion.div variants={fadeInUp} className="mb-8 text-center">
+            <div className="mx-auto w-full p-4 sm:p-6 lg:p-8">
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    variants={fadeInUp}
+                    className="mb-8 text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl uppercase">{t('title')}</h2>
                     <p className="mt-4 text-lg text-white">
                         {t('subtitle')}
                     </p>
                 </motion.div>
                 {/* This container will stagger its children (the cards) */}
-                <motion.div variants={staggerContainer} className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     {sortedMembers.map((member) => (
                         <motion.div variants={fadeInUp}
-                            key={member.name}
+                            key={member.order}
                             whileHover={{ y: -5, transition: { duration: 0.2 } }}
                         >
                             <CommitteeMember {...member} />
                         </motion.div>
                     ))}
-                </motion.div>
-            </motion.div>
+                </div>
+            </div>
         </section>
     )
 }
