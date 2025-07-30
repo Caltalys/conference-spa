@@ -21,9 +21,12 @@ const Committee = () => {
         return null; // Render nothing if the data is invalid
     }
 
+    // Sort members by the 'order' property. Fallback to a large number if order is not defined.
+    const sortedMembers = [...members].sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+
     return (
         <section id="ban-to-chuc" className="scroll-mt-16 pt-16 bottom-wave bg-primary">
-            <motion.div 
+            <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.1 }}
@@ -36,7 +39,7 @@ const Committee = () => {
                     </p>
                 </motion.div>
                 <motion.div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                    {members.map((member) => (
+                    {sortedMembers.map((member) => (
                         <motion.div variants={staggerContainer}
                             key={member.name}
                             whileHover={{ y: -5, transition: { duration: 0.2 } }}

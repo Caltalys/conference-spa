@@ -14,7 +14,7 @@ const CounterContainer = () => {
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.5 }}
             >
-                <p className="text-xl lg:text-3xl uppercase text-primary font-semibold">
+                <p className="text-xl lg:text-3xl uppercase text-primary font-semibold font-serif">
                     {t("remainTitle")}
                 </p>
             </motion.div>
@@ -34,9 +34,9 @@ const CounterContainer = () => {
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
                 <Link
-                    href="#dang-ky"
-                    className="inline-block rounded-full bg-secondary px-8 py-3 text-lg font-bold text-primary-foreground transition-transform duration-300 hover:scale-105"
-                >
+                    href="#dang-ky" 
+                    className="animate-bounce inline-block rounded-full bg-destructive shadow-xs px-8 py-3 text-xl lg:text-2xl font-bold text-primary-foreground transition-transform duration-300 hover:scale-105"
+                    >
                     {t("registerNow")}
                 </Link>
             </motion.div>

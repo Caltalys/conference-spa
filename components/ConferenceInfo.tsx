@@ -38,7 +38,7 @@ const DownloadButtons = ({ t }) => (
   <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 pt-16 w-full items-center justify-center">
     {/* Replaced `whileHover`/`whileTap` with `hover`/`press` */}
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-      <Button asChild size="xl" variant="destructive" className="text-xl animate-bounce">
+      <Button asChild size="xl" variant="destructive" className="text-xl font-semibold animate-bounce">
         <Link href={t('downloadFilename')} download="ThongBaoHoiNghi.pdf">
           <Download className="mr-2 h-5 w-5" />
           {t('downloadNotice')}
@@ -47,7 +47,7 @@ const DownloadButtons = ({ t }) => (
     </motion.div>
     
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-      <Button asChild variant="outline" size="xl" className="text-xl">
+      <Button asChild variant="outline" size="xl" className="text-xl font-semibold">
         <Link href="/ThuNgo.pdf" download="ThuNgo.pdf" >
           <Download className="mr-2 h-5 w-5" />
           {t('downloadLetter')}

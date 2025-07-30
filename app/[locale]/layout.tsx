@@ -1,7 +1,7 @@
 // app/[locale]/layout.tsx
 
 import type { Metadata } from "next";
-import { Roboto, Roboto_Mono } from "next/font/google";
+import { Roboto, Roboto_Mono, Roboto_Serif } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -9,10 +9,16 @@ import { notFound } from 'next/navigation';
 import "../../app/globals.css";
 
 // --- Font Definitions (No changes) ---
+const robotoSanserif = Roboto_Serif({
+  variable: "--font-roboto-serif",
+  subsets: ["latin"],
+  weight: ['400', '600', '700', '900']
+});
+
 const robotoSans = Roboto({
   variable: "--font-roboto-sans",
   subsets: ["latin"],
-  weight: ['400', '700', '900']
+  weight: ['400', '600', '700', '900']
 });
 
 const robotoMono = Roboto_Mono({
@@ -119,10 +125,10 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="scroll-smooth">
+    <html lang={locale} className={`${robotoSans.variable} ${robotoSanserif.variable} ${robotoMono.variable} scroll-smooth`}>
       {/* FIX: Removed manual <head> and <script> tags */}
       <body
-        className={`${robotoSans.variable} ${robotoMono.variable} antialiased`}
+        className="font-serif antialiased"
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
