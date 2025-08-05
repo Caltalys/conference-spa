@@ -26,15 +26,6 @@ const CommitteeV2 = () => {
     const [current, setCurrent] = useState(0);
     const [selectedMember, setSelectedMember] = useState<CommitteeMemberProps | null>(null);
 
-    const members = committeeData[locale] || committeeData.vi;
-
-    if (!Array.isArray(members)) {
-        console.error("Committee members data is not a valid array:", members);
-        return null;
-    }
-
-    const sortedMembers = [...members].sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
-
     const autoplay = useRef(
         Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })
     );
@@ -66,6 +57,15 @@ const CommitteeV2 = () => {
             autoplay.current.reset();
         }
     }, [selectedMember, api]);
+
+    const members = committeeData[locale] || committeeData.vi;
+
+    if (!Array.isArray(members)) {
+        console.error("Committee members data is not a valid array:", members);
+        return null;
+    }
+
+    const sortedMembers = [...members].sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
 
     const selectedMemberIndex = selectedMember
         ? sortedMembers.findIndex((m) => m.order === selectedMember.order)

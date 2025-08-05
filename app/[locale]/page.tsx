@@ -11,7 +11,6 @@ import Services from "@/components/Services";
 import CounterContainer from "@/components/CounterContainer";
 import Sponsor from "@/components/Sponsor";
 import dynamic from "next/dynamic";
-import CommitteeV3 from "@/components/CommitteeV3";
 
 // Tải động component Gallery
 const DynamicGallery = dynamic(() => import('@/components/Gallery'), {
