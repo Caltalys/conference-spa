@@ -36,7 +36,7 @@ const CommitteeV2 = () => {
     const sortedMembers = [...members].sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
 
     const autoplay = useRef(
-        Autoplay({ delay: 3000, stopOnInteraction: true, stopOnMouseEnter: false })
+        Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })
     );
 
     useEffect(() => {
