@@ -29,10 +29,12 @@ const CommitteeMemberV2 = ({ title, name, imageUrl, isActive, onInfoClick, onCar
             <Card className={cn(
                 "h-full overflow-hidden transition-all duration-500 ease-in-out",
                 // Thẻ active sẽ nổi bật hơn
-                isActive ? "shadow-2xl bg-white" : "shadow-md bg-gray-100"
+                isActive ? "shadow-3xl bg-white" : "shadow-lg bg-gray-100"
             )}>
                 <CardContent className="flex flex-col items-center justify-start p-0 h-full">
-                    <div className="relative h-40 w-40 overflow-hidden rounded-full border-4 border-white shadow-lg">
+                    <div className={cn("relative h-50 w-50 overflow-hidden rounded-full border-4 border-white",
+                        isActive ? "shadow-2xl" : "shadow-lg"
+                    )}>
                         <Image
                             src={imageUrl}
                             alt={name}

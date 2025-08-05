@@ -26,7 +26,8 @@ export const FlyerImageItem = () => {
                 src={flyerFullSrc}
                 alt={flyerAlt}
                 fill
-                className="object-contain"/>
+                className="object-contain"
+                style={{ clipPath: 'inset(12px 6px 12px 10px)' }} />
         </motion.div>
     );
 };

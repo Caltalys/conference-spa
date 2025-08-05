@@ -18,7 +18,7 @@ const Sponsor = () => {
                 variants={staggerContainer}
                 className="flex flex-col items-center justify-center pt-8 pb-4 space-y-8 mx-auto px-4 sm:px-6 lg:px-8">
                 
-                <SectionHeader title={t('sponsor')} textColor="text-gray-600" />
+                <SectionHeader title={t('sponsor')} textColor="text-primary" />
                 <motion.div
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
