@@ -46,14 +46,14 @@ const DownloadButtons = ({ t }) => (
       </Button>
     </motion.div>
     
-    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+    {/* <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
       <Button asChild variant="outline" size="xl" className="text-xl font-semibold">
         <Link href="/ThuNgo.pdf" download="ThuNgo.pdf" >
           <Download className="mr-2 h-5 w-5" />
           {t('downloadLetter')}
         </Link>
       </Button>
-    </motion.div>
+    </motion.div> */}
   </motion.div>
 );
 

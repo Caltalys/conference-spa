@@ -5,7 +5,7 @@ import { type CommitteeMemberProps } from "@/data/committee";
 const CommitteeMember = ({ title, name, role, imageUrl }: CommitteeMemberProps) => {
     return (
         <Card className="group bg-white shadow-lg h-full p-0 rounded-3xl overflow-hidden">
-            <CardContent className="flex flex-col md:flex-row h-full p-0">
+            <CardContent className="flex flex-col lg:flex-row h-full p-0">
                 {/* Vùng chứa ảnh: rộng toàn màn hình trên di động, 1/3 trên desktop. Tỷ lệ khung hình được điều chỉnh cho phù hợp. */}
                 <div className="relative w-full md:w-1/3 aspect-[4/3] md:aspect-[3/4] flex-shrink-0">
                     <Image

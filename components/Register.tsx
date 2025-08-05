@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { staggerContainer, fadeInUp } from "@/lib/animations";
 import "yet-another-react-lightbox/styles.css";
 
 interface SectionHeaderProps {
@@ -17,13 +18,7 @@ interface SectionHeaderProps {
 }
 
 const SectionHeader = ({ title, subtitle }: SectionHeaderProps) => (
-    <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 0.3 }}
-        className="text-center mb-8"
-    >
+    <motion.div variants={fadeInUp} className="text-center mb-8">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">{title}</h2>
         <p className="mt-4 text-lg text-gray-600">{subtitle}</p>
     </motion.div>
@@ -62,15 +57,17 @@ const ScientificReportInfo = () => {
 const AnimatedList = ({ items }: { items: string[] }) => (
     <ul className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
         {items.map((item, i) => (
-            <motion.li
-                key={item}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: i * 0.1 }}
-                viewport={{ once: true }}
-            >
-                {item}
-            </motion.li>
+            item && (
+                <motion.li
+                    key={item}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.1 }}
+                    viewport={{ once: true }}
+                >
+                    {item}
+                </motion.li>
+            )
         ))}
     </ul>
 );
@@ -140,34 +137,36 @@ const AttendanceDetails = () => {
 const Register = () => {
     const t = useTranslations('Register');
 
+    // Create motion-wrapped versions of the shadcn/ui components for type-safe animation
+    const MotionTabsList = motion(TabsList);
+    const MotionTabsTrigger = motion(TabsTrigger);
+
     return (
         <motion.section
             id="dang-ky"
             className="scroll-mt-16 py-16"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
         >
             <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
                 <SectionHeader title={t('title')} subtitle={t('subtitle')} />
 
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
-                    viewport={{ once: true, amount: 0.2 }}
-                >
+                <motion.div variants={fadeInUp}>
                     <Tabs defaultValue="attendance" className="w-full max-w-7xl mx-auto">
                         <div className="flex justify-center mb-6">
-                            <TabsList className="w-full max-w-lg rounded-xl bg-gray-200 p-2">
-                                <TabsTrigger value="attendance" className="py-2.5 text-base font-semibold data-[state=active]:bg-primary data-[state=active]:text-white rounded-lg transition-colors">
+                            <MotionTabsList
+                                className="w-full max-w-lg rounded-xl bg-gray-200 p-2"
+                                variants={staggerContainer}
+                            >
+                                <MotionTabsTrigger value="attendance" variants={fadeInUp} className="flex-1 py-2.5 text-base font-semibold data-[state=active]:bg-primary data-[state=active]:text-white rounded-lg transition-colors">
                                     {t('attendanceTitle')}
-                                </TabsTrigger>
-                                <TabsTrigger value="report" className="py-2.5 text-base font-semibold data-[state=active]:bg-primary data-[state=active]:text-white rounded-lg transition-colors">
+                                </MotionTabsTrigger>
+                                <MotionTabsTrigger value="report" variants={fadeInUp} className="flex-1 py-2.5 text-base font-semibold data-[state=active]:bg-primary data-[state=active]:text-white rounded-lg transition-colors">
                                     {t('reportTitle')}
-                                </TabsTrigger>
-                            </TabsList>
+                                </MotionTabsTrigger>
+                            </MotionTabsList>
                         </div>
                         <TabsContent value="attendance">
                             <motion.div

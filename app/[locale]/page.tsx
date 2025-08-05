@@ -1,15 +1,24 @@
+'use client';
 
 import Banner from "@/components/Banner";
 import Committee from "@/components/Committee";
 import ConferenceInfo from "@/components/ConferenceInfo";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Gallery from "@/components/Gallery";
 import WhyAttendKMC from "@/components/WhyAttendKMC";
 import Register from "@/components/Register";
 import Services from "@/components/Services";
 import CounterContainer from "@/components/CounterContainer";
 import Sponsor from "@/components/Sponsor";
+import dynamic from "next/dynamic";
+
+// Tải động component Gallery
+const DynamicGallery = dynamic(() => import('@/components/Gallery'), {
+  // Hiển thị một khung chờ để tránh xê dịch layout
+  loading: () => <div className="h-[500px] w-full bg-primary" />, 
+  // Tắt Server-Side Rendering cho component này vì nó có state phía client
+  ssr: false 
+});
 
 export default function Home() {
   return (
@@ -26,7 +35,8 @@ export default function Home() {
       <Register />
       <WhyAttendKMC />
       <Services />
-      <Gallery />
+      {/* <Gallery /> */}
+      <DynamicGallery />
       <Sponsor />
       <Footer />
     </div>
