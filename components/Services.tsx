@@ -7,6 +7,7 @@ import { SiFacebook } from '@icons-pack/react-simple-icons';
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import Pretitle from "./Pretitle";
 
 // Manual delay helper
 const getDelay = (index: number, base = 0.2) => base + index * 0.15;
@@ -83,9 +84,11 @@ const Services = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">
+          <Pretitle text={t("title")} center starColor="text-primary" textColor="text-primary" />
+
+          {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">
             {t("title")}
-          </h2>
+          </h2> */}
           <p className="mt-4 text-lg text-gray-600">{t("subtitle")}</p>
         </motion.div>
 
@@ -96,7 +99,7 @@ const Services = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-gray-900">{t("companyName")}</h3>
+            <h3 className="text-2xl font-bold text-primary">{t("companyName")}</h3>
             <p className="mt-4 text-gray-700">{t("support")}</p>
             {/* <p className="mt-4 text-gray-700 italic">{t("companyDescription")}</p> */}
           </motion.div>

@@ -11,6 +11,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeInUp } from "@/lib/animations";
 import "yet-another-react-lightbox/styles.css";
+import Pretitle from "./Pretitle";
 
 interface SectionHeaderProps {
     title: string;
@@ -19,7 +20,8 @@ interface SectionHeaderProps {
 
 const SectionHeader = ({ title, subtitle }: SectionHeaderProps) => (
     <motion.div variants={fadeInUp} className="text-center mb-8">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">{title}</h2>
+        <Pretitle text={title} center starColor="text-primary" textColor="text-primary" />
+        {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">{title}</h2> */}
         <p className="mt-4 text-lg text-gray-600">{subtitle}</p>
     </motion.div>
 );

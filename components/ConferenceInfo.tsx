@@ -10,13 +10,15 @@ import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight } from "@/lib/anima
 import { cn } from "@/lib/utils";
 import { FlyerImageItem } from "./FlyerImage";
 import { WelcomeMessageItem } from "./WelcomeMessage";
+import Pretitle from "./Pretitle";
 
 // Sub-component for the section title
 export const SectionHeader = ({ title, textColor }) => (
   <motion.div variants={fadeInUp} className="text-center mb-12">
-    <h2 className={cn("text-3xl font-bold tracking-tight sm:text-4xl uppercase",textColor)}>
+    <Pretitle text={title} center starColor={textColor} textColor={textColor} />
+    {/* <h2 className={cn("text-3xl font-bold tracking-tight sm:text-4xl uppercase",textColor)}>
       {title}
-    </h2>
+    </h2> */}
   </motion.div>
 );
 

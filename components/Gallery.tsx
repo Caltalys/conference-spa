@@ -15,15 +15,17 @@ import { motion } from "framer-motion";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
+import Pretitle from "./Pretitle";
 
 const SectionHeader = ({ title, subtitle }: { title: string; subtitle?: string }) => (
   <motion.div
     variants={fadeInUp}
     className="text-center mb-12"
   >
-    <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl uppercase">
+    <Pretitle text={title} center starColor="text-white" textColor="text-white" />
+    {/* <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl uppercase">
       {title}
-    </h2>
+    </h2> */}
     {subtitle && <p className="mt-4 text-lg text-gray-600">{subtitle}</p>}
   </motion.div>
 );

@@ -110,7 +110,7 @@ const CommitteeV2 = () => {
                 className="mx-auto w-full px-4 sm:px-6 lg:px-8"
             >
                 <motion.div variants={fadeInUp} className="text-center">
-                    <Pretitle text={t('title')} center />
+                    <Pretitle text={t('title')} center starColor="text-primary" textColor="text-primary" />
                     {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">{t('title')}</h2> */}
                     <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
                         {t('subtitle')}
