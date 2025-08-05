@@ -1,7 +1,7 @@
 'use client';
 
 import Banner from "@/components/Banner";
-import Committee from "@/components/Committee";
+import CommitteeV2 from "@/components/CommitteeV2";
 import ConferenceInfo from "@/components/ConferenceInfo";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -11,6 +11,7 @@ import Services from "@/components/Services";
 import CounterContainer from "@/components/CounterContainer";
 import Sponsor from "@/components/Sponsor";
 import dynamic from "next/dynamic";
+import CommitteeV3 from "@/components/CommitteeV3";
 
 // Tải động component Gallery
 const DynamicGallery = dynamic(() => import('@/components/Gallery'), {
@@ -30,8 +31,7 @@ export default function Home() {
       <ConferenceInfo />
       {/* <WelcomeMessage /> */}
       {/* <Agenda /> */}
-      {/* <FlyerImage /> */}
-      <Committee />
+      <CommitteeV2 />
       <Register />
       <WhyAttendKMC />
       <Services />
