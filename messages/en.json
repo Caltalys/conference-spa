@@ -30,7 +30,7 @@
     "seconds": "Seconds"
   },
   "ConferenceInfo": {
-    "title": "Conference Introduction",
+    "title": "WELCOME MESSAGE",
     "conferenceNameLabel": "Conference Name",
     "conferenceNameValue": "The Third Regional Conference of Asia-Oceania Network of Kangaroo Mother Care 2025",
     "timeLabel": "Time",
@@ -126,7 +126,7 @@
     "transferSyntax2": "If you only attend the workshops (Nov 27, 50 USD or 70 USD if registration after 20/9/25): KMCworkshop-fullname-amount transferred eg. KMCworkshop-Amy Chan-50",
     "transferSyntax3": "If you attend both workshops and conference (Nov 27,28,29, 125 USD or 170 USD if registration after 20/9/25): KMCboth-full name-amount transferred eg. KMCboth-Amy Chan-125",
     "flyer": "/flyer-cover-en.png",
-    "flyerFull": "/flyer-en.png"
+    "flyerFull": "/flyer-en.jpg"
   },
   "WhyAttend": {
     "title": "Why Attend KMC 2025?",
@@ -183,13 +183,16 @@
   },
   "WelcomeMessage": {
     "title": "WELCOME MESSAGE",
-    "subtitle": "THE THIRD REGIONAL CONFERENCE OF ASIA-OCEANIA NETWORK OF KANGAROO MOTHER CARE",
+    "subtitle": "The Third regional conference of Asia-Oceania network of Kangaroo Mother Care",
     "locationDate": "Da Nang City, November 2025",
-    "salutation": "Dear Delegates, Experts, and distinguished guests,",
-    "intro": "We warmly welcome you to the <strong>Third Regional Conference of the Asia-Oceania Network of Kangaroo Mother Care</strong>, held in <strong>Da Nang City</strong> – a place where the majestic beauty of nature, with its long, white sandy beaches and clear blue waters, meets the dynamic and modern pace of a young city in Central Vietnam.",
-    "slogan": "This year's conference carries a profound message: <strong>“Early and continuous Kangaroo Mother Care - Warmth of love, for a healthy future”</strong>",
-    "paragraph1": "The Kangaroo method - initiated as early as possible after birth and maintained continuously - has been proven to be an effective, comprehensive, and humane strategy integrated into the care of premature and low-birth-weight infants. This method not only helps reduce neonatal mortality rates but also promotes holistic development and strengthens the emotional bond between mother and child.",
-    "paragraph2": "This conference is a special occasion to bring together leading experts from the region and around the world in the field of neonatal care, especially for premature and low-birth-weight infants. It serves as a prestigious scientific forum to update the latest evidence, share practical experiences, and foster professional collaboration towards the sustainable expansion of the Kangaroo method in healthcare facilities - from central to local levels. Through this, we join hands to build a strong support network, aiming for a healthier future for children throughout the region.",
-    "closing": "<strong>We wish all delegates good health, success, and memorable experiences in the friendly and hospitable city of Da Nang!</strong>"
+    "salutation": "Dear Distinguished Delegates, Esteemed Experts, and Honored Guests,",
+    "intro": "It is with great pleasure that we welcome you to the third Regional Conference of the Asia-Oceania Network of Kangaroo Mother Care, held in <strong>Da Nang City</strong> - a place where the breathtaking beauty of nature meets the modern and vibrant pulse of a youthful central Vietnamese metropolis. With its pristine white-sand beaches and crystal-clear waters, Da Nang is proud to host this meaningful gathering of professionals dedicated to improving neonatal care. ",
+    "slogan": "This year’s conference carries a powerful message: <strong>“Immediate and Continuous Kangaroo Mother Care – Nurture small babies for healthier futures.”</strong>",
+    "paragraph1": "Kangaroo Mother Care has been widely recognized as an effective, integrated approach to caring for preterm and low birth weight infants. It significantly reduces neonatal mortality, enhances overall development, and strengthens the emotional bond between mother and baby.",
+    "paragraph2": "This conference presents a valuable opportunity for leading regional and international experts in obstetrics, neonatology and pediatrics to come together. It serves as a respected scientific forum to share the latest research evidence, exchange practical clinical experiences, and promote collaboration. Our shared goal is to expand the sustainable implementation of KMC across all levels of healthcare - from tertiary hospitals to local facilities - while building a strong professional network to ensure a healthier future for children throughout the region.",
+    "closing": "We wish all delegates good health, great success, and a memorable experience in the warm and welcoming city of Da Nang!",
+    "signature": "Sincerely yours,",
+    "signatureName": "Dr Ngo Thi Kim Yen",
+    "signatureRole": "Chairman of Da Nang Medical Association"
   }
 }

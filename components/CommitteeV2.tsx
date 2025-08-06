@@ -150,7 +150,7 @@ const CommitteeV2 = () => {
                 >
                     {sortedMembers[current] && (
                         <div>
-                            <h3 className="text-2xl font-bold text-primary">{`${sortedMembers[current].title} ${sortedMembers[current].name}`}</h3>
+                            <h3 className="text-2xl font-bold text-primary">{`${sortedMembers[current].name}`}</h3>
                             <ul className="mt-4 list-disc list-inside text-left space-y-2 text-gray-700 md:text-lg">
                                 {sortedMembers[current].role.map((roleItem, index) => (
                                     <li key={index}>{roleItem}</li>

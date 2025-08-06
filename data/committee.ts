@@ -15,7 +15,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 1,
             title: "Dr",
-            name: "Nathalie Charpak",
+            name: "Dr. Nathalie Charpak",
             role: [
                 "Pioneering and leading the way in Kangaroo Mother Care (1989–2025)",
                 "Leading global expert in Kangaroo Mother Care with KMC training of 217 teams from 47 countries, 108 internationals and 109 from Colombia (1994-2025)",
@@ -27,7 +27,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 2,
             title: "Dr",
-            name: "Socorro De Leon‑Mendoza",
+            name: "Dr. Socorro De Leon‑Mendoza",
             role: [
                 "Founder & Chairperson, Kangaroo Mother Care Foundation, Philippines Inc.",
                 "Lead Convenor Asia-Oceania Kangaroo Mother Care Network",
@@ -38,7 +38,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 3,
             title: "Professor",
-            name: "Shashi N. Vani",
+            name: "Professor Shashi N. Vani",
             role: [
                 "Honorary Professor of Pediatrics and Neonatology, Gujarat, India",
                 "Founding Chairperson & Managing Trustee, KMC India Foundation",
@@ -49,7 +49,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 4,
             title: "Dr, MD, PhD",
-            name: "Delgermaa Vanya",
+            name: "Dr. Delgermaa Vanya, MD, PhD",
             role: [
                 "Technical Officer, Maternal Child Health and Quality Safety Division of Health Systems and Services, WHO Regional Office for the Western Pacific (WPRO)",
             ],
@@ -58,7 +58,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 5,
             title: "Professor, MD, PhD",
-            name: "Deepa Alay Banker",
+            name: "Professor Deepa Alay Banker",
             role: [
                 "Neonatology Specialist & Kangaroo Care Expert",
                 "Former Professor and Head of Pediatrics and Neonatology Department",
@@ -70,7 +70,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 6,
             title: "Professor, Dr",
-            name: "Milind R. Shah",
+            name: "Professor Milind R. Shah",
             role: [
                 "Head of Department, Obstetrics and Gynecology, Gandhi Natha Medical College",
                 "Consultant at Naval Maternity Hospital & Nursing Home, Ashakiran Sperm Bank, Endoscopy & Assisted Reproduction Center, Solapur, India",
@@ -80,7 +80,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 7,
             title: "Dr",
-            name: "Alyson Skinner",
+            name: "Dr. Alyson Skinner MD, MEd (University of Dundee), MSc in Clinical Nutrition (University of Surrey, UK), DCH, FRCP (London, UK), FRCPCH, (London, UK)",
             role: [
                 "Honorary Consultant Neonatologist with special interests in medical education and nutrition",
                 "Walsall Manor Hospital, West Midlands, UK",
@@ -96,7 +96,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 8,
             title: "Professor, MD, PhD",
-            name: "Sylvie Nguyen",
+            name: "Professor Sylvie Nguyen The Tich",
             role: [
                 "Professor of Pediatrics",
                 "Head of Pediatric Neurology Department, University of Lille, France",
@@ -107,7 +107,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 9,
             title: "Professor, MD, PhD",
-            name: "Amy Gray",
+            name: "Professor Amy Gray",
             role: [
                 "Stevenson Chair and Head of Department of Pediatrics, The University of Melbourne",
                 "Consultant Pediatrician, General Pediatrics Department, Royal Children’s Hospital, Melbourne, Australia",
@@ -117,7 +117,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 10,
             "title": "Dr",
-            "name": "Maria Esterlita V. Uy",
+            "name": "Dr. Maria Esterlita V. Uy",
             "role": [
                 "Research professor, Institute of Child health and Human development",
                 "National Institutes of Health",
@@ -129,7 +129,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 11,
             "title": "Dr",
-            "name": "Daisy Evangeline C. Garcia, MD",
+            "name": "Dr. Daisy Evangeline C. Garcia, MD",
             "role": [
                 "Neonatologist",
                 "Board Member Kangaroo Mother Care Foundation, Philippines",
@@ -140,7 +140,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 12,
             "title": "Dr",
-            "name": "Bouasengnignom Phrasithideth",
+            "name": "Dr Bouasengnignom Phrasithideth",
             "role": [
                 "Neonatologist",
                 "Mahosot hospital, Lao PDR",
@@ -151,7 +151,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 13,
             title: "Dr",
-            name: "Tao Xu",
+            name: "Dr. Tao Xu, MD, PhD",
             role: [
                 "Director of Children's Healthcare Department, Maternal and Child Health Care, Chinese Disease Prevention and Control Center",
                 "Associate research fellow, National Center for Women and Children’s Health, National Health Commission",
@@ -162,7 +162,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 14,
             title: "M.D., F.A.A.P",
-            name: "Larry Ngo",
+            name: "Larry Ngo, M.D., F.A.A.P.",
             role: [
                 "Associate Program Director, Neonatal-Perinatal Fellowship Program",
                 "Co-Director of the Center for Newborn Research",
@@ -174,7 +174,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 15,
             title: "MD",
-            name: "Luong Kim Chi",
+            name: "Dr. Luong Kim Chi, MD",
             role: [
                 "Head of Neonatology Department, Tan An International General Hospital, Vietnam",
                 "Senior neonatologist and clinical expert in Kangaroo Mother Care",
@@ -185,7 +185,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 16,
             title: "MD, PhD, Associate Professor",
-            name: "Tran Thi Hoang",
+            name: "Associate Professor Tran Thi Hoang, MD, PhD",
             role: [
                 "Deputy Director, Da Nang Hospital for Women and Children, Vietnam",
                 "Head of Department of Pediatrics, School of Medicine and Pharmacy, The University of Da nang",
@@ -198,7 +198,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 17,
             title: "MD, PhD, Dr",
-            name: "Phan Thi Hang",
+            name: "Dr. Phan Thi Hang, MD, PhD",
             role: [
                 "Consultant Obstetrician",
                 "Deputy Director, Hùng Vương Hospital, Vietnam",
@@ -208,7 +208,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 18,
             title: "MSc, Specialist Level II, Dr",
-            name: "Le Thi Ha",
+            name: "Dr. Le Thi Ha, MMed, Specialist Level II",
             role: [
                 "Director, Neonatal Center – Vietnam National Children's Hospital",
                 "Executive Committee Member, Vietnam Perinatal–Neonatal Association",
@@ -219,7 +219,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 19,
             title: "Specialist Level II, Dr",
-            name: "Bui Thi Thuy Tien",
+            name: "Dr. Bui Thi Thuy Tien, Specialist Level II ",
             role: [
                 "Head of Neonatology Department, Hùng Vương Hospital, Ho Chi Minh City, Vietnam",
                 "Lecturer at Pham Ngoc Thach University of Medicine",
@@ -229,7 +229,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 20,
             title: "Dr",
-            name: "Huynh Thi Le",
+            name: "Dr Huynh Thi Le, MD, MMed",
             role: [
                 "Head of NICU, Da Nang Hospital for Women and Children, Viet Nam",
                 "Deputy Head of General Nursing Department, Faculty of Nursing, Da Nang University of Medical Technology and Pharmacy",
@@ -243,7 +243,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 1,
             "title": "BS",
-            "name": "Nathalie Charpak",
+            "name": "BS Nathalie Charpak",
             "role": [
                 "Người tiên phong và dẫn đầu trong Chăm sóc Bà mẹ Kangaroo (1989–2025)",
                 "Chuyên gia hàng đầu thế giới về Chăm sóc Bà mẹ Kangaroo, đã huấn luyện 217 nhóm đến từ 47 quốc gia, bao gồm 108 nhóm quốc tế và 109 nhóm từ Colombia (1994–2025)",
@@ -255,7 +255,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 2,
             "title": "BS",
-            "name": "Socorro De Leon – Mendoza",
+            "name": "BS Socorro De Leon – Mendoza, Philippines",
             "role": [
                 "Nhà sáng lập & Chủ tịch, Quỹ Kangaroo Mother Care Philippines Inc.",
                 "Điều phối viên chính Mạng lưới Kangaroo Mother Care Châu Á - Châu Đại Dương",
@@ -266,7 +266,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 3,
             "title": "GS",
-            "name": "Shashi N. Vani",
+            "name": "GS. Shashi N. Vani",
             "role": [
                 "Giáo sư Danh dự Nhi khoa và Sơ sinh học, bang Gujarat, Ấn Độ",
                 "Chủ tịch sáng lập và Quản lý Ủy thác, Tổ chức Kangaroo Mother Care Ấn Độ",
@@ -277,7 +277,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 4,
             "title": "TS.BS",
-            "name": "Delgermaa VANYA",
+            "name": "TS.BS Delgermaa VANYA",
             "role": [
                 "Cán bộ chuyên trách về sức khỏe Bà mẹ và Trẻ em",
                 "Tổ chức Y tế Thế giới khu vực Tây Thái Bình Dương"
@@ -287,7 +287,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 5,
             "title": "GS.BS",
-            "name": "Deepa Alay Banker",
+            "name": "GS.BS. Deepa Alay Banker",
             "role": [
                 "Chuyên khoa Sơ sinh & Chuyên gia Chăm sóc Kangaroo",
                 "Nguyên Giáo sư & Trưởng Khoa Nhi và Sơ sinh",
@@ -299,7 +299,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 6,
             "title": "GS.TS. BS",
-            "name": "Milind R. Shah",
+            "name": "GS.TS. BS. Milind R. Shah",
             "role": [
                 "Trưởng khoa Sản phụ khoa, Trường Cao đẳng Y Gandhi Natha H",
                 "Bệnh viện Sản & Viện dưỡng lão Naval, Ngân hàng tinh trùng Ashakiran, Trung tâm Nội soi & Hỗ trợ sinh sản, Solapur, Ấn Độ"
@@ -309,7 +309,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 7,
             "title": "TS.BS",
-            "name": "Alyson Skinner",
+            "name": "TS.BS. Alyson Skinner",
             "role": [
                 "Bác sĩ chuyên ngành Sơ sinh với quan tâm đặc biệt đến giáo dục y khoa và dinh dưỡng, Bệnh viện Walsall Manor, West Midlands, Vương quốc Anh",
                 "Nguyên Giảng viên cao cấp lâm sàng, Đại học Birmingham, Vương quốc Anh",
@@ -324,7 +324,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 8,
             "title": "GS.TS.BS",
-            "name": "Sylvie Nguyễn",
+            "name": "GS.TS.BS. Sylvie Nguyễn",
             "role": [
                 "Giáo sư Nhi khoa",
                 "Trưởng khoa thần kinh Nhi, Đại học Lille, Pháp",
@@ -335,7 +335,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 9,
             "title": "GS. TS. BS",
-            "name": "Amy Gray",
+            "name": "GS.TS.BS. Amy Gray",
             "role": [
                 "Trưởng bộ môn Nhi, Đại học Melbourne",
                 "Chuyên gia Nhi khoa, Bệnh viện Nhi Hoàng gia, Melbourne, Úc"
@@ -345,7 +345,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 10,
             "title": "GS.TS",
-            "name": "Maria Esterlita V. Uy",
+            "name": "GS.TS. Maria Esterlita V. Uy",
             "role": [
                 "Viện sức khỏe trẻ em và phát triển con người",
                 "Viện nghiên cứu sức khỏe quốc gia",
@@ -357,7 +357,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 11,
             "title": "Dr",
-            "name": "Daisy Evangeline C. Garcia, MD",
+            "name": "Dr. Daisy Evangeline C. Garcia, MD",
             "role": [
                 "Bác sĩ chuyên khoa Nhi sơ sinh",
                 "Thành viên hội đồng Hội chăm sóc Bà mẹ Kangaroo Philippines",
@@ -368,7 +368,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 12,
             "title": "Dr",
-            "name": "Bouasengnignom Phrasithideth",
+            "name": "Dr Bouasengnignom Phrasithideth",
             "role": [
                 "Bác sĩ chuyên sâu Sơ sinh",
                 "Bệnh viện Mahosot, CHDCND Lào",
@@ -379,7 +379,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 13,
             "title": "TS.BS",
-            "name": "Tao Xu",
+            "name": "TS.BS. Tao Xu",
             "role": [
                 "Trưởng khoa Chăm sóc Sức khỏe Trẻ em, Trung tâm Kiểm soát Bệnh tật Trung Quốc",
                 "Nghiên cứu viên, Trung tâm Quốc gia về Sức khỏe Phụ nữ và Trẻ em, Ủy ban Y tế Quốc gia",
@@ -390,7 +390,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 14,
             "title": "BS",
-            "name": "Larry Ngo",
+            "name": "BS Larry Ngo",
             "role": [
                 "Phó giám đốc chương trình Nội trú chuyên ngành Sơ sinh - Chu sinh Đồng giám đốc, Trung tâm Nghiên cứu sơ sinh",
                 "Giảng viên Hồi sức sơ sinh của Viện Hàn lâm Nhi khoa Hoa Kỳ",
@@ -401,7 +401,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 15,
             "title": "BS",
-            "name": "Lương Kim Chi",
+            "name": "BS. Lương Kim Chi",
             "role": [
                 "Trưởng khoa Sơ sinh, Bệnh viện đa khoa quốc tế Tân An, Việt Nam",
                 "Bác sĩ chuyên khoa Nhi sơ sinh và Chuyên gia Chăm sóc Bà mẹ Kangaroo",
@@ -412,7 +412,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 16,
             "title": "PGS.TS.BS",
-            "name": "Trần Thị Hoàng",
+            "name": "PGS.TS.BS. Trần Thị Hoàng",
             "role": [
                 "Phó giám đốc bệnh viện Phụ sản-Nhi Đà Nẵng",
                 "Trưởng Bộ môn Nhi, Trường Y Dược, Đại học Đà Nẵng",
@@ -425,7 +425,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 17,
             "title": "TS.BS",
-            "name": "Phan Thị Hằng",
+            "name": "TS.BS. Phan Thị Hằng",
             "role": [
                 "Phó giám đốc Bệnh viện Hùng Vương, Việt Nam",
                 "Bác sĩ Sản phụ khoa"
@@ -435,7 +435,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 18,
             "title": "ThS.BSCK II",
-            "name": "Lê Thị Hà",
+            "name": "ThS.BS.CK II Lê Thị Hà",
             "role": [
                 "Giám đốc Trung tâm Sơ sinh, Bệnh viện Nhi Trung ương",
                 "Ủy viên Ban chấp hành Chi Hội Chu sinh & Sơ sinh Việt Nam",
@@ -446,7 +446,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 19,
             "title": "BSCK II",
-            "name": "Bùi Thị Thuỷ Tiên",
+            "name": "BS.CK II Bùi Thị Thuỷ Tiên",
             "role": [
                 "Trưởng khoa Sơ sinh - Bệnh viện Hùng Vương, TP. Hồ Chí Minh, Việt Nam",
                 "Giảng viên thỉnh giảng Đại học Y khoa Phạm Ngọc Thạch"
@@ -456,7 +456,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 20,
             "title": "ThS.BS",
-            "name": "Huỳnh Thị Lệ",
+            "name": "ThS.BS. Huỳnh Thị Lệ",
             "role": [
                 "Trưởng khoa Sơ sinh Hồi sức Tích cực và Bệnh lý, Bệnh viện Phụ sản-Nhi Đà Nẵng",
                 "Phó Trưởng Bộ môn Điều dưỡng, Đại học Kỹ thuật Y Dược Đà Nẵng",

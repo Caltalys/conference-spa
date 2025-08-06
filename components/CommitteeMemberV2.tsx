@@ -52,7 +52,7 @@ const CommitteeMemberV2 = ({ title, name, imageUrl, isActive, onInfoClick, onCar
                         className={cn("p-4 text-center w-full transition-all duration-300")}
                         onClick={handleLocalInfoClick}
                     >
-                        <p className="font-semibold text-primary text-md">{title}</p>
+                        {/* <p className="font-semibold text-primary text-md">{title}</p> */}
                         <h4 className="font-bold text-xl text-gray-900">{name}</h4>
                     </div>
                 </CardContent>
