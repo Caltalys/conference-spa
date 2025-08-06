@@ -80,7 +80,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             order: 7,
             title: "Dr",
-            name: "Dr. Alyson Skinner MD, MEd (University of Dundee), MSc in Clinical Nutrition (University of Surrey, UK), DCH, FRCP (London, UK), FRCPCH, (London, UK)",
+            name: "Dr. Alyson Skinner MD, MEd, MSc in Clinical Nutrition, DCH, FRCP, FRCPCH",
             role: [
                 "Honorary Consultant Neonatologist with special interests in medical education and nutrition",
                 "Walsall Manor Hospital, West Midlands, UK",
