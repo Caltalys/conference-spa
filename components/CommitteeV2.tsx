@@ -146,7 +146,7 @@ const CommitteeV2 = () => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="mt-4 text-center max-w-4xl mx-auto min-h-[150px]"
+                    className="mt-4 text-center max-w-4xl mx-auto h-[350px] overflow-y-auto p-2"
                 >
                     {sortedMembers[current] && (
                         <div>

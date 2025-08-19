@@ -10,6 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Pretitle from "./Pretitle";
 import ServiceDetailModal, { type ServiceItem } from "./ServiceDetailModal";
+import Cuisine from "./Cuisine";
 
 // Manual delay helper
 const getDelay = (index: number, base = 0.2) => base + index * 0.15;
@@ -19,7 +20,7 @@ interface ServiceCardProps extends Pick<ServiceItem, 'title' | 'description' | '
   onClick: () => void;
 }
 
-const ServiceCard = ({ 
+const ServiceCard = ({
   title,
   description,
   imageUrl,
@@ -71,7 +72,7 @@ const Services = () => {
   const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
 
   const serviceItems: ServiceItem[] = [
-    { title: t("service1_title"), description: t("service1_description"), detail: t("service1_detail"), imageUrl: "/xe-dua-don.jpeg" , label: t("registerButton"), url: t("service1_url") },
+    { title: t("service1_title"), description: t("service1_description"), detail: t("service1_detail"), imageUrl: "/xe-dua-don.jpeg", label: t("registerButton"), url: t("service1_url") },
     { title: t("service2_title"), description: t("service2_description"), detail: t("service2_detail"), imageUrl: "/luu-tru.jpg", label: t("registerButton"), url: t("service2_url") },
     { title: t("service3_title"), description: t("service3_description"), detail: t("service3_detail"), imageUrl: "/tour.jpg", label: t("registerButton"), url: t("service3_url") },
   ];
@@ -157,17 +158,16 @@ const Services = () => {
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {serviceItems.map((item, index) => (
-              <ServiceCard 
-                key={index} 
-                {...item} 
-                index={index} 
-                onClick={() => setSelectedService(item)} 
+              <ServiceCard
+                key={index}
+                {...item}
+                index={index}
+                onClick={() => setSelectedService(item)}
               />
             ))}
           </div>
 
-
-
+          <Cuisine />
 
           <div className="flex flex-col md:flex-row gap-4 justify-center mx-auto">
             {t("contactPhone1") && (
@@ -177,8 +177,8 @@ const Services = () => {
             )
             }
             <ContactInfoItem icon={Phone} index={1}>
-                  <p><strong>{t("contactPhone2")}</strong> {t("contactPerson2")}</p>
-                </ContactInfoItem>
+              <p><strong>{t("contactPhone2")}</strong> {t("contactPerson2")}</p>
+            </ContactInfoItem>
             <ContactInfoItem icon={Mail} index={2}>
               <a href={`mailto:${t("contactEmail")}`} className="text-blue-600 hover:underline break-all">
                 {t("contactEmail")}
@@ -193,7 +193,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <ServiceDetailModal 
+      <ServiceDetailModal
         isOpen={!!selectedService}
         onClose={() => setSelectedService(null)}
         service={selectedService}
