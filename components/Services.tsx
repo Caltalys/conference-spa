@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Link as LinkIcon, Mail, Phone } from "lucide-react";
@@ -8,33 +9,30 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import Pretitle from "./Pretitle";
+import ServiceDetailModal, { type ServiceItem } from "./ServiceDetailModal";
 
 // Manual delay helper
 const getDelay = (index: number, base = 0.2) => base + index * 0.15;
 
-const ServiceCard = ({
+interface ServiceCardProps extends Pick<ServiceItem, 'title' | 'description' | 'imageUrl'> {
+  index: number;
+  onClick: () => void;
+}
+
+const ServiceCard = ({ 
   title,
   description,
-  detail,
   imageUrl,
   index,
-  label,
-  url
-}: {
-  title: string;
-  description: string;
-  detail: string;
-  imageUrl: string;
-  index: number;
-  label: string;
-  url: string;
-}) => (
+  onClick
+}: ServiceCardProps) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.2 }}
     transition={{ duration: 0.6, delay: getDelay(index) }}
-    className="group bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col"
+    className="group bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col rounded-lg overflow-hidden cursor-pointer hover:ring-2 hover:ring-primary"
+    onClick={onClick}
   >
     <div className="relative h-56 w-full overflow-hidden">
       <Image
@@ -52,24 +50,6 @@ const ServiceCard = ({
       </h3>
       <p className="text-base text-gray-600">{description}</p>
     </div>
-    {/* <div className="flex flex-col md:flex-row gap-4 justify-center mx-auto pb-4">
-      <Link
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Button size="lg" className="text-lg py-6 hover:bg-destructive transition-colors duration-300">
-                  <LinkIcon className="mr-2 h-5 w-5" />
-                  {label}
-                </Button>
-              </motion.div>
-            </Link>
-    </div> */}
   </motion.div>
 );
 
@@ -88,8 +68,9 @@ const ContactInfoItem = ({ icon: Icon, children, index }) => (
 
 const Services = () => {
   const t = useTranslations("Services");
+  const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
 
-  const serviceItems = [
+  const serviceItems: ServiceItem[] = [
     { title: t("service1_title"), description: t("service1_description"), detail: t("service1_detail"), imageUrl: "/xe-dua-don.jpeg" , label: t("registerButton"), url: t("service1_url") },
     { title: t("service2_title"), description: t("service2_description"), detail: t("service2_detail"), imageUrl: "/luu-tru.jpg", label: t("registerButton"), url: t("service2_url") },
     { title: t("service3_title"), description: t("service3_description"), detail: t("service3_detail"), imageUrl: "/tour.jpg", label: t("registerButton"), url: t("service3_url") },
@@ -176,7 +157,12 @@ const Services = () => {
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {serviceItems.map((item, index) => (
-              <ServiceCard key={index} {...item} index={index} />
+              <ServiceCard 
+                key={index} 
+                {...item} 
+                index={index} 
+                onClick={() => setSelectedService(item)} 
+              />
             ))}
           </div>
 
@@ -207,6 +193,11 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <ServiceDetailModal 
+        isOpen={!!selectedService}
+        onClose={() => setSelectedService(null)}
+        service={selectedService}
+      />
     </section>
   );
 };
