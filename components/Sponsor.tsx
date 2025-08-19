@@ -74,9 +74,9 @@ const Sponsor = () => {
                     </div>
                 </div> */}
 
-                <SponsorCategory title={t('silverSponsor')} sponsors={silverSponsors} itemClassName="h-28 w-48 border border-primary rounded-lg" />
-                <SponsorCategory title={t('bronzeSponsor')} sponsors={bronzeSponsors} itemClassName="h-28 w-48 border rounded-lg" />
-                <SponsorCategory title={t('partnerSponsor')} sponsors={partners} itemClassName="h-28 w-48 border rounded-lg" />
+                <SponsorCategory title={t('silverSponsor')} sponsors={silverSponsors} itemClassName="h-28 w-48" />
+                <SponsorCategory title={t('bronzeSponsor')} sponsors={bronzeSponsors} itemClassName="h-28 w-48" />
+                <SponsorCategory title={t('partnerSponsor')} sponsors={partners} itemClassName="h-28 w-48" />
             </motion.div>
         </section>
     );
