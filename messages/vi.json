@@ -143,10 +143,16 @@
     "subtitle": "Tham gia hội nghị thuận tiện hơn với các gợi ý đặt trước dịch vụ lưu trú và tham quan, vận chuyển",
     "service1_title": "Xe đưa đón",
     "service1_description": "Dịch vụ xe đưa đón tận nơi, đảm bảo sự thuận tiện cho Quý Đại biểu trong suốt thời gian tham dự hội nghị và các hoạt động tham quan.",
+    "service1_detail": "Dịch vụ xe đưa đón tận nơi, đảm bảo sự thuận tiện cho Quý đại biểu trong suốt thời gian tham dự hội nghị và các hoạt động tham quan. Bạn Đồng Hành Châu Á cung cấp đa dạng các loại xe đưa đón từ 4 chỗ đến 45 chỗ chất lượng cao – đáp ứng mọi nhu cầu từ cá nhân, gia đình cho đến đoàn khách lớn.",
+    "service1_url": "https://forms.gle/EDjnpuBj8J9AFW3r7",
     "service2_title": "Khách sạn",
     "service2_description": "Hợp tác với các khách sạn gần khu vực tổ chức hội nghị, mang đến mức giá ưu đãi và chất lượng dịch vụ tốt nhất.",
+    "service2_detail": "Bạn Đồng Hành Châu Á cung cấp dịch vụ hỗ trợ đặt phòng khách sạn cho Quý đại biểu với đa dạng lựa chọn từ các khách sạn 3 sao cho đến các khách sạn 5 sao đến những resort cao cấp nhằm mang đến những trải nghiệm tuyệt vời nhất và những giây phút thỏa mái nhất tại thành phố Đà Nẵng. Bên cạnh đó, công ty cũng hợp tác với các khách sạn lân cận địa điểm tổ chức hội nghị, nhằm mang đến mức giá ưu đãi cùng chất lượng dịch vụ tốt nhất cho Quý đại biểu trong thời gian tham dự hội nghị.",
+    "service2_url": "https://forms.gle/EDjnpuBj8J9AFW3r7",
     "service3_title": "Tour tham quan",
     "service3_description": "Cung cấp các tour tham quan hằng ngày giúp Quý Đại biểu dễ dàng khám phá văn hoá và danh thắng địa phương trong thời gian lưu trú.",
+    "service3_detail": "Với hơn 15 năm kinh nghiệm trong ngành lữ hành cùng sự am hiểu sâu sắc về điểm đến Đà Nẵng, Bạn Đồng Hành Châu Á mang đến các tour tham quan hằng ngày, giúp Quý đại biểu dễ dàng khám phá văn hóa và danh lam thắng cảnh địa phương trong suốt thời gian lưu trú.",
+    "service3_url": "https://forms.gle/EDjnpuBj8J9AFW3r7",
     "companyName": "CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ DU LỊCH BẠN ĐỒNG HÀNH CHÂU Á",
     "companyDescription": "Với đội ngũ chuyên nghiệp hơn 15 năm kinh nghiệm, Công ty Bạn Đồng Hành Châu Á là đối tác tin cậy trong nhiều sự kiện hội nghị trong nước và quốc tế ,",
     "experience": " cam kết mang đến những dịch vụ chuyên nghiệp, chất lượng cao để đảm bảo chuyến đi của quý vị thoải mái và đáng nhớ.",
@@ -193,7 +199,7 @@
     "paragraph2": "Hội nghị lần này là dịp đặc biệt để quy tụ các chuyên gia đầu ngành trong khu vực và quốc tế trong lĩnh vực chăm sóc sơ sinh, đặc biệt là chăm sóc trẻ sinh non và nhẹ cân. Đây là diễn đàn khoa học uy tín nhằm cập nhật các bằng chứng mới nhất, chia sẻ kinh nghiệm thực tiễn, đồng thời thúc đẩy hợp tác chuyên môn hướng đến việc nhân rộng áp dụng phương pháp Kangaroo một cách bền vững tại các cơ sở y tế - từ tuyến trung ương đến địa phương. Qua đó, chúng ta cùng chung tay xây dựng một mạng lưới hỗ trợ vững mạnh, hướng đến mục tiêu vì một tương lai khỏe mạnh hơn cho trẻ em trong toàn khu vực.",
     "closing": "<strong>Xin kính chúc quý Đại biểu sức khỏe, thành công và có những trải nghiệm đáng nhớ tại thành phố Đà Nẵng thân thiện và hiếu khách!</strong>",
     "signature": "Trân trọng,",
-    "signatureName": "BS. Ngô Thị Kim Yến",
-    "signatureRole": "Chủ tịch Hội Y học thành phố Đà Nẵng"
+    "signatureName": "Ban Tổ Chức",
+    "signatureRole": ""
   }
 }

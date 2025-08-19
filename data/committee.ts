@@ -111,6 +111,9 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             role: [
                 "Stevenson Chair and Head of Department of Pediatrics, The University of Melbourne",
                 "Consultant Pediatrician, General Pediatrics Department, Royal Children’s Hospital, Melbourne, Australia",
+                "Consultant with WHO, UNICEF, Save the Children and the ADB",
+                "Led redesign of national child health training programs such as IMNCI and WHO Pocketbook in Lao PDR ",
+                "Co-Chair of Melbourne Children’s Global Health",
             ],
             imageUrl: "/committer/AmyGray.webp",
         },
@@ -172,7 +175,21 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/LarryNgo.webp",
         },
         {
-            order: 15,
+            "order": 15,
+            "title": "BS",
+            "name": "Professor Abdul Mannan, MD, PhD",
+            "role": [
+                "Chairman, Department of Neonatology, Bangladesh Medical University",
+                "Co-Investigator & Clinical Lead, iKMC project",
+                "Master Mentor, KMC Training",
+                "Secretary General, Bangladesh Perinatal Society",
+                "Vice President, Bangladesh Neonatal Forum",
+                "Member, National Technical Working Committee on Newborn Health Bangladesh"
+            ],
+            "imageUrl": "/committer/AbdulMannan.png"
+        },
+        {
+            order: 16,
             title: "MD",
             name: "Dr. Luong Kim Chi, MD",
             role: [
@@ -183,7 +200,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/LuongKimChi.webp",
         },
         {
-            order: 16,
+            order: 17,
             title: "MD, PhD, Associate Professor",
             name: "Associate Professor Tran Thi Hoang, MD, PhD",
             role: [
@@ -196,7 +213,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/TranThiHoang.webp",
         },
         {
-            order: 17,
+            order: 18,
             title: "MD, PhD, Dr",
             name: "Dr. Phan Thi Hang, MD, PhD",
             role: [
@@ -206,7 +223,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/PhanThiHang.webp",
         },
         {
-            order: 18,
+            order: 19,
             title: "MSc, Specialist Level II, Dr",
             name: "Dr. Le Thi Ha, MMed, Specialist Level II",
             role: [
@@ -217,7 +234,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/LeThiHa.webp",
         },
         {
-            order: 19,
+            order: 20,
             title: "Specialist Level II, Dr",
             name: "Dr. Bui Thi Thuy Tien, Specialist Level II ",
             role: [
@@ -227,7 +244,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/BuiThiThuyTien.webp",
         },
         {
-            order: 20,
+            order: 21,
             title: "Dr",
             name: "Dr Huynh Thi Le, MD, MMed",
             role: [
@@ -338,7 +355,10 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "name": "GS.TS.BS. Amy Gray",
             "role": [
                 "Trưởng bộ môn Nhi, Đại học Melbourne",
-                "Chuyên gia Nhi khoa, Bệnh viện Nhi Hoàng gia, Melbourne, Úc"
+                "Chuyên gia Nhi khoa, Bệnh viện Nhi Hoàng gia, Melbourne, Úc",
+                "Chuyên gia cho WHO, UNICEF, Save the Children và ADB",
+                "Đóng vai trò chủ chốt trong việc thiết kế lại các chương trình đào tạo sức khỏe trẻ em quốc gia như IMNCI và Sổ tay WHO tại Lào.",
+                "Đồng Chủ tịch Chương trình Sức khỏe trẻ em Toàn cầu Melbourne"
             ],
             "imageUrl": "/committer/AmyGray.webp"
         },
@@ -401,6 +421,20 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 15,
             "title": "BS",
+            "name": "GS.TS.BS. Abdul Mannan",
+            "role": [
+                "Trưởng khoa Sơ sinh, Đại học Y khoa Bangladesh",
+                "Đồng trưởng nhóm nghiên cứu và lâm sàng dự án iKMC",
+                "Cố vấn cao cấp chương trình đào tạo KMC",
+                "Tổng Thư ký Hội Chu sinh Bangladesh",
+                "Phó Chủ tịch Diễn đàn Sơ sinh Bangladesh",
+                "Thành viên Ủy ban Kỹ thuật Quốc gia về Sức khỏe Trẻ sơ sinh Bangladesh."
+            ],
+            "imageUrl": "/committer/AbdulMannan.png"
+        },
+        {
+            "order": 16,
+            "title": "BS",
             "name": "BS. Lương Kim Chi",
             "role": [
                 "Trưởng khoa Sơ sinh, Bệnh viện đa khoa quốc tế Tân An, Việt Nam",
@@ -410,7 +444,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/LuongKimChi.webp"
         },
         {
-            "order": 16,
+            "order": 17,
             "title": "PGS.TS.BS",
             "name": "PGS.TS.BS. Trần Thị Hoàng",
             "role": [
@@ -423,7 +457,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/TranThiHoang.webp"
         },
         {
-            "order": 17,
+            "order": 18,
             "title": "TS.BS",
             "name": "TS.BS. Phan Thị Hằng",
             "role": [
@@ -433,7 +467,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/PhanThiHang.webp"
         },
         {
-            "order": 18,
+            "order": 19,
             "title": "ThS.BSCK II",
             "name": "ThS.BS.CK II Lê Thị Hà",
             "role": [
@@ -444,7 +478,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/LeThiHa.webp"
         },
         {
-            "order": 19,
+            "order": 20,
             "title": "BSCK II",
             "name": "BS.CK II Bùi Thị Thuỷ Tiên",
             "role": [
@@ -454,7 +488,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/BuiThiThuyTien.webp"
         },
         {
-            "order": 20,
+            "order": 21,
             "title": "ThS.BS",
             "name": "ThS.BS. Huỳnh Thị Lệ",
             "role": [

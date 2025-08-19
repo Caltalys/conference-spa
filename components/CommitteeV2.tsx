@@ -27,7 +27,7 @@ const CommitteeV2 = () => {
     const [selectedMember, setSelectedMember] = useState<CommitteeMemberProps | null>(null);
 
     const autoplay = useRef(
-        Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })
+        Autoplay({ delay: 1500, stopOnInteraction: false, stopOnMouseEnter: true })
     );
 
     useEffect(() => {

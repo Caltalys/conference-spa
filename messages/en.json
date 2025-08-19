@@ -129,12 +129,12 @@
     "flyerFull": "/flyer-en.jpg"
   },
   "WhyAttend": {
-    "title": "Why Attend KMC 2025?",
+    "title": "Why Attend Da Nang KMC Conference 2025?",
     "feature1_title": "Update knowledge and enhance skills",
     "feature1_desc": "The conference will focus on updating knowledge and improving skills in caring for premature and low birth weight infants receiving Kangaroo Mother Care (KMC) - a method that has been proven to reduce mortality and morbidity among premature and low-birth-weight infants.",
     "feature2_title": "Make Meaningful Connections",
     "feature2_desc": "The conference is honored to welcome clinical experts and researchers from many countries around the world to share valuable experiences as well as the latest research results on this method of care",
-    "feature3_title": "Promote Positive Impact in the Healthcare Community",
+    "feature3_title": "Enhance Positive Impact on the Healthcare Community",
     "feature3_desc": "The conference aims to improve the quality of care for preterm infants, reduce neonatal mortality and morbidity rates, and promote the widespread adoption of the Kangaroo Mother Care method within the regional healthcare community.",
     "flyer": "/flyer-cover-en.png"
   },
@@ -143,10 +143,16 @@
     "subtitle": "To facilitate your attendance at the conference, we offer recommended options for pre-booking accommodation, sightseeing, and transportation services.",
     "service1_title": "Transportation",
     "service1_description": "Door-to-door transportation service ensuring convenience for delegates throughout the conference.",
+    "service1_detail": "Door-to-door transportation service ensures convenience for all delegates throughout the conference and sightseeing activities. Asian Companion Travel offers a wide range of high-quality vehicles, from 4-seaters to 45-seaters, catering to individuals, families, and large groups.",
+    "service1_url": "https://forms.gle/EDjnpuBj8J9AFW3r7",
     "service2_title": "Accommodation",
     "service2_description": "In partnership with hotels near the conference venue, we offer special rates and high-quality services.",
+    "service2_detail": "Asian Companion Travel offer hotel booking support cho all delegates, with a wide selection ranging from 3-star to 5-star hotel and luxury resort - ensuring the best experiences and comfort during your stay in Da Nang city. Moreover, in partnership with hotel near the conference venue, we offer a special rate and high-quality services for you during the conference.",
+    "service2_url": "https://forms.gle/EDjnpuBj8J9AFW3r7",
     "service3_title": "Sightseeing Tours",
     "service3_description": "Daily tours are available to help delegates easily explore local culture and attractions during your stay.",
+    "service3_detail": "With over 15 years of experience in tourism and in-depth knowledge of Da Nang, Asian Companion Travel offer a daily tour that help delegates easily to explore Da Nang’s most iconic natural and cultural attractions during the conference.",
+    "service3_url": "https://forms.gle/EDjnpuBj8J9AFW3r7",
     "companyName": "ASIAN COMPANION TRAVEL SERVICES AND TRADING COMPANY LIMITED",
     "companyDescription": "",
     "experience": "With a professional team boasting over 15 years of experience, Asian Companion Travel is a trusted partner for numerous major domestic and international conference events. The agency provides high-quality, professional services to ensure your journey to Da Nang is both comfortable and memorable.",
@@ -192,7 +198,7 @@
     "paragraph2": "This conference presents a valuable opportunity for leading regional and international experts in obstetrics, neonatology and pediatrics to come together. It serves as a respected scientific forum to share the latest research evidence, exchange practical clinical experiences, and promote collaboration. Our shared goal is to expand the sustainable implementation of KMC across all levels of healthcare - from tertiary hospitals to local facilities - while building a strong professional network to ensure a healthier future for children throughout the region.",
     "closing": "We wish all delegates good health, great success, and a memorable experience in the warm and welcoming city of Da Nang!",
     "signature": "Sincerely yours,",
-    "signatureName": "Dr Ngo Thi Kim Yen",
-    "signatureRole": "Chairman of Da Nang Medical Association"
+    "signatureName": "Conference Organizing Committee",
+    "signatureRole": ""
   }
 }
