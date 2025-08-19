@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 import CountDown from "./Countdown";
@@ -27,10 +28,18 @@ const Hero = () => {
   return (
     <section
       id="trang-chu"
-      className="relative min-h-[580px] lg:h-screen bg-[url('/baby.jpg')] bg-cover bg-no-repeat bg-center pt-2 md:pt-0"
+      className="relative min-h-[580px] lg:h-screen pt-2 md:pt-0"
     >
+      <Image
+        src="/baby.jpg"
+        alt="A mother holding her newborn baby"
+        fill
+        priority
+        className="object-cover object-center"
+        sizes="100vw"
+      />
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-500/50 to-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-900/60 to-black/50" />
 
       <div className="relative z-10 flex h-full w-full items-center justify-center pt-16">
         <motion.div

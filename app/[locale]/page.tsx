@@ -24,17 +24,13 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <Header />
-      {/* <Hero /> */}
       <Banner />
       <CounterContainer />
       <ConferenceInfo />
-      {/* <WelcomeMessage /> */}
-      {/* <Agenda /> */}
       <CommitteeV2 />
       <Register />
       <WhyAttendKMC />
       <Services />
-      {/* <Gallery /> */}
       <DynamicGallery />
       <Sponsor />
       <Footer />

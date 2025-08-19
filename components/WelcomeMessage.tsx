@@ -18,14 +18,10 @@ export const WelcomeMessageItem = () => {
     };
 
     return (
-        <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
+        <div
             className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center"
         >
-            <motion.div variants={fadeInUp}>
+            <div>
                 {/* <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl uppercase">
                     {t('title')}
                 </h2> */}
@@ -35,10 +31,9 @@ export const WelcomeMessageItem = () => {
                 <p className="mt-2 text-lg text-white">
                     {t('locationDate')}
                 </p>
-            </motion.div>
+            </div>
 
-            <motion.div
-                variants={fadeInUp}
+            <div
                 className="mt-12 text-left space-y-6 text-white text-lg"
             >
                 <p className="italic">{t('salutation')}</p>
@@ -53,9 +48,9 @@ export const WelcomeMessageItem = () => {
                 <p className="font-bold mt-4">{t("signatureName")}</p>
                 <p className="italic">{t("signatureRole")}</p>
                 </div>
-            </motion.div>
+            </div>
             <div className="mt-6 border-t border-cyan-400 w-1/2 mx-auto"></div>
-        </motion.div>
+        </div>
     );
 }
 

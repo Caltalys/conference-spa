@@ -1,9 +1,18 @@
 
+import Image from "next/image";
 
 const Banner = () => {
     return (
-        <section id="banner" className="relative mx-auto h-full overflow-hidden mt-20 scroll-mt-16">
-            <img src="/bg-hero.jpg" alt="Banner"  className="w-full h-full object-cover"  />
+        <section id="banner" className="relative w-full mt-20 scroll-mt-16">
+            <Image
+                src="/bg-hero.jpg"
+                alt="Banner"
+                width={2100}
+                height={900}
+                priority
+                className="w-full h-auto object-contain"
+                sizes="100vw"
+            />
         </section>
     )
 }
