@@ -219,7 +219,11 @@
     "address": "402 Le Van Hien, Ngu Hanh Son Ward, Da Nang City",
     "copyright": "KMC 2025 VIETNAM – DA NANG. All rights reserved.",
     "sponsor": "Sponsor",
-    "sponsorTitle": "The Conference Organizing Committee sincerely thanks the Embassy of Ireland in Vietnam for their valued support through the Alive & Thrive project"
+    "sponsorTitle": "The Conference Organizing Committee sincerely thanks the Embassy of Ireland in Vietnam for their valued support through the Alive & Thrive project",
+    "coSponsorTitle": "Co-Sponsors",
+    "silverSponsor": "Silver Sponsor",
+    "bronzeSponsor": "Bronze Sponsor",
+    "partnerSponsor": "Partners"
   },
   "WelcomeMessage": {
     "title": "WELCOME MESSAGE",

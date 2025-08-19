@@ -219,7 +219,11 @@
     "address": "402 Lê Văn Hiến, Phường Ngũ Hành Sơn, TP. Đà Nẵng",
     "copyright": "KMC 2025 VIỆT NAM – ĐÀ NẴNG. Mọi quyền được bảo lưu.",
     "sponsor": "Đơn vị tài trợ",
-    "sponsorTitle": "Hội nghị trân trọng cảm ơn sự đồng hành của Đại sứ quán Ireland tại Việt Nam thông qua Dự án Alive & Thrive"
+    "sponsorTitle": "Hội nghị trân trọng cảm ơn sự đồng hành của đơn vị",
+    "coSponsorTitle": "Các đơn vị đồng tài trợ",
+    "silverSponsor": "Tài trợ bạc",
+    "bronzeSponsor": "Tài trợ đồng",
+    "partnerSponsor": "Đồng hành"
   }
 ,
   "WelcomeMessage": {
