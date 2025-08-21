@@ -3,6 +3,7 @@ import { Mic, BookOpen, CheckSquare, type LucideIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
+import { useAnimationProps } from "@/lib/useAnimationProps";
 
 const iconMap: Record<string, LucideIcon> = {
   BookOpen,
@@ -32,13 +33,7 @@ const Agenda = () => {
 
   return (
     <section id="chuong-trinh" className=" bg-slate-50 lg:py-24">
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
-      >
+      <motion.div {...useAnimationProps(staggerContainer)} className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div variants={fadeInUp} className="text-center mb-8">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl uppercase">
             {t('title')}

@@ -8,10 +8,11 @@ import { CalendarClock, Link as LinkIcon, type LucideIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { staggerContainer, fadeInUp } from "@/lib/animations";
+import { motion, Variants } from 'framer-motion';
+import { staggerContainer, fadeInUp, fadeInLeft } from "@/lib/animations";
 import "yet-another-react-lightbox/styles.css";
 import Pretitle from "./Pretitle";
+import { useAnimationProps } from "@/lib/useAnimationProps";
 
 interface SectionHeaderProps {
     title: string;
@@ -57,21 +58,15 @@ const ScientificReportInfo = () => {
 };
 
 const AnimatedList = ({ items }: { items: string[] }) => (
-    <ul className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
+    <motion.ul variants={staggerContainer} className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
         {items.map((item, i) => (
             item && (
-                <motion.li
-                    key={item}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: i * 0.1 }}
-                    viewport={{ once: true }}
-                >
+                <motion.li key={item} variants={fadeInLeft}>
                     {item}
                 </motion.li>
             )
         ))}
-    </ul>
+    </motion.ul>
 );
 
 // ... (rest of the file)
@@ -147,10 +142,7 @@ const Register = () => {
         <motion.section
             id="dang-ky"
             className="scroll-mt-16 py-16"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
+            {...useAnimationProps(staggerContainer, { once: true, amount: 0.2 })}
         >
             <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
                 <SectionHeader title={t('title')} subtitle={t('subtitle')} />
@@ -171,25 +163,12 @@ const Register = () => {
                             </MotionTabsList>
                         </div>
                         <TabsContent value="attendance">
-                            <motion.div
-                                key="attendance"
-                                initial={{ opacity: 0, y: 10 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.4, ease: 'easeOut' }}
-                                viewport={{ once: true }}
-                                className=""
-                            >
+                            <motion.div key="attendance" variants={fadeInUp} className="">
                                 <AttendanceDetails />
                             </motion.div>
                         </TabsContent>
                         <TabsContent value="report">
-                            <motion.div
-                                key="report"
-                                initial={{ opacity: 0, y: 10 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.4, ease: 'easeOut' }}
-                                viewport={{ once: true }}
-                            >
+                            <motion.div key="report" variants={fadeInUp}>
                                 <ScientificReportInfo />
                             </motion.div>
                         </TabsContent>

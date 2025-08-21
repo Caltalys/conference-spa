@@ -6,23 +6,20 @@ import { Building, CalendarDays, Download, MapPin, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight } from "@/lib/animations";
-import { cn } from "@/lib/utils";
+import { staggerContainer, fadeInUp, fadeInRight } from "@/lib/animations";
 import { FlyerImageItem } from "./FlyerImage";
 import { WelcomeMessageItem } from "./WelcomeMessage";
 import Pretitle from "./Pretitle";
+import { useAnimationProps } from "@/lib/useAnimationProps";
 
 // Sub-component for the section title
 export const SectionHeader = ({ title, textColor }) => (
   <motion.div variants={fadeInUp} className="text-center mb-12">
     <Pretitle text={title} center starColor={textColor} textColor={textColor} />
-    {/* <h2 className={cn("text-3xl font-bold tracking-tight sm:text-4xl uppercase",textColor)}>
-      {title}
-    </h2> */}
   </motion.div>
 );
 
-// Sub-component for each info item. Now accepts an `index` for staggered animations.
+// Sub-component for each info item. Accepts an `index` for staggered animations.
 const InfoItem = ({ icon: Icon, label, children }) => (
   <motion.div variants={fadeInUp} className="flex">
     <dt className="flex-shrink-0">
@@ -47,7 +44,7 @@ const DownloadButtons = ({ t }) => (
         </Link>
       </Button>
     </motion.div>
-    
+
     {/* <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
       <Button asChild variant="outline" size="xl" className="text-xl font-semibold">
         <Link href="/ThuNgo.pdf" download="ThuNgo.pdf" >
@@ -62,6 +59,7 @@ const DownloadButtons = ({ t }) => (
 
 const ConferenceInfo = () => {
   const t = useTranslations('ConferenceInfo');
+  const sectionProps = useAnimationProps(staggerContainer);
 
   const infoItems = [
     { icon: Building, label: t('conferenceNameLabel'), value: t('conferenceNameValue') },
@@ -78,21 +76,20 @@ const ConferenceInfo = () => {
 
   return (
     <section id="tong-quan" className="scroll-mt-16 top-wave bg-primary">
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        className="mx-auto max-w-7xl p-4 sm:p-6 md:p-8"
-      >
+      <div className="mx-auto max-w-7xl p-4 sm:p-6 md:p-8">
         <SectionHeader title={t('title')} textColor={'text-white'} />
 
-        <WelcomeMessageItem />
+        <motion.div {...useAnimationProps(fadeInUp)}>
+          <WelcomeMessageItem />
+        </motion.div>
 
-        <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-16 py-8">
+        <motion.div
+          {...useAnimationProps(fadeInUp)}
+          className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-16 py-8"
+        >
 
           {/* Left Column */}
-          <motion.div variants={staggerContainer} className="space-y-8">
+          <motion.div {...useAnimationProps(staggerContainer)} className="space-y-8">
             <dl className="space-y-6">
               {/* We now pass the `index` to the InfoItem for staggering */}
               {infoItems.map((item) => (
@@ -111,7 +108,7 @@ const ConferenceInfo = () => {
           </motion.div>
 
           {/* Right Column (Map) */}
-          <motion.div variants={fadeInRight} className="relative my-16 lg:mt-0">
+          <motion.div {...useAnimationProps(fadeInRight)} className="relative my-16 lg:mt-0">
             <Link
               href="https://www.google.com/maps/place/Trung+T%C3%A2m+Ki%E1%BB%83m+So%C3%A1t+B%E1%BB%87nh+T%E1%BA%ADt+(CDC)+%C4%90%C3%A0+N%E1%BA%B5ng/@16.0542243,108.2090089,17z/data=!3m1!4b1!4m6!3m5!1s0x3142192e9a35a1bf:0x57e8e45b501ffea2!8m2!3d16.0542243!4d108.2115838!16s%2Fg%2F11hz3jv49q?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
@@ -128,10 +125,12 @@ const ConferenceInfo = () => {
               </div>
             </Link>
           </motion.div>
-        </div>
-        <FlyerImageItem />
+        </motion.div>
+        <motion.div {...useAnimationProps(fadeInUp)}>
+          <FlyerImageItem />
+        </motion.div>
         <DownloadButtons t={t} />
-      </motion.div>
+      </div>
     </section>
   );
 };

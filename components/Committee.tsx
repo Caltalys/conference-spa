@@ -4,6 +4,7 @@ import CommitteeMember from "./CommitteeMember";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
 import { committeeData } from "@/data/committee";
+import { useAnimationProps } from "@/lib/useAnimationProps";
 
 const Committee = () => {
     const t = useTranslations('Committee');
@@ -25,21 +26,19 @@ const Committee = () => {
     const sortedMembers = [...members].sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
 
     return (
-        <section id="ban-to-chuc" className="scroll-mt-16 pt-16 bottom-wave bg-primary">
+        <motion.section
+            id="ban-to-chuc"
+            className="scroll-mt-16 pt-16 bottom-wave bg-primary"
+            {...useAnimationProps(staggerContainer)}
+        >
             <div className="mx-auto w-full p-4 sm:p-6 lg:p-8">
-                <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    variants={fadeInUp}
-                    className="mb-8 text-center">
+                <motion.div variants={fadeInUp} className="mb-8 text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl uppercase">{t('title')}</h2>
                     <p className="mt-4 text-lg text-white">
                         {t('subtitle')}
                     </p>
                 </motion.div>
-                {/* This container will stagger its children (the cards) */}
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <motion.div variants={staggerContainer} className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     {sortedMembers.map((member) => (
                         <motion.div variants={fadeInUp}
                             key={member.order}
@@ -48,9 +47,9 @@ const Committee = () => {
                             <CommitteeMember {...member} />
                         </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 export default Committee

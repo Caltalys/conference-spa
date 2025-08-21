@@ -28,8 +28,8 @@ export default function Home() {
       <CounterContainer />
       <ConferenceInfo />
       <CommitteeV2 />
-      <Register />
       <WhyAttendKMC />
+      <Register />
       <Services />
       <DynamicGallery />
       <Sponsor />

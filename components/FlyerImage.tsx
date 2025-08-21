@@ -1,7 +1,6 @@
 'use client';
 
 import { useTranslations } from "next-intl";
-import { Card, CardContent } from "./ui/card";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -14,13 +13,9 @@ export const FlyerImageItem = () => {
 
     return (
         <motion.div
-            className="relative w-full max-w-7xl mx-auto aspect-[3/2]"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            transition={{ delay: 0.3 }}
-            viewport={{ once: true }}
+            className="relative w-full max-w-7xl mx-auto aspect-[3/2]"
         >
             <Image
                 src={flyerFullSrc}

@@ -16,6 +16,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
 import Pretitle from "./Pretitle";
+import { useAnimationProps } from "@/lib/useAnimationProps";
 
 const SectionHeader = ({ title, subtitle }: { title: string; subtitle?: string }) => (
   <motion.div
@@ -50,10 +51,7 @@ const Gallery = () => {
     <motion.section
       id="thu-vien"
       className="scroll-mt-16 pt-16 bg-primary"
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.1 }}
+      {...useAnimationProps(staggerContainer)}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader title={t('title')} />

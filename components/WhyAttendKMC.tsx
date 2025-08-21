@@ -2,24 +2,18 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { motion } from "motion/react";
+import { motion, type Variants } from "framer-motion";
+import { staggerContainer, fadeInUp, fadeInRight } from "@/lib/animations";
+import { useAnimationProps } from "@/lib/useAnimationProps";
 
 const FeatureItem = ({
   title,
   description,
-  delay,
 }: {
   title: string;
   description: string;
-  delay: number;
 }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay }}
-    viewport={{ once: true }}
-    className="mb-10"
-  >
+  <motion.div variants={fadeInUp} className="mb-10">
     <h3 className="text-xl font-semibold text-white">{title}</h3>
     <p className="mt-2 text-white/90">{description}</p>
     <div className="mt-4 border-t border-cyan-400 w-full"></div>
@@ -46,34 +40,24 @@ const WhyAttendKMC = () => {
 
   return (
     <section className="relative top-wave bottom-wave bg-primary">
-      <div className="relative z-20 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
-        <div>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-white mb-8"
-          >
+      <motion.div {...useAnimationProps(staggerContainer, { once: true, amount: 0.2 })}
+        className="relative z-20 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4"
+      >
+        {/* Cột trái: Sử dụng staggerContainer để các phần tử con xuất hiện lần lượt */}
+        <motion.div variants={staggerContainer}>
+          <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold text-white mb-8">
             {t("title")}
           </motion.h2>
           {items.map((item, i) => (
-            <FeatureItem
-              key={i}
-              title={item.title}
-              description={item.description}
-              delay={0.2 + i * 0.2}
-            />
+            <FeatureItem key={i} title={item.title} description={item.description} />
           ))}
-        </div>
-        <div className="relative w-full max-w-[480px] h-96 md:h-auto mx-auto">
-          <Image
-            src={t('flyer')}
-            alt="Why Attend KMC"
-            fill
-            className="object-contain rounded-md shadow-lg"
-          />
-        </div>
-      </div>
+        </motion.div>
+
+        {/* Cột phải: Xuất hiện đồng thời với cột trái */}
+        <motion.div variants={fadeInUp} className="relative w-full max-w-[480px] h-96 md:h-auto mx-auto">
+          <Image src={t('flyer')} alt="Why Attend KMC" fill className="object-contain rounded-md shadow-lg" />
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

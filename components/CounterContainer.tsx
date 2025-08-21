@@ -1,37 +1,30 @@
 "use client";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { staggerContainer, fadeInUp, scaleIn } from "@/lib/animations";
 import CountDown from "./Countdown";
 import Link from "next/link";
+import { useAnimationProps } from "@/lib/useAnimationProps";
 
 const CounterContainer = () => {
     const t = useTranslations("Hero");
+    const sectionProps = useAnimationProps(staggerContainer, { once: true, amount: 0.5 });
     return (
-        <section className="flex flex-col w-full h-full items-center justify-center pt-8 pb-4 space-y-8">
-            <motion.div
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.5 }}
-            >
+        <motion.section {...sectionProps}
+            className="flex flex-col w-full h-full items-center justify-center pt-8 pb-4 space-y-8"
+        >
+            <motion.div variants={fadeInUp}>
                 <p className="text-xl lg:text-3xl uppercase text-primary font-semibold font-serif">
                     {t("remainTitle")}
                 </p>
             </motion.div>
-            <motion.div
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.5 }}
-            >
+            <motion.div variants={fadeInUp}>
                 <CountDown />
             </motion.div>
             <motion.div
-                initial={{ scale: 0.95, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
+                variants={scaleIn}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
                 <Link
                     href="#dang-ky" 
@@ -40,7 +33,7 @@ const CounterContainer = () => {
                     {t("registerNow")}
                 </Link>
             </motion.div>
-        </section>
+        </motion.section>
     )
 }
 

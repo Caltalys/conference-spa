@@ -4,21 +4,14 @@ import { Building, Mail, MapPin, Phone, User } from 'lucide-react';
 import { useTranslations } from "next-intl";
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeInUp } from '@/lib/animations';
+import { useAnimationProps } from '@/lib/useAnimationProps';
 
 const Footer = () => {
     const t = useTranslations('Footer');
 
     return (
-        <motion.footer
-            id="lien-he"
-            className="bg-primary text-white w-full pt-8"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-        >
-            <div className="container mx-auto px-4 pb-8">
-                <motion.div variants={fadeInUp} className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <footer id="lien-he" className="bg-primary text-white w-full pt-8">
+            <div className="container mx-auto px-4 pb-8 grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Column 1: About */}
                     <div className="md:col-span-2">
                         <h3 className="text-xl font-display font-bold mb-2">{t('conferenceName')}</h3>
@@ -30,7 +23,8 @@ const Footer = () => {
                         <h4 className="font-bold  mb-3">{t('contact')}</h4>
                         <ul className="space-y-2 ">
                             <li className="flex items-center"><User className="mr-2" /> {t('contactPerson')}</li>
-                            <li className="flex items-center"><Mail className="mr-2" />
+                            <li className="flex items-center">
+                                <Mail className="mr-2" />
                                 <a href={`mailto:${t('email')}`} className="font-semibold hover:underline">
                                     {t('email')}
                                 </a>
@@ -40,14 +34,13 @@ const Footer = () => {
                             <li className="flex items-center"><MapPin className="mr-2" /> {t('address')}</li>
                         </ul>
                     </div>
-                </motion.div>
             </div>
-            <motion.div variants={fadeInUp} className="bg-gray-800 py-4">
+            <div className="bg-gray-800 py-4">
                 <div className="container mx-auto px-4 text-center text-white text-sm">
                     <p>&copy; {new Date().getFullYear()} {t('copyright')}</p>
                 </div>
-            </motion.div>
-        </motion.footer>
+            </div>
+        </footer>
     )
 }
 
