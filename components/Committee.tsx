@@ -9,6 +9,7 @@ import { useAnimationProps } from "@/lib/useAnimationProps";
 const Committee = () => {
     const t = useTranslations('Committee');
     const locale = useLocale();
+    const sectionProps = useAnimationProps(staggerContainer);
 
     // Fetching data from a dedicated, locale-aware data file
     // is more efficient and maintainable than using `t.raw`.
@@ -29,7 +30,7 @@ const Committee = () => {
         <motion.section
             id="ban-to-chuc"
             className="scroll-mt-16 pt-16 bottom-wave bg-primary"
-            {...useAnimationProps(staggerContainer)}
+            {...sectionProps}
         >
             <div className="mx-auto w-full p-4 sm:p-6 lg:p-8">
                 <motion.div variants={fadeInUp} className="mb-8 text-center">
