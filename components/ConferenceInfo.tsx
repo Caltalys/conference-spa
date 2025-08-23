@@ -79,9 +79,9 @@ const ConferenceInfo = () => {
       <div className="mx-auto max-w-7xl p-4 sm:p-6 md:p-8">
         <SectionHeader title={t('title')} textColor={'text-white'} />
 
-        <motion.div {...useAnimationProps(fadeInUp)}>
-          <WelcomeMessageItem />
-        </motion.div>
+        <WelcomeMessageItem />
+        {/* <motion.div {...useAnimationProps(fadeInUp)}>
+        </motion.div> */}
 
         <motion.div
           {...useAnimationProps(fadeInUp)}

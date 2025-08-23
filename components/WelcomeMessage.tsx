@@ -2,7 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { staggerContainer, fadeInUp } from "@/lib/animations";
+import { fadeInUp } from "@/lib/animations";
+import { useAnimationProps } from "@/lib/useAnimationProps";
 
 export const WelcomeMessageItem = () => {
     const t = useTranslations('WelcomeMessage');
@@ -18,7 +19,7 @@ export const WelcomeMessageItem = () => {
     };
 
     return (
-        <div
+        <motion.div {...useAnimationProps(fadeInUp)}
             className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center"
         >
             <div>
@@ -50,7 +51,7 @@ export const WelcomeMessageItem = () => {
                 </div>
             </div>
             <div className="mt-6 border-t border-cyan-400 w-1/2 mx-auto"></div>
-        </div>
+        </motion.div>
     );
 }
 

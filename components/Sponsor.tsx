@@ -18,11 +18,12 @@ const bronzeSponsors = [
     { src: '/sponsors/AstraZeneca.png', alt: 'AstraZeneca' },
     { src: '/sponsors/iceland.png', alt: 'Government of Ireland' },
     { src: '/sponsors/thrive.png', alt: 'Thrive' },
+    { src: '/sponsors/TAIPEI.png', alt: 'TAIPEI' },
 ];
 
 const partners = [
     {
-        src: '/sponsors/nhisosinh.jpg',
+        src: '/sponsors/nhisosinh.png',
         alt: 'Nhi sơ sinh Đà Nẵng- Da Nang NICU',
     },
     {
