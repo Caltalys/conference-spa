@@ -53,7 +53,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             role: [
                 "Technical Officer, Maternal Child Health and Quality Safety Division of Health Systems and Services, WHO Regional Office for the Western Pacific (WPRO)",
             ],
-            imageUrl: "/committer/DelgermaaVanya.webp",
+            imageUrl: "/committer/DelgermaaVanya.jpg",
         },
         {
             order: 5,
@@ -189,7 +189,18 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/AbdulMannan.png"
         },
         {
-            order: 16,
+            "order": 16,
+            "title": "BS",
+            "name": "Dr Arata Oda, MD",
+            "role": [
+                "Neonatologist",
+                "Director of Neonatology Nagano Children's Hospital, Japan",
+                "Chairperson of the Neonatal Respiratory Care & Monitoring Forum"
+            ],
+            "imageUrl": "/committer/ArataOda.jpg"
+        },
+        {
+            order: 17,
             title: "MD",
             name: "Dr. Luong Kim Chi, MD",
             role: [
@@ -200,41 +211,43 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/LuongKimChi.webp",
         },
         {
-            order: 17,
+            order: 18,
             title: "MD, PhD, Associate Professor",
             name: "Associate Professor Tran Thi Hoang, MD, PhD",
             role: [
-                "Deputy Director, Da Nang Hospital for Women and Children, Vietnam",
-                "Head of Department of Pediatrics, School of Medicine and Pharmacy, The University of Da nang",
-                "Vice Chairman, Vietnam Perinatal-Neonatal Association",
-                "IRG member for WPRO on monitoring implementation of the Action Plan for Healthy Newborns",
-                "Instructor for Early Essential Newborn Care, Kangaroo Mother Care and Neonatal Resuscitation for both national and international colleagues",
+                "Deputy Director, Da Nang Hospital for Women and Children, Viet Nam",
+                "Head of Department of Pediatrics, School of Medicine and Pharmacy, University of Da Nang",
+                "Vice Chairman, Viet Nam Perinatal & Neonatal Association",
+                "IRG member for WPRO on monitoring the implementation of the Action Plan for Healthy Newborns",
+                "Instructor in Early Essential Newborn Care, Kangaroo Mother Care and Neonatal Resuscitation for national and international health professionals",
             ],
             imageUrl: "/committer/TranThiHoang.webp",
         },
         {
-            order: 18,
+            order: 19,
             title: "MD, PhD, Dr",
             name: "Dr. Phan Thi Hang, MD, PhD",
             role: [
                 "Consultant Obstetrician",
-                "Deputy Director, Hùng Vương Hospital, Vietnam",
+                "Deputy Director, Hùng Vương Hospital, Viet Nam",
+                "Lecturer at the University of Medicine and Pharmacy at Ho Chi Minh City and Pham Ngoc Thach University of Medicine",
+                "Deputy Chair of the Patient Safety Committee, Ho Chi Minh City Department of Health"
             ],
             imageUrl: "/committer/PhanThiHang.webp",
         },
         {
-            order: 19,
+            order: 20,
             title: "MSc, Specialist Level II, Dr",
             name: "Dr. Le Thi Ha, MMed, Specialist Level II",
             role: [
-                "Director, Neonatal Center – Vietnam National Children's Hospital",
-                "Executive Committee Member, Vietnam Perinatal–Neonatal Association",
-                "Instructor of neonatal care for colleagues from provincial hospitals",
+                "Director, Neonatal Center, Viet Nam National Children's Hospital",
+                "Executive Committee Member, Viet Nam Perinatal & Neonatal Association",
+                "Instructor in neonatal care for health professionals from provincial hospitals",
             ],
             imageUrl: "/committer/LeThiHa.webp",
         },
         {
-            order: 20,
+            order: 21,
             title: "Specialist Level II, Dr",
             name: "Dr. Bui Thi Thuy Tien, Specialist Level II ",
             role: [
@@ -244,19 +257,31 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/BuiThiThuyTien.webp",
         },
         {
-            order: 21,
+            order: 22,
+            title: "Dr",
+            name: "Dr. Pham Thi Thanh Tam, MMed, Specialist Level II",
+            role: [
+                "Head of Neonatal Intensive Care Unit, Children’s Hospital 1",
+                "Vice Chairman, Viet Nam Perinatal & Neonatal Association",
+                "Lecturer at Pham Ngoc Thach University of Medicine",
+                "Instructor in neonatal care for health professionals from provincial hospitals",
+            ],
+            imageUrl: "/committer/Pham-Thi-Thanh-Tam.jpg",
+        },
+        {
+            order: 23,
             title: "Dr",
             name: "Dr Huynh Thi Le, MD, MMed",
             role: [
                 "Head of NICU, Da Nang Hospital for Women and Children, Viet Nam",
                 "Deputy Head of General Nursing Department, Faculty of Nursing, Da Nang University of Medical Technology and Pharmacy",
                 "Executive Committee Member, Viet Nam Perinatal & Neonatal Association",
-                "Instructor for Early Essential Newborn Care, Kangaroo Mother Care and Neonatal Resuscitation for both national and international colleagues",
+                "Instructor in Early Essential Newborn Care, Kangaroo Mother Care and Neonatal Resuscitation for national and international health professionals",
             ],
             imageUrl: "/committer/HuynhThiLe.webp",
         },
     ],
-    "vi": [
+    vi: [
         {
             "order": 1,
             "title": "BS",
@@ -294,12 +319,12 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 4,
             "title": "TS.BS",
-            "name": "TS.BS Delgermaa VANYA",
+            "name": "TS.BS Delgermaa Vanya",
             "role": [
                 "Cán bộ chuyên trách về sức khỏe Bà mẹ và Trẻ em",
                 "Tổ chức Y tế Thế giới khu vực Tây Thái Bình Dương"
             ],
-            "imageUrl": "/committer/DelgermaaVanya.webp"
+            "imageUrl": "/committer/DelgermaaVanya.jpg"
         },
         {
             "order": 5,
@@ -435,6 +460,17 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 16,
             "title": "BS",
+            "name": "TS.BS. Arata Oda",
+            "role": [
+                "Bác sĩ Nhi Sơ sinh",
+                "Giám đốc Khoa Sơ sinh Bệnh viện Nhi Nagano, Nhật Bản",
+                "Chủ tịch Diễn đàn Chăm sóc Hô hấp & Theo dõi Sơ sinh"
+            ],
+            "imageUrl": "/committer/ArataOda.jpg"
+        },
+        {
+            "order": 17,
+            "title": "BS",
             "name": "BS. Lương Kim Chi",
             "role": [
                 "Trưởng khoa Sơ sinh, Bệnh viện đa khoa quốc tế Tân An, Việt Nam",
@@ -444,7 +480,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/LuongKimChi.webp"
         },
         {
-            "order": 17,
+            "order": 18,
             "title": "PGS.TS.BS",
             "name": "PGS.TS.BS. Trần Thị Hoàng",
             "role": [
@@ -457,17 +493,19 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/TranThiHoang.webp"
         },
         {
-            "order": 18,
+            "order": 19,
             "title": "TS.BS",
             "name": "TS.BS. Phan Thị Hằng",
             "role": [
+                "Bác sĩ Sản phụ khoa",
                 "Phó giám đốc Bệnh viện Hùng Vương, Việt Nam",
-                "Bác sĩ Sản phụ khoa"
+                "Giảng viên thỉnh giảng Đại học Y Dược TP. Hồ Chí Minh, Đại học Y khoa Phạm Ngọc Thạch",
+                "Phó ban An toàn người bệnh, Sở Y tế TP. Hồ Chí Minh"
             ],
             "imageUrl": "/committer/PhanThiHang.webp"
         },
         {
-            "order": 19,
+            "order": 20,
             "title": "ThS.BSCK II",
             "name": "ThS.BS.CK II Lê Thị Hà",
             "role": [
@@ -478,17 +516,30 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/LeThiHa.webp"
         },
         {
-            "order": 20,
+            "order": 21,
             "title": "BSCK II",
             "name": "BS.CK II Bùi Thị Thuỷ Tiên",
             "role": [
                 "Trưởng khoa Sơ sinh - Bệnh viện Hùng Vương, TP. Hồ Chí Minh, Việt Nam",
-                "Giảng viên thỉnh giảng Đại học Y khoa Phạm Ngọc Thạch"
+                "Giảng viên thỉnh giảng Đại học Y khoa Phạm Ngọc Thạch",
+                "Giảng viên về chăm sóc điều trị sơ sinh cho các bệnh viện tuyến tỉnh"
             ],
             "imageUrl": "/committer/BuiThiThuyTien.webp"
         },
         {
-            "order": 21,
+            order: 22,
+            title: "Dr",
+            name: "ThS.BSCK2. Phạm Thị Thanh Tâm",
+            role: [
+                "Trưởng khoa Hồi sức sơ sinh, Bệnh viện Nhi đồng 1",
+                "Phó trưởng Chi hội Chu Sinh & Sơ sinh Việt Nam",
+                "Thỉnh giảng trường Y Khoa Phạm Ngọc Thạch",
+                "Giảng viên về chăm sóc điều trị sơ sinh cho các bệnh viện tuyến tỉnh",
+            ],
+            imageUrl: "/committer/Pham-Thi-Thanh-Tam.jpg",
+        },
+        {
+            "order": 23,
             "title": "ThS.BS",
             "name": "ThS.BS. Huỳnh Thị Lệ",
             "role": [

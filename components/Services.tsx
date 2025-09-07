@@ -167,8 +167,6 @@ const Services = () => {
             ))}
           </div>
 
-          <Cuisine />
-
           <div className="flex flex-col md:flex-row gap-4 justify-center mx-auto">
             {t("contactPhone1") && (
               <ContactInfoItem icon={Phone} index={0}>
@@ -191,6 +189,8 @@ const Services = () => {
               </a>
             </ContactInfoItem>
           </div>
+
+          <Cuisine />
         </div>
       </div>
       <ServiceDetailModal

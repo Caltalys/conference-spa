@@ -8,7 +8,9 @@ import { cn } from '@/lib/utils';
 import Pretitle from './Pretitle';
 import { useAnimationProps } from '@/lib/useAnimationProps';
 
-const silverSponsors = [{ src: '/sponsors/pfizer.svg', alt: 'Pfizer Inc' }];
+// const silverSponsors = [
+//     { src: '/sponsors/pfizer.svg', alt: 'Pfizer Inc' }
+// ];
 
 const bronzeSponsors = [
     {
@@ -16,6 +18,7 @@ const bronzeSponsors = [
         alt: 'MEDICAL TECHNOLOGY TRANSFER AND SERVICES Co., LTD',
     },
     { src: '/sponsors/AstraZeneca.png', alt: 'AstraZeneca' },
+    { src: '/sponsors/draeger_default.svg', alt: 'Dräger Việt Nam' },
     { src: '/sponsors/iceland.png', alt: 'Government of Ireland' },
     { src: '/sponsors/thrive.png', alt: 'Thrive' },
     { src: '/sponsors/TAIPEI.png', alt: 'TAIPEI' },
@@ -64,9 +67,9 @@ const Sponsor = () => {
                     <Pretitle text={t("sponsor")} center starColor="text-primary" textColor="text-primary" />
                 </motion.div>
 
-                <motion.div variants={fadeInUp}>
+                {/* <motion.div variants={fadeInUp}>
                     <SponsorCategory title={t('silverSponsor')} sponsors={silverSponsors} itemClassName="h-28 w-48" />
-                </motion.div>
+                </motion.div> */}
                 <motion.div variants={fadeInUp}>
                     <SponsorCategory title={t('bronzeSponsor')} sponsors={bronzeSponsors} itemClassName="h-28 w-48" />
                 </motion.div>
