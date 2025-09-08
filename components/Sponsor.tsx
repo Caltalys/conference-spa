@@ -18,13 +18,13 @@ const diamondSponsor = [
 // ];
 
 const bronzeSponsors = [
+    { src: '/sponsors/TAIPEI.png', alt: 'TAIPEI' },
     {
         src: '/sponsors/mtts.jpg',
         alt: 'MEDICAL TECHNOLOGY TRANSFER AND SERVICES Co., LTD',
     },
     { src: '/sponsors/AstraZeneca.png', alt: 'AstraZeneca' },
-    // { src: '/sponsors/draeger_default.svg', alt: 'Dräger Việt Nam' },
-    { src: '/sponsors/TAIPEI.png', alt: 'TAIPEI' },
+    { src: '/sponsors/Hyphens.png', alt: 'Hyphens' },
 ];
 
 const partners = [
