@@ -8,6 +8,11 @@ import { cn } from '@/lib/utils';
 import Pretitle from './Pretitle';
 import { useAnimationProps } from '@/lib/useAnimationProps';
 
+const diamondSponsor = [
+    { src: '/sponsors/iceland.png', alt: 'Government of Ireland' },
+    { src: '/sponsors/thrive.png', alt: 'Thrive' },
+];
+
 // const silverSponsors = [
 //     { src: '/sponsors/pfizer.svg', alt: 'Pfizer Inc' }
 // ];
@@ -18,9 +23,7 @@ const bronzeSponsors = [
         alt: 'MEDICAL TECHNOLOGY TRANSFER AND SERVICES Co., LTD',
     },
     { src: '/sponsors/AstraZeneca.png', alt: 'AstraZeneca' },
-    { src: '/sponsors/draeger_default.svg', alt: 'Dräger Việt Nam' },
-    { src: '/sponsors/iceland.png', alt: 'Government of Ireland' },
-    { src: '/sponsors/thrive.png', alt: 'Thrive' },
+    // { src: '/sponsors/draeger_default.svg', alt: 'Dräger Việt Nam' },
     { src: '/sponsors/TAIPEI.png', alt: 'TAIPEI' },
 ];
 
@@ -48,7 +51,7 @@ const Sponsor = () => {
             </motion.div>
             <motion.div
                 variants={staggerContainer}
-                className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-8 md:gap-x-16">
+                className="mt-8 flex flex-wrap items-center justify-center gap-x-4 gap-y-8 md:gap-x-16">
                 {sponsors.map((sponsor) => (
                     <motion.div key={sponsor.alt} variants={fadeInUp} className={cn('relative', itemClassName)}>
                         <Image src={sponsor.src} alt={sponsor.alt} fill className="p-4 object-contain" style={{ clipPath: 'inset(1px 2px 1px 2px)' }} />
@@ -67,9 +70,9 @@ const Sponsor = () => {
                     <Pretitle text={t("sponsor")} center starColor="text-primary" textColor="text-primary" />
                 </motion.div>
 
-                {/* <motion.div variants={fadeInUp}>
-                    <SponsorCategory title={t('silverSponsor')} sponsors={silverSponsors} itemClassName="h-28 w-48" />
-                </motion.div> */}
+                <motion.div variants={fadeInUp}>
+                    <SponsorCategory title={t('diamondSponsor')} sponsors={diamondSponsor} itemClassName="h-32 w-52" />
+                </motion.div>
                 <motion.div variants={fadeInUp}>
                     <SponsorCategory title={t('bronzeSponsor')} sponsors={bronzeSponsors} itemClassName="h-28 w-48" />
                 </motion.div>
