@@ -200,7 +200,21 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/ArataOda.jpg"
         },
         {
-            order: 17,
+            "order": 17,
+            "title": "BS",
+            "name": "Professor Somashekhar Nimbalkar, MD, FNNF, FIAP",
+            "role": [
+                "Professor of Neonatology, Pramukhswami Medical College, Gujarat India",
+                "President-Elect 2026 – National Neonatology Forum (NNF)",
+                "India Editor-in-Chief, Journal of Neonatology (NNF)",
+                "National Coordinator, IAP NNF Neonatal Resuscitation Program (2020–2025)",
+                "Member International Pediatric Association Program on Maternal & Newborn Health, Perinatal Medicine (2025–2027)",
+                "Recipient of multiple national and international awards in Pediatrics & Neonatology"
+            ],
+            "imageUrl": "/committer/Nimbalkar.jpg"
+        },
+        {
+            order: 18,
             title: "MD",
             name: "Dr. Luong Kim Chi, MD",
             role: [
@@ -211,7 +225,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/LuongKimChi.webp",
         },
         {
-            order: 18,
+            order: 19,
             title: "MD, PhD, Associate Professor",
             name: "Associate Professor Tran Thi Hoang, MD, PhD",
             role: [
@@ -224,7 +238,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/TranThiHoang.webp",
         },
         {
-            order: 19,
+            order: 20,
             title: "MD, PhD, Dr",
             name: "Dr. Phan Thi Hang, MD, PhD",
             role: [
@@ -236,7 +250,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/PhanThiHang.webp",
         },
         {
-            order: 20,
+            order: 21,
             title: "MSc, Specialist Level II, Dr",
             name: "Dr. Le Thi Ha, MMed, Specialist Level II",
             role: [
@@ -247,7 +261,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/LeThiHa.webp",
         },
         {
-            order: 21,
+            order: 22,
             title: "Specialist Level II, Dr",
             name: "Dr. Bui Thi Thuy Tien, Specialist Level II ",
             role: [
@@ -257,7 +271,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/BuiThiThuyTien.webp",
         },
         {
-            order: 22,
+            order: 23,
             title: "Dr",
             name: "Dr. Pham Thi Thanh Tam, MMed, Specialist Level II",
             role: [
@@ -269,7 +283,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/Pham-Thi-Thanh-Tam.jpg",
         },
         {
-            order: 23,
+            order: 24,
             title: "Dr",
             name: "Dr Huynh Thi Le, MD, MMed",
             role: [
@@ -280,6 +294,17 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             ],
             imageUrl: "/committer/HuynhThiLe.webp",
         },
+        {
+            order: 25,
+            title: "Dr",
+            name: "Dr. Nguyen Thu Nga",
+            role: [
+                "Pediatrician, Neonatologist, and Kangaroo Mother Care Specialist",
+                "Former Head of Neonatology Department and KMC Unit, Vietnam-Sweden Uong Bi Hospital",
+                "Expert in training, support and assesment of the KMC implementation"
+            ],
+            imageUrl: "/committer/NguyenThuNga.jpg",
+        }
     ],
     vi: [
         {
@@ -471,6 +496,20 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
         {
             "order": 17,
             "title": "BS",
+            "name": "GS. TS. BS. Somashekhar Nimbalkar",
+            "role": [
+                "Giáo sư Sơ sinh, Trường Y Pramukhswami, Gujarat, Ấn Độ ",
+                "Chủ tịch đắc cử 2026 – Diễn đàn Sơ sinh Quốc gia Ấn Độ (NNF)",
+                "Tổng Biên tập Tạp chí Sơ sinh (NNF)",
+                "Điều phối viên quốc gia Chương trình Hồi sức Sơ sinh IAP NNF (2020–2025)",
+                "Thành viên Ban Chương trình Hiệp hội Nhi khoa Quốc tế về Sức khỏe Bà mẹ & Trẻ sơ sinh, Y học Chu sinh (2025–2027)",
+                "Nhận nhiều giải thưởng quốc gia và quốc tế trong lĩnh vực Nhi khoa & Sơ sinh"
+            ],
+            "imageUrl": "/committer/Nimbalkar.jpg"
+        },
+        {
+            "order": 18,
+            "title": "BS",
             "name": "BS. Lương Kim Chi",
             "role": [
                 "Trưởng khoa Sơ sinh, Bệnh viện đa khoa quốc tế Tân An, Việt Nam",
@@ -480,7 +519,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/LuongKimChi.webp"
         },
         {
-            "order": 18,
+            "order": 19,
             "title": "PGS.TS.BS",
             "name": "PGS.TS.BS. Trần Thị Hoàng",
             "role": [
@@ -493,7 +532,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/TranThiHoang.webp"
         },
         {
-            "order": 19,
+            "order": 20,
             "title": "TS.BS",
             "name": "TS.BS. Phan Thị Hằng",
             "role": [
@@ -505,7 +544,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/PhanThiHang.webp"
         },
         {
-            "order": 20,
+            "order": 21,
             "title": "ThS.BSCK II",
             "name": "ThS.BS.CK II Lê Thị Hà",
             "role": [
@@ -516,7 +555,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/LeThiHa.webp"
         },
         {
-            "order": 21,
+            "order": 22,
             "title": "BSCK II",
             "name": "BS.CK II Bùi Thị Thuỷ Tiên",
             "role": [
@@ -527,7 +566,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             "imageUrl": "/committer/BuiThiThuyTien.webp"
         },
         {
-            order: 22,
+            order: 23,
             title: "Dr",
             name: "ThS.BSCK2. Phạm Thị Thanh Tâm",
             role: [
@@ -539,7 +578,7 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
             imageUrl: "/committer/Pham-Thi-Thanh-Tam.jpg",
         },
         {
-            "order": 23,
+            "order": 24,
             "title": "ThS.BS",
             "name": "ThS.BS. Huỳnh Thị Lệ",
             "role": [
@@ -549,6 +588,16 @@ export const committeeData: Record<string, CommitteeMemberProps[]> = {
                 "Giảng dạy chương trình Chăm sóc sơ sinh thiết yếu sớm, Chăm sóc Bà mẹ Kangaroo, Hồi sức sơ sinh cho đồng nghiệp trong nước và quốc tế"
             ],
             "imageUrl": "/committer/HuynhThiLe.webp"
+        },
+        {
+            "order": 25,
+            "title": "ThS.BS",
+            "name": "TS. BS Nguyễn Thu Nga",
+            "role": [
+                "Chuyên khoa Nhi, Sơ sinh và Chăm sóc Bà mẹ Kangaroo",
+                "Nguyên trưởng khoa Sơ sinh và trưởng đơn vị KMC, Bệnh viện Việt Nam Thụy Điển Uông Bí",
+                "Chuyên gia đào tạo, giám sát hỗ trợ và đánh giá thực hiện KMC"            ],
+            "imageUrl": "/committer/NguyenThuNga.jpg"
         }
     ]
 };
