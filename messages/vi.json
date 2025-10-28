@@ -44,6 +44,8 @@
     "attendanceValue3": "",
     "downloadNotice": "Tải Thông báo số 1",
     "downloadFilename": "/ThongBao.pdf",
+    "downloadNotice2": "Tải Thông báo số 2",
+    "downloadFilename2": "/ThongBao2.pdf",
     "downloadLetter": "Tải Thư ngỏ",
     "viewMap": "Xem bản đồ",
     "mapAlt": "Bản đồ địa điểm hội nghị",

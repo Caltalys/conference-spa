@@ -44,6 +44,8 @@
     "attendanceValue3": "- Media reporters.",
     "downloadNotice": "Download 1st Announcement",
     "downloadFilename": "/announcement.pdf",
+    "downloadNotice2": "Download 2nd Announcement",
+    "downloadFilename2": "/announcement2.pdf",
     "downloadLetter": "Download Invitation Letter",
     "viewMap": "View map",
     "mapAlt": "Map of the conference location",

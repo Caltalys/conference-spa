@@ -38,9 +38,15 @@ const DownloadButtons = ({ t }) => (
     {/* Replaced `whileHover`/`whileTap` with `hover`/`press` */}
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
       <Button asChild size="xl" variant="destructive" className="text-xl font-semibold animate-bounce">
-        <Link href={t('downloadFilename')} download="ThongBaoHoiNghi.pdf">
+        <Link href={t('downloadFilename')} download={t('downloadFilename')}>
           <Download className="mr-2 h-5 w-5" />
           {t('downloadNotice')}
+        </Link>
+      </Button>
+      <Button asChild size="xl" variant="destructive" className="text-xl font-semibold animate-bounce">
+        <Link href={t('downloadFilename2')} download={t('downloadFilename2')}>
+          <Download className="mr-2 h-5 w-5" />
+          {t('downloadNotice2')}
         </Link>
       </Button>
     </motion.div>
