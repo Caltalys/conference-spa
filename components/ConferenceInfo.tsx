@@ -135,7 +135,18 @@ const ConferenceInfo = () => {
         <motion.div {...useAnimationProps(fadeInUp)}>
           <FlyerImageItem />
         </motion.div>
+        
         <DownloadButtons t={t} />
+
+        <div className="flex flex-col sm:flex-row gap-4 w-full items-center justify-center pt-8">
+          <Button asChild size="xl" variant="destructive" className="text-xl font-semibold">
+            <Link href="/KMC program_251001_DN_V9-1.pdf" download="KMC program_251001_DN_V9-1.pdf">
+              <Download className="mr-2 h-5 w-5" />
+              {t('downloadProgram')}
+            </Link>
+          </Button>
+        </div>
+
       </div>
     </section>
   );
